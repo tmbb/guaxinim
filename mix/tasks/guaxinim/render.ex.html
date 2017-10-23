@@ -1,0 +1,388 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Licensed under the Apache 2.0 License -->
+    <link rel="stylesheet" type="text/css" href="../../../_static/fonts/open-sans/stylesheet.css" />
+    <!-- Licensed under the SIL Open Font License -->
+    <link rel="stylesheet" type="text/css" href="../../../_static/fonts/source-serif-pro/source-serif-pro.css" />
+    <!-- Guzzler docs -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!--
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/bootstrap.min.css" />
+    -->
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/bootstrap-theme.min.css" />
+    <!-- Guaxinim -->
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div id="left-column">
+        <div class="sphinxsidebar">
+  <a href="#" class="text-logo">
+    Guaxinim
+  </a>
+  <div class="sidebar-block">
+    <div class="sidebar-wrapper">
+      <h2>Table Of Contents</h2>
+    </div>
+    <div class="sidebar-toc">
+      <ul class="current">
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="..">
+            <span class="glyphicon glyphicon-level-up"></span>
+            &nbsp;
+            <span class="sidebar-toc-level-up">../</span></a></li>
+        
+        
+        
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="render.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">render.ex</span></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <div id="right-column">
+        <div class="document clearer body">
+          <div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L1"></a><a href="#L1"> 1</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Mix.Tasks.Guaxinim.Render</span><span class="w"> </span><span class="k" data-group-id="789">do</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-moduledoc">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default guaxinim-panel">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-11">
+                  <span class="guaxinim-moduledoc-label">@moduledoc</span>
+                  
+                </div>
+                <div class="col-md-1 text-right">
+                  <span class="glyphicon glyphicon glyphicon-info-sign"
+                    style="margin-top:3px"></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Renders the current project into a literate program.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>This is all rather hacky.
+I don’t know where the Mnesia database is being created.
+I’ll have to find out if I ever want to implement some kind of caching.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L8"></a><a href="#L8"> 8</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kn">use</span><span class="w"> </span><span class="nc">Mix.Task</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>This task is extremely wasteful, generating and destroying
+the database each time it is run.
+We must destroy the database so that we don’t make mistakes due
+to a rare corner case in which a function named <code class="inline">f</code> (for example)
+is removed and a variable named <code class="inline">f</code> is placed in the same line.
+This makes the program create a link to a function when in fact
+it’s only a variable.
+This corner case is probably very rare, but it’s insidious.</p>
+<p>Currently, we only output the hyperlinked source, but in the future
+we might have dependency graphs or other visualization tools,
+and for those cases we can’t afford to have stale values in the tables.</p>
+<p>The obvious optimization is to be intelligent while updating the database.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L23"></a><a href="#L23">23</a>
+<a id="L24"></a><a href="#L24">24</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">run</span><span class="p" data-group-id="775">(</span><span class="bp">_args</span><span class="p" data-group-id="775">)</span><span class="w"> </span><span class="k" data-group-id="788">do</span><span class="w"></span>
+<span class="w">    </span><span class="nc">Amnesia</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/amnesia/Amnesia.html#start/0">start</a></span><span class="p" data-group-id="776">()</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Try to create a schema</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L26"></a><a href="#L26">26</a>
+<a id="L27"></a><a href="#L27">27</a>
+<a id="L28"></a><a href="#L28">28</a>
+<a id="L29"></a><a href="#L29">29</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">Amnesia.Schema</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/amnesia/Amnesia.Schema.html#create/0">create</a></span><span class="p" data-group-id="777">()</span><span class="w"> </span><span class="k" data-group-id="780">do</span><span class="w"></span>
+<span class="w">      </span><span class="ss">:ok</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="778">(</span><span class="s2">&quot;Created schema.&quot;</span><span class="p" data-group-id="778">)</span><span class="w"></span>
+<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="779">(</span><span class="s2">&quot;Schema already exists.&quot;</span><span class="p" data-group-id="779">)</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="780">end</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Destroy the old version of the database, if it exists.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L31"></a><a href="#L31">31</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim/database.ex.html#L12">destroy</a></span><span class="p" data-group-id="781">()</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Create the database</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L33"></a><a href="#L33">33</a>
+<a id="L34"></a><a href="#L34">34</a>
+<a id="L35"></a><a href="#L35">35</a>
+<a id="L36"></a><a href="#L36">36</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim/database.ex.html#L12">create</a></span><span class="p" data-group-id="782">()</span><span class="w"> </span><span class="k" data-group-id="785">do</span><span class="w"></span>
+<span class="w">      </span><span class="ss">:ok</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="783">(</span><span class="s2">&quot;Created database.&quot;</span><span class="p" data-group-id="783">)</span><span class="w"></span>
+<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="784">(</span><span class="s2">&quot;Database already exists.&quot;</span><span class="p" data-group-id="784">)</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="785">end</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Render the project</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L38"></a><a href="#L38">38</a>
+<a id="L39"></a><a href="#L39">39</a>
+<a id="L40"></a><a href="#L40">40</a>
+<a id="L41"></a><a href="#L41">41</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="nc">Guaxinim</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim.ex.html#L41">run</a></span><span class="p" data-group-id="786">()</span><span class="w"></span>
+<span class="w">    </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="787">(</span><span class="s2">&quot;Project rendered.&quot;</span><span class="p" data-group-id="787">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="788">end</span><span class="w"></span>
+<span class="k" data-group-id="789">end</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../../_static/js/makeup.js"></script>
+  </body>
+</html>
