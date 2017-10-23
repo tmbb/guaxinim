@@ -14,6 +14,7 @@ defmodule Guaxinim.AstInspector do
           {_, calls} = Macro.traverse(ast, [], &functions_called_pre_walk/2, &post_walk/2),
         do: calls
 
+
     calls_per_head
     |> List.flatten
     |> Enum.filter(fn {fun_arity, _} -> MapSet.member?(definitions, fun_arity) end)

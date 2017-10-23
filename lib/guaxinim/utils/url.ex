@@ -64,9 +64,10 @@ defmodule Guaxinim.Utils.URL do
           {<< m0 >> <> _, _, _} when ?a <= m0 and m0 <= ?z ->
             url_for_builtin_erlang_module(mfa)
 
-          # We can distinguish Elixirmodules from the module name alone.
-          # The name of all Elixir modules starts with `"Elixir."`
-          mfa ->
+          {"EEx." <> _, _f, _a} ->
+            url_mfa_hexdocs("eex", mfa)
+
+          _ ->
             url_mfa_hexdocs("elixir", mfa)
         end
     end

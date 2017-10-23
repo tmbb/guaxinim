@@ -27,5 +27,7 @@
         </div>
       </div>
     </div>
+
+    <script src="<%= path(from: @file, to: "_static/js/makeup.js") %>"></script>
   </body>
 </html>
