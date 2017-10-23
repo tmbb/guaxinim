@@ -8,6 +8,7 @@ defmodule Guaxinim.Mixfile do
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
+      docs: docs(),
       guaxinim: [
         src: "lib",
         dst: "literate"
@@ -19,6 +20,14 @@ defmodule Guaxinim.Mixfile do
   def application do
     [
       extra_applications: [:logger]
+    ]
+  end
+
+  def docs do
+    [
+      main: "Guaxinim",
+      logo: "assets/logo/logo.png",
+      extras: ["README.md"]
     ]
   end
 

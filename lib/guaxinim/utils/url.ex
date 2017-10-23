@@ -98,7 +98,7 @@ defmodule Guaxinim.Utils.URL do
     # Link to the anchor of the line where the function is defined:
     case base do
       "" -> "#L#{line}"
-      _ -> "#{base}.html##{line}"
+      _ -> "#{base}.html#L#{line}"
     end
   end
 
