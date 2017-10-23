@@ -76,7 +76,10 @@ defmodule Guaxinim do
 
     child_files =
       children
-      |> Enum.filter(fn path -> not (parent_dir |> Path.join(path) |> File.dir?) end)
+
+      |> Enum.filter(fn path ->
+        not File.dir?(Path.join(parent_dir, path)) and Path.extname(path) == ".ex"
+      end)
       |> Enum.sort
 
     {child_directories, child_files}

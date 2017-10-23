@@ -1,6 +1,8 @@
 defmodule Guaxinim.AstInspector do
-  defp functions_called_pre_walk({f, location, args} = ast_node, acc) when is_atom(f) and is_list(args), do:
+  defp functions_called_pre_walk({f, location, args} = ast_node, acc)
+      when is_atom(f) and is_list(args) do
     {ast_node, [{{f, length(args)}, location } | acc]}
+  end
   defp functions_called_pre_walk(ast_node, acc), do: {ast_node, acc}
 
   defp post_walk(ast_node, acc), do: {ast_node, acc}

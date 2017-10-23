@@ -25,9 +25,9 @@ defmodule GuaxinimTest do
   """
   def f3 do
     # Function with arity = 1
-    Makeup.ElixirLexer.lex("source")
+    _ignore = Makeup.highlight("source")
     # Function with arity = 2
-    Makeup.ElixirLexer.lex("source", [])
+    Makeup.highlight("source", [])
   end
 
 
@@ -35,7 +35,7 @@ defmodule GuaxinimTest do
   Link to a function from Erlang's standard library
   """
   def f4 do
-    :dgp.ctp()
+    :dbg.ctp()
   end
 
 

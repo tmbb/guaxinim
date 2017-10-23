@@ -1,18 +1,23 @@
+# This module is not adequately named.
+# It does inspect the BEAM fies but iit does a lot more than that.
+# We must change the name to reflect this.
 defmodule Guaxinim.BeamInspector do
   @moduledoc """
   A module to gather information from `.beam` files
   """
 
+  # Some tools to inspect the compile manifests, also used by `mix xref`
   alias Mix.Tasks.Compile.Elixir, as: E
-  import Mix.Compilers.Elixir, only: [
-    read_manifest: 2, source: 1, module: 1,
-  ]
+  import Mix.Compilers.Elixir, only: [read_manifest: 2, source: 1, module: 1]
+  # The module `Amnesia.Helper` must be required to avoid some problems with macros
+  # defined by the `Amnesia` module. **TODO**: Fix this upstream
   require Amnesia.Helper
   require Amnesia
-
+  # Modules related to the database
   require Guaxinim.Database.{ModuleDefinition, FunctionDefinition, FunctionCall}
   alias Guaxinim.Database.{ModuleDefinition, FunctionDefinition, FunctionCall}
-
+  # Module that contains utilities to traverse the AST directly and gather data
+  # without help from the compile manifests
   alias Guaxinim.AstInspector
 
   @doc """
@@ -76,6 +81,8 @@ defmodule Guaxinim.BeamInspector do
           source = Enum.find(manifest_data, &match?(source(source: ^source), &1)),
           do: {module, source}
 
+    # This is very fast (possibly the Elixir compiler has already done most of the work)
+    # Parallelizing this loop is not a top priority.
     Enum.map(module_sources, fn {current, source} ->
       source(runtime_dispatches: runtime_nested,
              compile_dispatches: compile_nested,
@@ -100,7 +107,8 @@ defmodule Guaxinim.BeamInspector do
   end
 
   # def gather_function_definitions_in_module(_, _, false), do: :ok
-  def gather_function_definitions_in_module(config, {module_name, binary_path}, internal?) do
+  def gather_function_definitions_in_module(config, {full_module_name, binary_path}, internal?) do
+    module_name = String.trim_leading(full_module_name, "Elixir.")
     with path when is_list(path) <- to_charlist(binary_path),
         # Some BEAM introspection magic here...
         {:ok, {_, [debug_info: {:debug_info_v1, backend, data}]}} <- :beam_lib.chunks(path, [:debug_info]),
@@ -110,6 +118,7 @@ defmodule Guaxinim.BeamInspector do
            file: abs_file}} <- backend.debug_info(:elixir_v1, String.to_atom(module_name), data, []) do
 
       package = package_from_path(binary_path)
+
       file =
         case internal? do
           true -> Path.relative_to(abs_file, config.src_root)
@@ -187,7 +196,7 @@ defmodule Guaxinim.BeamInspector do
     module_names =
       rel_files
       |> Enum.map(&String.trim_trailing(&1, ".beam"))
-      |> Enum.map(&String.trim_leading(&1, "Elixir."))
+      # |> Enum.map(&String.trim_leading(&1, "Elixir."))
 
     abs_files = Enum.map(rel_files, &Path.join(ebin_path, &1))
 

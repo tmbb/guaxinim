@@ -34,14 +34,6 @@ defmodule Guaxinim.Utils.URL do
   URL for a given function. The function is given as `{module, function, arity}`,
   where `module` and `function` are strings instead of atoms.
   """
-  def url_for_mfa(_config, _src, {"Elixir." <> m, f, a}) do
-    # We can distinguish built-in modules from the module name alone.
-    # All built-in modules start with `"Elixir."`, and no modules
-    # other than the built-in ones start with that prefix.
-    # Matching this case first saves us a Mnesia query.
-    url_mfa_hexdocs("elixir", {m, f, a})
-  end
-
   def url_for_mfa(config, src, {m, _f, _a} = mfa) do
     # We already know that we're not dealing with an Elixir function
     # from the standard library.
@@ -72,12 +64,16 @@ defmodule Guaxinim.Utils.URL do
           << m0 >> <> _ when ?a <= m0 and m0 <= ?z ->
             url_for_builtin_erlang_module(mfa)
 
+          # We can distinguish Elixirmodules from the module name alone.
+          # The name of all Elixir modules starts with `"Elixir."`
+          {"Elixir." <> m, f, a} ->
+            url_mfa_hexdocs("elixir", {m, f, a})
+
           _ ->
             nil
         end
     end
   end
-
 
   @doc """
   URL for an Erlang function from the standard library
@@ -92,7 +88,8 @@ defmodule Guaxinim.Utils.URL do
   URL for a function (given as `{module, function, arity}`) from a Hex package.
   """
   def url_mfa_hexdocs(package, {m, f, a}) do
-    "https://hexdocs.pm/#{package}/#{m}.html##{f}/#{a}"
+    trimmed = String.trim_leading(m, "Elixir.")
+    "https://hexdocs.pm/#{package}/#{trimmed}.html##{f}/#{a}"
   end
 
   @doc """
@@ -101,7 +98,10 @@ defmodule Guaxinim.Utils.URL do
   def url_internal(_config, src, dst, line) do
     base = path(from: src, to: dst)
     # Link to the anchor of the line where the function is defined:
-    "#{base}#L#{line}"
+    case base do
+      "" -> "#L#{line}"
+      _ -> "#{base}.html##{line}"
+    end
   end
 
 end
