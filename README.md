@@ -1,6 +1,6 @@
 # Guaxinim
 
-![Guaxinim = Racoon](assets/logo/logo.png)
+![](assets/logo/logo.png)
 
 
 Quick n' dirty literate programming for Elixir, inspired by
@@ -31,7 +31,7 @@ The Elixir code is not executed or interpreted.
 
 ## Installation
 
-The package is [available in Hex](https://hex.pm/docs/publish).
+The package is [available in Hex](https://hex.pm/packages/guaxinim).
 It can be installed by adding `guaxinim` to your list of dependencies in `mix.exs`:
 
 ```elixir

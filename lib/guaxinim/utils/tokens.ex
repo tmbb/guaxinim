@@ -35,6 +35,13 @@ defmodule Guaxinim.Utils.Tokens do
     |> Enum.with_index(1)
   end
 
+  defp escape(string) do
+    escape_map = [{"&", "&amp;"}, {"<", "&lt;"}, {">", "&gt;"}, {~S("), "&quot;"}]
+    Enum.reduce escape_map, string, fn {pattern, escape}, acc ->
+      String.replace(acc, pattern, escape)
+    end
+  end
+
   EEx.function_from_string(:defp, :render_token, """
   <span\
   <%= if css_class do %> class="<%= css_class %>"<% end %>\
@@ -43,7 +50,7 @@ defmodule Guaxinim.Utils.Tokens do
   """, [:escaped_value, :css_class, :meta, :url])
 
   def format_token_with_link({tag, meta, value}, url) do
-    escaped_value = HtmlEntities.encode(value)
+    escaped_value = escape(value)
     css_class = Makeup.Token.Utils.css_class_for_token_type(tag)
     render_token(escaped_value, css_class, meta, url)
   end

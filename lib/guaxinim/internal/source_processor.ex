@@ -84,7 +84,7 @@ defmodule Guaxinim.Internal.SourceProcessor do
 
   # Process the raw source of the file into blocks.
   def process_source(file, source) do
-    tokens = ElixirLexer.lex(source, true)
+    tokens = ElixirLexer.lex(source, [])
     token_lines = Tokens.split_into_lines(tokens)
     %{error: nil, result: blocks} = SourceParser.from_string(source)
     merged_blocks = merge_blocks_and_token_lines(blocks, token_lines)

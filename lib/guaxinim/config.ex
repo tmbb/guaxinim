@@ -9,7 +9,7 @@ defmodule Guaxinim.Config do
     guaxinim_user_config = Keyword.get(Mix.Project.config(), :guaxinim, [])
     src = Keyword.get(guaxinim_user_config, :src, "lib")
     dst = Keyword.get(guaxinim_user_config, :dst, "literate")
-    project_title = Keyword.get(guaxinim_user_config, :projec_title, "Add Title...")
+    project_title = Keyword.get(guaxinim_user_config, :project_title, "Add Title...")
 
     # Paths will be relative to the mix project's root
     %__MODULE__{
