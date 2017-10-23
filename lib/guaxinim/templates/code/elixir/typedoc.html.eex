@@ -1,0 +1,32 @@
+<div style="display: flex;" class="guaxinim-docblock guaxinim-typedoc">
+  <table>
+    <tbody>
+      <tr>
+        <td><pre><%= String.duplicate("&nbsp;", indent) %></pre></td>
+        <td>
+          <td class="right-side guaxinim-prose">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-11">
+                  <span class="guaxinim-typedoc-label">@typedoc</span>
+                  <%= if type do %>
+                    <span class="guaxinim-docblock-connector"><%= connector %></span>
+                    <span class="guaxinim-type-name"><%= type %></span>
+                  <% end %>
+                </div>
+                <div class="col-md-1 text-right">
+                  <span class="glyphicon glyphicon glyphicon-info-sign"
+                    style="margin-top:3px"></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <%= content %>
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

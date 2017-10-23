@@ -1,0 +1,36 @@
+<div style="display: flex;" class="guaxinim-docblock guaxinim-moduledoc">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre><%= String.duplicate("&nbsp;", indent) %></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default guaxinim-panel">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-11">
+                  <span class="guaxinim-moduledoc-label">@moduledoc</span>
+                  <%= if module do %>
+                    <span class="guaxinim-docblock-connector"><%= connector %></span>
+                    <span class="guaxinim-module-name"><%= module %></span>
+                  <% end %>
+                </div>
+                <div class="col-md-1 text-right">
+                  <span class="glyphicon glyphicon glyphicon-info-sign"
+                    style="margin-top:3px"></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <%= content %>
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

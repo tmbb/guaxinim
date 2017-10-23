@@ -1,0 +1,18 @@
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><%= anchors %></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><%= code %></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

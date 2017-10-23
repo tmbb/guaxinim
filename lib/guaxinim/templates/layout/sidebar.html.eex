@@ -1,0 +1,38 @@
+<div class="sphinxsidebar">
+  <a href="#" class="text-logo">
+    <%= @project_title %>
+  </a>
+  <div class="sidebar-block">
+    <div class="sidebar-wrapper">
+      <h2>Table Of Contents</h2>
+    </div>
+    <div class="sidebar-toc">
+      <ul class="current">
+        <%# The index of the root directory is a special case (can't move up!) %>
+        <%= if @file != "index.html" do %>
+        <li class="toctree-l1">
+          <a class="reference internal" href="..">
+            <span class="glyphicon glyphicon-level-up"></span>
+            &nbsp;
+            <span class="sidebar-toc-level-up">../</span></a></li>
+        <% end %>
+        <%# List of directories %>
+        <%= for dir <- @sibling_directories do %>
+        <li class="toctree-l1">
+          <a class="reference internal" href="<%= dir %>">
+            <span class="glyphicon glyphicon-folder-open"></span>
+            &nbsp;
+            <span class="sidebar-toc-directory"><%= dir %>/</span></a></li>
+        <% end %>
+        <%# List of files %>
+        <%= for file <- @sibling_files do %>
+        <li class="toctree-l1">
+          <a class="reference internal" href="<%= file %>.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file"><%= file %></span></a></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>
