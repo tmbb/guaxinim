@@ -12,7 +12,13 @@ defmodule Guaxinim do
   Prepare the destination directory
   """
   def prepare_dst(config) do
+    # Clean the already existing files (oportunity for caching)
+    if File.exists?(config.dst) and File.dir?(config.dst) do
+      File.rm_rf!(config.dst)
+    end
+    # Create the destination directory
     File.mkdir_p!(config.dst)
+    # Copy the static assets
     dst_static = Path.join(config.dst, "_static")
     File.cp_r!("priv/static", dst_static)
     :ok
@@ -36,7 +42,6 @@ defmodule Guaxinim do
     config = Config.from_mix()
     BeamInspector.gather_data_from_modules(config)
     prepare_dst(config)
-
 
     config.src
     |> all_relative_files

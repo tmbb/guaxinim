@@ -9,8 +9,8 @@ defmodule Guaxinim.Mixfile do
       start_permanent: Mix.env == :prod,
       deps: deps(),
       guaxinim: [
-        sources: ["lib"],
-        destination: "literate"
+        src: "lib",
+        dst: "literate"
       ]
     ]
   end
