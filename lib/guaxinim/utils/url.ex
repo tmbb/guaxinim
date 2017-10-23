@@ -34,7 +34,7 @@ defmodule Guaxinim.Utils.URL do
   URL for a given function. The function is given as `{module, function, arity}`,
   where `module` and `function` are strings instead of atoms.
   """
-  def url_for_mfa(config, src, {m, _f, _a} = mfa) do
+  def url_for_mfa(config, src, mfa) do
     # We already know that we're not dealing with an Elixir function
     # from the standard library.
     # At this point there are only three cases we must handle:
@@ -53,7 +53,7 @@ defmodule Guaxinim.Utils.URL do
         url_mfa_hexdocs(package, mfa)
 
       nil ->
-        case m do
+        case mfa do
           # If the module:
           #
           #   1. is not a built-in Elixir module module;
@@ -61,16 +61,13 @@ defmodule Guaxinim.Utils.URL do
           #   3. can't be found amongs our packages
           #
           # we assume it's a built-in Erlang module and link to the erlang docs,
-          << m0 >> <> _ when ?a <= m0 and m0 <= ?z ->
+          {<< m0 >> <> _, _, _} when ?a <= m0 and m0 <= ?z ->
             url_for_builtin_erlang_module(mfa)
 
           # We can distinguish Elixirmodules from the module name alone.
           # The name of all Elixir modules starts with `"Elixir."`
-          {"Elixir." <> m, f, a} ->
-            url_mfa_hexdocs("elixir", {m, f, a})
-
-          _ ->
-            nil
+          mfa ->
+            url_mfa_hexdocs("elixir", mfa)
         end
     end
   end
