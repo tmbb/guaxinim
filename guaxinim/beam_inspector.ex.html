@@ -90,18 +90,42 @@
 
       <div id="right-column">
         <div class="document clearer body">
-          <div class="guaxinim-codeblock">
+          <div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>This module is not adequately named.
+It does inspect the BEAM fies but iit does a lot more than that.
+We must change the name to reflect this.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
   <table>
     <tbody>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L1"></a><a href="#L1">  1</a></pre>
+            <pre><a id="L4"></a><a href="#L4">  4</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.BeamInspector</span><span class="w"> </span><span class="k" data-group-id="15942">do</span><span class="w"></span></pre>
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.BeamInspector</span><span class="w"> </span><span class="k" data-group-id="12067">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -148,35 +172,181 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L5"></a><a href="#L5">  5</a>
-<a id="L6"></a><a href="#L6">  6</a>
-<a id="L7"></a><a href="#L7">  7</a>
-<a id="L8"></a><a href="#L8">  8</a>
-<a id="L9"></a><a href="#L9">  9</a>
-<a id="L10"></a><a href="#L10"> 10</a>
-<a id="L11"></a><a href="#L11"> 11</a>
-<a id="L12"></a><a href="#L12"> 12</a>
-<a id="L13"></a><a href="#L13"> 13</a>
-<a id="L14"></a><a href="#L14"> 14</a>
-<a id="L15"></a><a href="#L15"> 15</a>
-<a id="L16"></a><a href="#L16"> 16</a>
-<a id="L17"></a><a href="#L17"> 17</a></pre>
+            <pre><a id="L8"></a><a href="#L8">  8</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w"></span>
-<span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Mix.Tasks.Compile.Elixir</span><span class="p">,</span><span class="w"> </span><span class="ss">as</span><span class="p">:</span><span class="w"> </span><span class="nc">E</span><span class="w"></span>
-<span class="w">  </span><span class="kn">import</span><span class="w"> </span><span class="nc">Mix.Compilers.Elixir</span><span class="p">,</span><span class="w"> </span><span class="ss">only</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15762">[</span><span class="w"></span>
-<span class="w">    </span><span class="ss">read_manifest</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="ss">module</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="15762">]</span><span class="w"></span>
-<span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Amnesia.Helper</span><span class="w"></span>
-<span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Amnesia</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="p" data-group-id="15763">{</span><span class="nc">ModuleDefinition</span><span class="p">,</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="p">,</span><span class="w"> </span><span class="nc">FunctionCall</span><span class="p" data-group-id="15763">}</span><span class="w"></span>
-<span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="p" data-group-id="15764">{</span><span class="nc">ModuleDefinition</span><span class="p">,</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="p">,</span><span class="w"> </span><span class="nc">FunctionCall</span><span class="p" data-group-id="15764">}</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Guaxinim.AstInspector</span><span class="w"></span>
+            <pre><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Some tools to inspect the compile manifests, also used by <code class="inline">mix xref</code></p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L10"></a><a href="#L10"> 10</a>
+<a id="L11"></a><a href="#L11"> 11</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Mix.Tasks.Compile.Elixir</span><span class="p">,</span><span class="w"> </span><span class="ss">as</span><span class="p">:</span><span class="w"> </span><span class="nc">E</span><span class="w"></span>
+<span class="w">  </span><span class="kn">import</span><span class="w"> </span><span class="nc">Mix.Compilers.Elixir</span><span class="p">,</span><span class="w"> </span><span class="ss">only</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11888">[</span><span class="ss">read_manifest</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="ss">module</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="11888">]</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>The module <code class="inline">Amnesia.Helper</code> must be required to avoid some problems with macros
+defined by the <code class="inline">Amnesia</code> module. <strong>TODO</strong>: Fix this upstream</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L14"></a><a href="#L14"> 14</a>
+<a id="L15"></a><a href="#L15"> 15</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Amnesia.Helper</span><span class="w"></span>
+<span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Amnesia</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Modules related to the database</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L17"></a><a href="#L17"> 17</a>
+<a id="L18"></a><a href="#L18"> 18</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="p" data-group-id="11889">{</span><span class="nc">ModuleDefinition</span><span class="p">,</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="p">,</span><span class="w"> </span><span class="nc">FunctionCall</span><span class="p" data-group-id="11889">}</span><span class="w"></span>
+<span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="p" data-group-id="11890">{</span><span class="nc">ModuleDefinition</span><span class="p">,</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="p">,</span><span class="w"> </span><span class="nc">FunctionCall</span><span class="p" data-group-id="11890">}</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Module that contains utilities to traverse the AST directly and gather data
+without help from the compile manifests</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L21"></a><a href="#L21"> 21</a>
+<a id="L22"></a><a href="#L22"> 22</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Guaxinim.AstInspector</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -224,12 +394,7 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L21"></a><a href="#L21"> 21</a>
-<a id="L22"></a><a href="#L22"> 22</a>
-<a id="L23"></a><a href="#L23"> 23</a>
-<a id="L24"></a><a href="#L24"> 24</a>
-<a id="L25"></a><a href="#L25"> 25</a>
-<a id="L26"></a><a href="#L26"> 26</a>
+            <pre><a id="L26"></a><a href="#L26"> 26</a>
 <a id="L27"></a><a href="#L27"> 27</a>
 <a id="L28"></a><a href="#L28"> 28</a>
 <a id="L29"></a><a href="#L29"> 29</a>
@@ -286,10 +451,105 @@
 <a id="L80"></a><a href="#L80"> 80</a>
 <a id="L81"></a><a href="#L81"> 81</a>
 <a id="L82"></a><a href="#L82"> 82</a>
-<a id="L83"></a><a href="#L83"> 83</a>
-<a id="L84"></a><a href="#L84"> 84</a>
-<a id="L85"></a><a href="#L85"> 85</a>
-<a id="L86"></a><a href="#L86"> 86</a>
+<a id="L83"></a><a href="#L83"> 83</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">module_references</span><span class="p" data-group-id="11891">()</span><span class="w"> </span><span class="k" data-group-id="11903">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">module_sources</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="n">manifest</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nc">E</span><span class="o">.</span><span class="n">manifests</span><span class="p" data-group-id="11892">()</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="n">manifest_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read_manifest</span><span class="p" data-group-id="11893">(</span><span class="n">manifest</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p" data-group-id="11893">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="n">module</span><span class="p" data-group-id="11894">(</span><span class="ss">module</span><span class="p">:</span><span class="w"> </span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="ss">sources</span><span class="p">:</span><span class="w"> </span><span class="n">sources</span><span class="p" data-group-id="11894">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">manifest_data</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="n">source</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sources</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="n">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">find</span><span class="p" data-group-id="11897">(</span><span class="n">manifest_data</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">match?</span><span class="p" data-group-id="11896">(</span><span class="n">source</span><span class="p" data-group-id="11895">(</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="o">^</span><span class="n">source</span><span class="p" data-group-id="11895">)</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="11896">)</span><span class="p" data-group-id="11897">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11898">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="11898">}</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">    </span><span class="nc">Map</span><span class="o">.</span><span class="n">new</span><span class="w"> </span><span class="n">module_sources</span><span class="p">,</span><span class="w"> </span><span class="k" data-group-id="11902">fn</span><span class="w"> </span><span class="p" data-group-id="11899">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="11899">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="n">source</span><span class="p" data-group-id="11900">(</span><span class="ss">runtime_dispatches</span><span class="p">:</span><span class="w"> </span><span class="n">runtime_dispatches</span><span class="p">,</span><span class="w"></span>
+<span class="w">             </span><span class="ss">compile_dispatches</span><span class="p">:</span><span class="w"> </span><span class="n">compile_dispatches</span><span class="p" data-group-id="11900">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">source</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="11901">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">compile_dispatches</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">runtime_dispatches</span><span class="p" data-group-id="11901">}</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="11902">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="11903">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">package_from_path</span><span class="p" data-group-id="11904">(</span><span class="n">path</span><span class="p" data-group-id="11904">)</span><span class="w"> </span><span class="k" data-group-id="11905">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">path</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">dirname</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">dirname</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">basename</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="11905">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">flatten_dispatch</span><span class="p" data-group-id="11907">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="11906">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">function_calls</span><span class="p" data-group-id="11906">}</span><span class="p" data-group-id="11907">)</span><span class="w"> </span><span class="k" data-group-id="11918">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">module_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n">to_string</span><span class="p" data-group-id="11908">(</span><span class="n">module</span><span class="p" data-group-id="11908">)</span><span class="w"></span>
+<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="11917">(</span><span class="n">function_calls</span><span class="p">,</span><span class="w"> </span><span class="k" data-group-id="11916">fn</span><span class="w"> </span><span class="p" data-group-id="11910">{</span><span class="p" data-group-id="11909">{</span><span class="n">fun</span><span class="p">,</span><span class="w"> </span><span class="n">arity</span><span class="p" data-group-id="11909">}</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="11910">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="n">fun_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n">to_string</span><span class="p" data-group-id="11911">(</span><span class="n">fun</span><span class="p" data-group-id="11911">)</span><span class="w"></span>
+<span class="w">      </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="11915">(</span><span class="n">lines</span><span class="p">,</span><span class="w"> </span><span class="k" data-group-id="11914">fn</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="p" data-group-id="11913">%</span><span class="nc" data-group-id="11913">FunctionCall</span><span class="p" data-group-id="11913">{</span><span class="w"></span>
+<span class="w">          </span><span class="ss">m</span><span class="p">:</span><span class="w"> </span><span class="n">module_name</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="ss">f</span><span class="p">:</span><span class="w"> </span><span class="n">fun_str</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="ss">a</span><span class="p">:</span><span class="w"> </span><span class="n">arity</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="ss">caller_mfa</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="ss">caller_module</span><span class="p">:</span><span class="w"> </span><span class="n">caller_module</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="ss">f_file_line</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11912">{</span><span class="n">fun_str</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="11912">}</span><span class="w"></span>
+<span class="w">        </span><span class="p" data-group-id="11913">}</span><span class="w"></span>
+<span class="w">      </span><span class="k" data-group-id="11914">end</span><span class="p" data-group-id="11915">)</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="11916">end</span><span class="p" data-group-id="11917">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n">flatten</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="11918">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">dispatches_to_function_calls</span><span class="p" data-group-id="11919">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">dispatches</span><span class="p" data-group-id="11919">)</span><span class="w"> </span><span class="k" data-group-id="11923">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">dispatches</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="11922">(</span><span class="k" data-group-id="11921">fn</span><span class="w"> </span><span class="n">dispatch</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L50">flatten_dispatch</a></span><span class="p" data-group-id="11920">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">dispatch</span><span class="p" data-group-id="11920">)</span><span class="w"> </span><span class="k" data-group-id="11921">end</span><span class="p" data-group-id="11922">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n">flatten</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="11923">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">file_references</span><span class="p" data-group-id="11924">(</span><span class="n">config</span><span class="p" data-group-id="11924">)</span><span class="w"> </span><span class="k" data-group-id="11944">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">module_sources</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="n">manifest</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nc">E</span><span class="o">.</span><span class="n">manifests</span><span class="p" data-group-id="11925">()</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="n">manifest_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">read_manifest</span><span class="p" data-group-id="11926">(</span><span class="n">manifest</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p" data-group-id="11926">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="n">module</span><span class="p" data-group-id="11927">(</span><span class="ss">module</span><span class="p">:</span><span class="w"> </span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="ss">sources</span><span class="p">:</span><span class="w"> </span><span class="n">sources</span><span class="p" data-group-id="11927">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">manifest_data</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="n">source</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sources</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="n">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">find</span><span class="p" data-group-id="11930">(</span><span class="n">manifest_data</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">match?</span><span class="p" data-group-id="11929">(</span><span class="n">source</span><span class="p" data-group-id="11928">(</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="o">^</span><span class="n">source</span><span class="p" data-group-id="11928">)</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="11929">)</span><span class="p" data-group-id="11930">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11931">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="11931">}</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>This is very fast (possibly the Elixir compiler has already done most of the work)
+Parallelizing this loop is not a top priority.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L86"></a><a href="#L86"> 86</a>
 <a id="L87"></a><a href="#L87"> 87</a>
 <a id="L88"></a><a href="#L88"> 88</a>
 <a id="L89"></a><a href="#L89"> 89</a>
@@ -304,91 +564,40 @@
 <a id="L98"></a><a href="#L98"> 98</a>
 <a id="L99"></a><a href="#L99"> 99</a>
 <a id="L100"></a><a href="#L100">100</a>
-<a id="L101"></a><a href="#L101">101</a></pre>
+<a id="L101"></a><a href="#L101">101</a>
+<a id="L102"></a><a href="#L102">102</a>
+<a id="L103"></a><a href="#L103">103</a>
+<a id="L104"></a><a href="#L104">104</a>
+<a id="L105"></a><a href="#L105">105</a>
+<a id="L106"></a><a href="#L106">106</a>
+<a id="L107"></a><a href="#L107">107</a>
+<a id="L108"></a><a href="#L108">108</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">module_references</span><span class="p" data-group-id="15765">()</span><span class="w"> </span><span class="k" data-group-id="15777">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">module_sources</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="n">manifest</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nc">E</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Tasks.Compile.Elixir.html#manifests/0">manifests</a></span><span class="p" data-group-id="15766">()</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n">manifest_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#read_manifest/2">read_manifest</a></span><span class="p" data-group-id="15767">(</span><span class="n">manifest</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p" data-group-id="15767">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#module/1">module</a></span><span class="p" data-group-id="15768">(</span><span class="ss">module</span><span class="p">:</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#module/1">module</a></span><span class="p">,</span><span class="w"> </span><span class="ss">sources</span><span class="p">:</span><span class="w"> </span><span class="n">sources</span><span class="p" data-group-id="15768">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">manifest_data</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n">source</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sources</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#find/2">find</a></span><span class="p" data-group-id="15771">(</span><span class="n">manifest_data</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Kernel.html#match?/2">match?</a></span><span class="p" data-group-id="15770">(</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="p" data-group-id="15769">(</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="o">^</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="p" data-group-id="15769">)</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="15770">)</span><span class="p" data-group-id="15771">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15772">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="15772">}</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">    </span><span class="nc">Map</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Map.html#new/2">new</a></span><span class="w"> </span><span class="n">module_sources</span><span class="p">,</span><span class="w"> </span><span class="k" data-group-id="15776">fn</span><span class="w"> </span><span class="p" data-group-id="15773">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="15773">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="p" data-group-id="15774">(</span><span class="ss">runtime_dispatches</span><span class="p">:</span><span class="w"> </span><span class="n">runtime_dispatches</span><span class="p">,</span><span class="w"></span>
-<span class="w">             </span><span class="ss">compile_dispatches</span><span class="p">:</span><span class="w"> </span><span class="n">compile_dispatches</span><span class="p" data-group-id="15774">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">source</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">      </span><span class="p" data-group-id="15775">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">compile_dispatches</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">runtime_dispatches</span><span class="p" data-group-id="15775">}</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="15776">end</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15777">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">package_from_path</span><span class="p" data-group-id="15778">(</span><span class="n">path</span><span class="p" data-group-id="15778">)</span><span class="w"> </span><span class="k" data-group-id="15779">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">path</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#dirname/1">dirname</a></span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#dirname/1">dirname</a></span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#basename/1">basename</a></span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15779">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">flatten_dispatch</span><span class="p" data-group-id="15781">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15780">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">function_calls</span><span class="p" data-group-id="15780">}</span><span class="p" data-group-id="15781">)</span><span class="w"> </span><span class="k" data-group-id="15792">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">module_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Atom.html#to_string/1">to_string</a></span><span class="p" data-group-id="15782">(</span><span class="n">module</span><span class="p" data-group-id="15782">)</span><span class="w"></span>
-<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15791">(</span><span class="n">function_calls</span><span class="p">,</span><span class="w"> </span><span class="k" data-group-id="15790">fn</span><span class="w"> </span><span class="p" data-group-id="15784">{</span><span class="p" data-group-id="15783">{</span><span class="n">fun</span><span class="p">,</span><span class="w"> </span><span class="n">arity</span><span class="p" data-group-id="15783">}</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="15784">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">      </span><span class="n">fun_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Atom.html#to_string/1">to_string</a></span><span class="p" data-group-id="15785">(</span><span class="n">fun</span><span class="p" data-group-id="15785">)</span><span class="w"></span>
-<span class="w">      </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15789">(</span><span class="n">lines</span><span class="p">,</span><span class="w"> </span><span class="k" data-group-id="15788">fn</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="p" data-group-id="15787">%</span><span class="nc" data-group-id="15787">FunctionCall</span><span class="p" data-group-id="15787">{</span><span class="w"></span>
-<span class="w">          </span><span class="ss">m</span><span class="p">:</span><span class="w"> </span><span class="n">module_name</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="ss">f</span><span class="p">:</span><span class="w"> </span><span class="n">fun_str</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="ss">a</span><span class="p">:</span><span class="w"> </span><span class="n">arity</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="ss">caller_mfa</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="ss">caller_module</span><span class="p">:</span><span class="w"> </span><span class="n">caller_module</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="ss">f_file_line</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15786">{</span><span class="n">fun_str</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="15786">}</span><span class="w"></span>
-<span class="w">        </span><span class="p" data-group-id="15787">}</span><span class="w"></span>
-<span class="w">      </span><span class="k" data-group-id="15788">end</span><span class="p" data-group-id="15789">)</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="15790">end</span><span class="p" data-group-id="15791">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/List.html#flatten/1">flatten</a></span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15792">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">dispatches_to_function_calls</span><span class="p" data-group-id="15793">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">dispatches</span><span class="p" data-group-id="15793">)</span><span class="w"> </span><span class="k" data-group-id="15797">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">dispatches</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15796">(</span><span class="k" data-group-id="15795">fn</span><span class="w"> </span><span class="n">dispatch</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L45">flatten_dispatch</a></span><span class="p" data-group-id="15794">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">dispatch</span><span class="p" data-group-id="15794">)</span><span class="w"> </span><span class="k" data-group-id="15795">end</span><span class="p" data-group-id="15796">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/List.html#flatten/1">flatten</a></span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15797">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">file_references</span><span class="p" data-group-id="15798">(</span><span class="n">config</span><span class="p" data-group-id="15798">)</span><span class="w"> </span><span class="k" data-group-id="15818">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">module_sources</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="n">manifest</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nc">E</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Tasks.Compile.Elixir.html#manifests/0">manifests</a></span><span class="p" data-group-id="15799">()</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n">manifest_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#read_manifest/2">read_manifest</a></span><span class="p" data-group-id="15800">(</span><span class="n">manifest</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p" data-group-id="15800">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#module/1">module</a></span><span class="p" data-group-id="15801">(</span><span class="ss">module</span><span class="p">:</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#module/1">module</a></span><span class="p">,</span><span class="w"> </span><span class="ss">sources</span><span class="p">:</span><span class="w"> </span><span class="n">sources</span><span class="p" data-group-id="15801">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">manifest_data</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n">source</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">sources</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#find/2">find</a></span><span class="p" data-group-id="15804">(</span><span class="n">manifest_data</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Kernel.html#match?/2">match?</a></span><span class="p" data-group-id="15803">(</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="p" data-group-id="15802">(</span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="o">^</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="p" data-group-id="15802">)</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="15803">)</span><span class="p" data-group-id="15804">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">          </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15805">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="p" data-group-id="15805">}</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15817">(</span><span class="n">module_sources</span><span class="p">,</span><span class="w"> </span><span class="k" data-group-id="15816">fn</span><span class="w"> </span><span class="p" data-group-id="15806">{</span><span class="n">current</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="15806">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Compilers.Elixir.html#source/1">source</a></span><span class="p" data-group-id="15807">(</span><span class="ss">runtime_dispatches</span><span class="p">:</span><span class="w"> </span><span class="n">runtime_nested</span><span class="p">,</span><span class="w"></span>
+            <pre><span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="11943">(</span><span class="n">module_sources</span><span class="p">,</span><span class="w"> </span><span class="k" data-group-id="11942">fn</span><span class="w"> </span><span class="p" data-group-id="11932">{</span><span class="n">current</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="11932">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">      </span><span class="n">source</span><span class="p" data-group-id="11933">(</span><span class="ss">runtime_dispatches</span><span class="p">:</span><span class="w"> </span><span class="n">runtime_nested</span><span class="p">,</span><span class="w"></span>
 <span class="w">             </span><span class="ss">compile_dispatches</span><span class="p">:</span><span class="w"> </span><span class="n">compile_nested</span><span class="p">,</span><span class="w"></span>
-<span class="w">             </span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="n">file_relative_to_mix</span><span class="p" data-group-id="15807">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">source</span><span class="w"></span>
+<span class="w">             </span><span class="ss">source</span><span class="p">:</span><span class="w"> </span><span class="n">file_relative_to_mix</span><span class="p" data-group-id="11933">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">source</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">      </span><span class="n">abs_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#absname/1">absname</a></span><span class="p" data-group-id="15808">(</span><span class="n">file_relative_to_mix</span><span class="p" data-group-id="15808">)</span><span class="w"></span>
-<span class="w">      </span><span class="n">rel_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#relative_to/2">relative_to</a></span><span class="p" data-group-id="15809">(</span><span class="n">abs_file</span><span class="p">,</span><span class="w"> </span><span class="n">config</span><span class="o">.</span><span class="n">src_root</span><span class="p" data-group-id="15809">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">abs_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">absname</span><span class="p" data-group-id="11934">(</span><span class="n">file_relative_to_mix</span><span class="p" data-group-id="11934">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">rel_file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">relative_to</span><span class="p" data-group-id="11935">(</span><span class="n">abs_file</span><span class="p">,</span><span class="w"> </span><span class="n">config</span><span class="o">.</span><span class="n">src_root</span><span class="p" data-group-id="11935">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">      </span><span class="n">caller_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Atom.html#to_string/1">to_string</a></span><span class="p" data-group-id="15810">(</span><span class="n">current</span><span class="p" data-group-id="15810">)</span><span class="w"></span>
-<span class="w">      </span><span class="n">runtime_function_calls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L64">dispatches_to_function_calls</a></span><span class="p" data-group-id="15811">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">rel_file</span><span class="p">,</span><span class="w"> </span><span class="n">runtime_nested</span><span class="p" data-group-id="15811">)</span><span class="w"></span>
-<span class="w">      </span><span class="n">compile_function_calls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L64">dispatches_to_function_calls</a></span><span class="p" data-group-id="15812">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">rel_file</span><span class="p">,</span><span class="w"> </span><span class="n">compile_nested</span><span class="p" data-group-id="15812">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">caller_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n">to_string</span><span class="p" data-group-id="11936">(</span><span class="n">current</span><span class="p" data-group-id="11936">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">runtime_function_calls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L69">dispatches_to_function_calls</a></span><span class="p" data-group-id="11937">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">rel_file</span><span class="p">,</span><span class="w"> </span><span class="n">runtime_nested</span><span class="p" data-group-id="11937">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">compile_function_calls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L69">dispatches_to_function_calls</a></span><span class="p" data-group-id="11938">(</span><span class="n">caller_module</span><span class="p">,</span><span class="w"> </span><span class="n">rel_file</span><span class="p">,</span><span class="w"> </span><span class="n">compile_nested</span><span class="p" data-group-id="11938">)</span><span class="w"></span>
 <span class="w">      </span><span class="n">function_calls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">runtime_function_calls</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">compile_function_calls</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">      </span><span class="nc">Amnesia</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Amnesia.html#transaction/1">transaction</a></span><span class="w"> </span><span class="k" data-group-id="15815">do</span><span class="w"></span>
-<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">function_call</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">function_calls</span><span class="w"> </span><span class="k" data-group-id="15814">do</span><span class="w"></span>
-<span class="w">          </span><span class="nc">FunctionCall</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Guaxinim.Database.FunctionCall.html#write/1">write</a></span><span class="p" data-group-id="15813">(</span><span class="n">function_call</span><span class="p" data-group-id="15813">)</span><span class="w"></span>
-<span class="w">        </span><span class="k" data-group-id="15814">end</span><span class="w"></span>
-<span class="w">      </span><span class="k" data-group-id="15815">end</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="15816">end</span><span class="p" data-group-id="15817">)</span><span class="w"></span>
+<span class="w">      </span><span class="nc">Amnesia</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/amnesia/Amnesia.html#transaction/1">transaction</a></span><span class="w"> </span><span class="k" data-group-id="11941">do</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">function_call</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">function_calls</span><span class="w"> </span><span class="k" data-group-id="11940">do</span><span class="w"></span>
+<span class="w">          </span><span class="nc">FunctionCall</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="database.ex.html#33">write</a></span><span class="p" data-group-id="11939">(</span><span class="n">function_call</span><span class="p" data-group-id="11939">)</span><span class="w"></span>
+<span class="w">        </span><span class="k" data-group-id="11940">end</span><span class="w"></span>
+<span class="w">      </span><span class="k" data-group-id="11941">end</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="11942">end</span><span class="p" data-group-id="11943">)</span><span class="w"></span>
 <span class="w"></span>
 <span class="w">    </span><span class="ss">:ok</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15818">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="11944">end</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -424,14 +633,16 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L103"></a><a href="#L103">103</a>
-<a id="L104"></a><a href="#L104">104</a></pre>
+            <pre><a id="L110"></a><a href="#L110">110</a>
+<a id="L111"></a><a href="#L111">111</a>
+<a id="L112"></a><a href="#L112">112</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_function_definitions_in_module</span><span class="p" data-group-id="15820">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15819">{</span><span class="n">module_name</span><span class="p">,</span><span class="w"> </span><span class="n">binary_path</span><span class="p" data-group-id="15819">}</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="15820">)</span><span class="w"> </span><span class="k" data-group-id="15862">do</span><span class="w"></span>
-<span class="w">    </span><span class="k">with</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#is_list-1">is_list</a></span><span class="p" data-group-id="15821">(</span><span class="n">path</span><span class="p" data-group-id="15821">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Kernel.html#to_charlist/1">to_charlist</a></span><span class="p" data-group-id="15822">(</span><span class="n">binary_path</span><span class="p" data-group-id="15822">)</span><span class="p">,</span><span class="w"></span></pre>
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_function_definitions_in_module</span><span class="p" data-group-id="11946">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="11945">{</span><span class="n">full_module_name</span><span class="p">,</span><span class="w"> </span><span class="n">binary_path</span><span class="p" data-group-id="11945">}</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="11946">)</span><span class="w"> </span><span class="k" data-group-id="11989">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">module_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n">trim_leading</span><span class="p" data-group-id="11947">(</span><span class="n">full_module_name</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Elixir.&quot;</span><span class="p" data-group-id="11947">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">with</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#is_list-1">is_list</a></span><span class="p" data-group-id="11948">(</span><span class="n">path</span><span class="p" data-group-id="11948">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">to_charlist</span><span class="p" data-group-id="11949">(</span><span class="n">binary_path</span><span class="p" data-group-id="11949">)</span><span class="p">,</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -466,38 +677,40 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L106"></a><a href="#L106">106</a>
-<a id="L107"></a><a href="#L107">107</a>
-<a id="L108"></a><a href="#L108">108</a>
-<a id="L109"></a><a href="#L109">109</a>
-<a id="L110"></a><a href="#L110">110</a>
-<a id="L111"></a><a href="#L111">111</a>
-<a id="L112"></a><a href="#L112">112</a>
-<a id="L113"></a><a href="#L113">113</a>
-<a id="L114"></a><a href="#L114">114</a>
+            <pre><a id="L114"></a><a href="#L114">114</a>
 <a id="L115"></a><a href="#L115">115</a>
 <a id="L116"></a><a href="#L116">116</a>
 <a id="L117"></a><a href="#L117">117</a>
 <a id="L118"></a><a href="#L118">118</a>
-<a id="L119"></a><a href="#L119">119</a></pre>
+<a id="L119"></a><a href="#L119">119</a>
+<a id="L120"></a><a href="#L120">120</a>
+<a id="L121"></a><a href="#L121">121</a>
+<a id="L122"></a><a href="#L122">122</a>
+<a id="L123"></a><a href="#L123">123</a>
+<a id="L124"></a><a href="#L124">124</a>
+<a id="L125"></a><a href="#L125">125</a>
+<a id="L126"></a><a href="#L126">126</a>
+<a id="L127"></a><a href="#L127">127</a>
+<a id="L128"></a><a href="#L128">128</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">        </span><span class="p" data-group-id="15826">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15825">{</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15824">[</span><span class="ss">debug_info</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15823">{</span><span class="ss">:debug_info_v1</span><span class="p">,</span><span class="w"> </span><span class="n">backend</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="15823">}</span><span class="p" data-group-id="15824">]</span><span class="p" data-group-id="15825">}</span><span class="p" data-group-id="15826">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="ss">:beam_lib</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/beam_lib.html#chunks-2">chunks</a></span><span class="p" data-group-id="15828">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15827">[</span><span class="ss">:debug_info</span><span class="p" data-group-id="15827">]</span><span class="p" data-group-id="15828">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="p" data-group-id="15830">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"></span>
-<span class="w">         </span><span class="p" data-group-id="15829">%{</span><span class="ss">definitions</span><span class="p">:</span><span class="w"> </span><span class="n">defs</span><span class="p">,</span><span class="w"></span>
+            <pre><span class="w">        </span><span class="p" data-group-id="11953">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="11952">{</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="11951">[</span><span class="ss">debug_info</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11950">{</span><span class="ss">:debug_info_v1</span><span class="p">,</span><span class="w"> </span><span class="n">backend</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p" data-group-id="11950">}</span><span class="p" data-group-id="11951">]</span><span class="p" data-group-id="11952">}</span><span class="p" data-group-id="11953">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="ss">:beam_lib</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/beam_lib.html#chunks-2">chunks</a></span><span class="p" data-group-id="11955">(</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="11954">[</span><span class="ss">:debug_info</span><span class="p" data-group-id="11954">]</span><span class="p" data-group-id="11955">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="p" data-group-id="11957">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="p" data-group-id="11956">%{</span><span class="ss">definitions</span><span class="p">:</span><span class="w"> </span><span class="n">defs</span><span class="p">,</span><span class="w"></span>
 <span class="w">           </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">module_line</span><span class="p">,</span><span class="w"></span>
-<span class="w">           </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">abs_file</span><span class="p" data-group-id="15829">}</span><span class="p" data-group-id="15830">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">backend</span><span class="o">.</span><span class="n">debug_info</span><span class="p" data-group-id="15833">(</span><span class="ss">:elixir_v1</span><span class="p">,</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/String.html#to_atom/1">to_atom</a></span><span class="p" data-group-id="15831">(</span><span class="n">module_name</span><span class="p" data-group-id="15831">)</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15832">[]</span><span class="p" data-group-id="15833">)</span><span class="w"> </span><span class="k" data-group-id="15861">do</span><span class="w"></span>
+<span class="w">           </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">abs_file</span><span class="p" data-group-id="11956">}</span><span class="p" data-group-id="11957">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">backend</span><span class="o">.</span><span class="n">debug_info</span><span class="p" data-group-id="11960">(</span><span class="ss">:elixir_v1</span><span class="p">,</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n">to_atom</span><span class="p" data-group-id="11958">(</span><span class="n">module_name</span><span class="p" data-group-id="11958">)</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="11959">[]</span><span class="p" data-group-id="11960">)</span><span class="w"> </span><span class="k" data-group-id="11988">do</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">      </span><span class="n">package</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L38">package_from_path</a></span><span class="p" data-group-id="15834">(</span><span class="n">binary_path</span><span class="p" data-group-id="15834">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">package</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L43">package_from_path</a></span><span class="p" data-group-id="11961">(</span><span class="n">binary_path</span><span class="p" data-group-id="11961">)</span><span class="w"></span>
+<span class="w"></span>
 <span class="w">      </span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="n">internal?</span><span class="w"> </span><span class="k" data-group-id="15836">do</span><span class="w"></span>
-<span class="w">          </span><span class="no">true</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#relative_to/2">relative_to</a></span><span class="p" data-group-id="15835">(</span><span class="n">abs_file</span><span class="p">,</span><span class="w"> </span><span class="n">config</span><span class="o">.</span><span class="n">src_root</span><span class="p" data-group-id="15835">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="n">internal?</span><span class="w"> </span><span class="k" data-group-id="11963">do</span><span class="w"></span>
+<span class="w">          </span><span class="no">true</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">relative_to</span><span class="p" data-group-id="11962">(</span><span class="n">abs_file</span><span class="p">,</span><span class="w"> </span><span class="n">config</span><span class="o">.</span><span class="n">src_root</span><span class="p" data-group-id="11962">)</span><span class="w"></span>
 <span class="w">          </span><span class="no">false</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">abs_file</span><span class="w"></span>
-<span class="w">        </span><span class="k" data-group-id="15836">end</span><span class="w"></span>
+<span class="w">        </span><span class="k" data-group-id="11963">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">      </span><span class="nc">Amnesia</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Amnesia.html#transaction/1">transaction</a></span><span class="w"> </span><span class="k" data-group-id="15860">do</span><span class="w"></span></pre>
+<span class="w">      </span><span class="nc">Amnesia</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/amnesia/Amnesia.html#transaction/1">transaction</a></span><span class="w"> </span><span class="k" data-group-id="11987">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -532,25 +745,25 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L121"></a><a href="#L121">121</a>
-<a id="L122"></a><a href="#L122">122</a>
-<a id="L123"></a><a href="#L123">123</a>
-<a id="L124"></a><a href="#L124">124</a>
-<a id="L125"></a><a href="#L125">125</a>
-<a id="L126"></a><a href="#L126">126</a>
-<a id="L127"></a><a href="#L127">127</a>
-<a id="L128"></a><a href="#L128">128</a></pre>
+            <pre><a id="L130"></a><a href="#L130">130</a>
+<a id="L131"></a><a href="#L131">131</a>
+<a id="L132"></a><a href="#L132">132</a>
+<a id="L133"></a><a href="#L133">133</a>
+<a id="L134"></a><a href="#L134">134</a>
+<a id="L135"></a><a href="#L135">135</a>
+<a id="L136"></a><a href="#L136">136</a>
+<a id="L137"></a><a href="#L137">137</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">        </span><span class="p" data-group-id="15837">%</span><span class="nc" data-group-id="15837">ModuleDefinition</span><span class="p" data-group-id="15837">{</span><span class="w"></span>
+            <pre><span class="w">        </span><span class="p" data-group-id="11964">%</span><span class="nc" data-group-id="11964">ModuleDefinition</span><span class="p" data-group-id="11964">{</span><span class="w"></span>
 <span class="w">          </span><span class="ss">m</span><span class="p">:</span><span class="w"> </span><span class="n">module_name</span><span class="p">,</span><span class="w"></span>
 <span class="w">          </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"></span>
 <span class="w">          </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">module_line</span><span class="p">,</span><span class="w"></span>
 <span class="w">          </span><span class="ss">internal?</span><span class="p">:</span><span class="w"> </span><span class="n">internal?</span><span class="p">,</span><span class="w"></span>
 <span class="w">          </span><span class="ss">package</span><span class="p">:</span><span class="w"> </span><span class="n">package</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="p" data-group-id="15837">}</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">ModuleDefinition</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Guaxinim.Database.ModuleDefinition.html#write/1">write</a></span><span class="w"></span>
+<span class="w">        </span><span class="p" data-group-id="11964">}</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">ModuleDefinition</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="database.ex.html#56">write</a></span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -586,16 +799,7 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L130"></a><a href="#L130">130</a>
-<a id="L131"></a><a href="#L131">131</a>
-<a id="L132"></a><a href="#L132">132</a>
-<a id="L133"></a><a href="#L133">133</a>
-<a id="L134"></a><a href="#L134">134</a>
-<a id="L135"></a><a href="#L135">135</a>
-<a id="L136"></a><a href="#L136">136</a>
-<a id="L137"></a><a href="#L137">137</a>
-<a id="L138"></a><a href="#L138">138</a>
-<a id="L139"></a><a href="#L139">139</a>
+            <pre><a id="L139"></a><a href="#L139">139</a>
 <a id="L140"></a><a href="#L140">140</a>
 <a id="L141"></a><a href="#L141">141</a>
 <a id="L142"></a><a href="#L142">142</a>
@@ -607,18 +811,27 @@
 <a id="L148"></a><a href="#L148">148</a>
 <a id="L149"></a><a href="#L149">149</a>
 <a id="L150"></a><a href="#L150">150</a>
-<a id="L151"></a><a href="#L151">151</a></pre>
+<a id="L151"></a><a href="#L151">151</a>
+<a id="L152"></a><a href="#L152">152</a>
+<a id="L153"></a><a href="#L153">153</a>
+<a id="L154"></a><a href="#L154">154</a>
+<a id="L155"></a><a href="#L155">155</a>
+<a id="L156"></a><a href="#L156">156</a>
+<a id="L157"></a><a href="#L157">157</a>
+<a id="L158"></a><a href="#L158">158</a>
+<a id="L159"></a><a href="#L159">159</a>
+<a id="L160"></a><a href="#L160">160</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">        </span><span class="n">definitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="p" data-group-id="15838">{</span><span class="n">fun_arity</span><span class="p">,</span><span class="w"> </span><span class="n">keyword</span><span class="p">,</span><span class="w"> </span><span class="n">meta</span><span class="p">,</span><span class="w"> </span><span class="n">_heads</span><span class="p" data-group-id="15838">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">defs</span><span class="p">,</span><span class="w"> </span><span class="ss">into</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15839">%</span><span class="nc" data-group-id="15839">MapSet</span><span class="p" data-group-id="15839">{}</span><span class="w"> </span><span class="k" data-group-id="15845">do</span><span class="w"></span>
-<span class="w">          </span><span class="n">fun_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/2">get</a></span><span class="p" data-group-id="15840">(</span><span class="n">meta</span><span class="p">,</span><span class="w"> </span><span class="ss">:line</span><span class="p" data-group-id="15840">)</span><span class="w"></span>
-<span class="w">          </span><span class="p" data-group-id="15841">{</span><span class="n">fun</span><span class="p">,</span><span class="w"> </span><span class="n">arity</span><span class="p" data-group-id="15841">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fun_arity</span><span class="w"></span>
-<span class="w">          </span><span class="n">fun_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Atom.html#to_string/1">to_string</a></span><span class="p" data-group-id="15842">(</span><span class="n">fun</span><span class="p" data-group-id="15842">)</span><span class="w"></span>
+            <pre><span class="w">        </span><span class="n">definitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="p" data-group-id="11965">{</span><span class="n">fun_arity</span><span class="p">,</span><span class="w"> </span><span class="n">keyword</span><span class="p">,</span><span class="w"> </span><span class="n">meta</span><span class="p">,</span><span class="w"> </span><span class="n">_heads</span><span class="p" data-group-id="11965">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">defs</span><span class="p">,</span><span class="w"> </span><span class="ss">into</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11966">%</span><span class="nc" data-group-id="11966">MapSet</span><span class="p" data-group-id="11966">{}</span><span class="w"> </span><span class="k" data-group-id="11972">do</span><span class="w"></span>
+<span class="w">          </span><span class="n">fun_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="11967">(</span><span class="n">meta</span><span class="p">,</span><span class="w"> </span><span class="ss">:line</span><span class="p" data-group-id="11967">)</span><span class="w"></span>
+<span class="w">          </span><span class="p" data-group-id="11968">{</span><span class="n">fun</span><span class="p">,</span><span class="w"> </span><span class="n">arity</span><span class="p" data-group-id="11968">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fun_arity</span><span class="w"></span>
+<span class="w">          </span><span class="n">fun_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n">to_string</span><span class="p" data-group-id="11969">(</span><span class="n">fun</span><span class="p" data-group-id="11969">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">          </span><span class="p" data-group-id="15844">%</span><span class="nc" data-group-id="15844">FunctionDefinition</span><span class="p" data-group-id="15844">{</span><span class="w"></span>
-<span class="w">            </span><span class="ss">mfa</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15843">{</span><span class="n">module_name</span><span class="p">,</span><span class="w"> </span><span class="n">fun_str</span><span class="p">,</span><span class="w"> </span><span class="n">arity</span><span class="p" data-group-id="15843">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="p" data-group-id="11971">%</span><span class="nc" data-group-id="11971">FunctionDefinition</span><span class="p" data-group-id="11971">{</span><span class="w"></span>
+<span class="w">            </span><span class="ss">mfa</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11970">{</span><span class="n">module_name</span><span class="p">,</span><span class="w"> </span><span class="n">fun_str</span><span class="p">,</span><span class="w"> </span><span class="n">arity</span><span class="p" data-group-id="11970">}</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="ss">m</span><span class="p">:</span><span class="w"> </span><span class="n">module_name</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="ss">f</span><span class="p">:</span><span class="w"> </span><span class="n">fun_str</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="ss">a</span><span class="p">:</span><span class="w"> </span><span class="n">arity</span><span class="p">,</span><span class="w"></span>
@@ -628,12 +841,12 @@
 <span class="w">            </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">fun_line</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="ss">keyword</span><span class="p">:</span><span class="w"> </span><span class="n">keyword</span><span class="p">,</span><span class="w"></span>
 <span class="w">            </span><span class="ss">meta</span><span class="p">:</span><span class="w"> </span><span class="n">meta</span><span class="w"></span>
-<span class="w">          </span><span class="p" data-group-id="15844">}</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Guaxinim.Database.FunctionDefinition.html#write/1">write</a></span><span class="w"></span>
+<span class="w">          </span><span class="p" data-group-id="11971">}</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="database.ex.html#14">write</a></span><span class="w"></span>
 <span class="w"></span>
 <span class="w">          </span><span class="n">fun_arity</span><span class="w"></span>
-<span class="w">        </span><span class="k" data-group-id="15845">end</span><span class="w"></span>
+<span class="w">        </span><span class="k" data-group-id="11972">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">internal?</span><span class="w"> </span><span class="k" data-group-id="15859">do</span><span class="w"></span></pre>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">internal?</span><span class="w"> </span><span class="k" data-group-id="11986">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -669,14 +882,14 @@ we can add the internal function calls.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L154"></a><a href="#L154">154</a>
-<a id="L155"></a><a href="#L155">155</a></pre>
+            <pre><a id="L163"></a><a href="#L163">163</a>
+<a id="L164"></a><a href="#L164">164</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">          </span><span class="k">for</span><span class="w"> </span><span class="p" data-group-id="15847">{</span><span class="p" data-group-id="15846">{</span><span class="n">caller_fun</span><span class="p">,</span><span class="w"> </span><span class="n">caller_arity</span><span class="p" data-group-id="15846">}</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">heads</span><span class="p" data-group-id="15847">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">defs</span><span class="w"> </span><span class="k" data-group-id="15858">do</span><span class="w"></span>
-<span class="w">            </span><span class="n">calls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">AstInspector</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Guaxinim.AstInspector.html#functions_called_by/2">functions_called_by</a></span><span class="p" data-group-id="15848">(</span><span class="n">definitions</span><span class="p">,</span><span class="w"> </span><span class="n">heads</span><span class="p" data-group-id="15848">)</span><span class="w"></span></pre>
+            <pre><span class="w">          </span><span class="k">for</span><span class="w"> </span><span class="p" data-group-id="11974">{</span><span class="p" data-group-id="11973">{</span><span class="n">caller_fun</span><span class="p">,</span><span class="w"> </span><span class="n">caller_arity</span><span class="p" data-group-id="11973">}</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">heads</span><span class="p" data-group-id="11974">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">defs</span><span class="w"> </span><span class="k" data-group-id="11985">do</span><span class="w"></span>
+<span class="w">            </span><span class="n">calls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">AstInspector</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="ast_inspector.ex.html#8">functions_called_by</a></span><span class="p" data-group-id="11975">(</span><span class="n">definitions</span><span class="p">,</span><span class="w"> </span><span class="n">heads</span><span class="p" data-group-id="11975">)</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -711,16 +924,7 @@ we can add the internal function calls.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L157"></a><a href="#L157">157</a>
-<a id="L158"></a><a href="#L158">158</a>
-<a id="L159"></a><a href="#L159">159</a>
-<a id="L160"></a><a href="#L160">160</a>
-<a id="L161"></a><a href="#L161">161</a>
-<a id="L162"></a><a href="#L162">162</a>
-<a id="L163"></a><a href="#L163">163</a>
-<a id="L164"></a><a href="#L164">164</a>
-<a id="L165"></a><a href="#L165">165</a>
-<a id="L166"></a><a href="#L166">166</a>
+            <pre><a id="L166"></a><a href="#L166">166</a>
 <a id="L167"></a><a href="#L167">167</a>
 <a id="L168"></a><a href="#L168">168</a>
 <a id="L169"></a><a href="#L169">169</a>
@@ -752,9 +956,79 @@ we can add the internal function calls.</p>
 <a id="L195"></a><a href="#L195">195</a>
 <a id="L196"></a><a href="#L196">196</a>
 <a id="L197"></a><a href="#L197">197</a>
-<a id="L198"></a><a href="#L198">198</a>
-<a id="L199"></a><a href="#L199">199</a>
-<a id="L200"></a><a href="#L200">200</a>
+<a id="L198"></a><a href="#L198">198</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p" data-group-id="11977">{</span><span class="p" data-group-id="11976">{</span><span class="n">callee_fun</span><span class="p">,</span><span class="w"> </span><span class="n">callee_arity</span><span class="p" data-group-id="11976">}</span><span class="p">,</span><span class="w"> </span><span class="n">meta</span><span class="p" data-group-id="11977">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">calls</span><span class="w"> </span><span class="k" data-group-id="11984">do</span><span class="w"></span>
+<span class="w">              </span><span class="n">callee_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n">get</span><span class="p" data-group-id="11978">(</span><span class="n">meta</span><span class="p">,</span><span class="w"> </span><span class="ss">:line</span><span class="p" data-group-id="11978">)</span><span class="w"></span>
+<span class="w">              </span><span class="n">caller_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">module_name</span><span class="w"></span>
+<span class="w">              </span><span class="n">callee_fun_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n">to_string</span><span class="p" data-group-id="11979">(</span><span class="n">callee_fun</span><span class="p" data-group-id="11979">)</span><span class="w"></span>
+<span class="w">              </span><span class="p" data-group-id="11983">%</span><span class="nc" data-group-id="11983">FunctionCall</span><span class="p" data-group-id="11983">{</span><span class="w"></span>
+<span class="w">                </span><span class="ss">m</span><span class="p">:</span><span class="w"> </span><span class="n">module_name</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="ss">f</span><span class="p">:</span><span class="w"> </span><span class="n">callee_fun_str</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="ss">a</span><span class="p">:</span><span class="w"> </span><span class="n">callee_arity</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="ss">caller_mfa</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11981">{</span><span class="n">module_name</span><span class="p">,</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n">to_string</span><span class="p" data-group-id="11980">(</span><span class="n">caller_fun</span><span class="p" data-group-id="11980">)</span><span class="p">,</span><span class="w"> </span><span class="n">caller_arity</span><span class="p" data-group-id="11981">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="ss">caller_module</span><span class="p">:</span><span class="w"> </span><span class="n">caller_module</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">callee_line</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="ss">f_file_line</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="11982">{</span><span class="n">callee_fun_str</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">callee_line</span><span class="p" data-group-id="11982">}</span><span class="w"></span>
+<span class="w">              </span><span class="p" data-group-id="11983">}</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">FunctionCall</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="database.ex.html#33">write</a></span><span class="w"></span>
+<span class="w">            </span><span class="k" data-group-id="11984">end</span><span class="w"></span>
+<span class="w">          </span><span class="k" data-group-id="11985">end</span><span class="w"></span>
+<span class="w">        </span><span class="k" data-group-id="11986">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">        </span><span class="ss">:ok</span><span class="w"></span>
+<span class="w">      </span><span class="k" data-group-id="11987">end</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="11988">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="11989">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">modules_from_app_path</span><span class="p" data-group-id="11990">(</span><span class="n">app_path</span><span class="p" data-group-id="11990">)</span><span class="w"> </span><span class="k" data-group-id="12000">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">ebin_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">join</span><span class="p" data-group-id="11991">(</span><span class="n">app_path</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ebin&quot;</span><span class="p" data-group-id="11991">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">rel_files</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">      </span><span class="n">ebin_path</span><span class="w"></span>
+<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">File</span><span class="o">.</span><span class="n">ls!</span><span class="w"></span>
+<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">filter</span><span class="p" data-group-id="11993">(</span><span class="o">&amp;</span><span class="nc">String</span><span class="o">.</span><span class="n">ends_with?</span><span class="p" data-group-id="11992">(</span><span class="ni">&amp;1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;.beam&quot;</span><span class="p" data-group-id="11992">)</span><span class="p" data-group-id="11993">)</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">    </span><span class="n">module_names</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">      </span><span class="n">rel_files</span><span class="w"></span>
+<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="11995">(</span><span class="o">&amp;</span><span class="nc">String</span><span class="o">.</span><span class="n">trim_trailing</span><span class="p" data-group-id="11994">(</span><span class="ni">&amp;1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;.beam&quot;</span><span class="p" data-group-id="11994">)</span><span class="p" data-group-id="11995">)</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>|&gt; Enum.map(&amp;String.trim_leading(&amp;1, “Elixir.”))</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L200"></a><a href="#L200">200</a>
 <a id="L201"></a><a href="#L201">201</a>
 <a id="L202"></a><a href="#L202">202</a>
 <a id="L203"></a><a href="#L203">203</a>
@@ -775,75 +1049,50 @@ we can add the internal function calls.</p>
 <a id="L218"></a><a href="#L218">218</a>
 <a id="L219"></a><a href="#L219">219</a>
 <a id="L220"></a><a href="#L220">220</a>
-<a id="L221"></a><a href="#L221">221</a></pre>
+<a id="L221"></a><a href="#L221">221</a>
+<a id="L222"></a><a href="#L222">222</a>
+<a id="L223"></a><a href="#L223">223</a>
+<a id="L224"></a><a href="#L224">224</a>
+<a id="L225"></a><a href="#L225">225</a>
+<a id="L226"></a><a href="#L226">226</a>
+<a id="L227"></a><a href="#L227">227</a>
+<a id="L228"></a><a href="#L228">228</a>
+<a id="L229"></a><a href="#L229">229</a>
+<a id="L230"></a><a href="#L230">230</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p" data-group-id="15850">{</span><span class="p" data-group-id="15849">{</span><span class="n">callee_fun</span><span class="p">,</span><span class="w"> </span><span class="n">callee_arity</span><span class="p" data-group-id="15849">}</span><span class="p">,</span><span class="w"> </span><span class="n">meta</span><span class="p" data-group-id="15850">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">calls</span><span class="w"> </span><span class="k" data-group-id="15857">do</span><span class="w"></span>
-<span class="w">              </span><span class="n">callee_line</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/2">get</a></span><span class="p" data-group-id="15851">(</span><span class="n">meta</span><span class="p">,</span><span class="w"> </span><span class="ss">:line</span><span class="p" data-group-id="15851">)</span><span class="w"></span>
-<span class="w">              </span><span class="n">caller_module</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">module_name</span><span class="w"></span>
-<span class="w">              </span><span class="n">callee_fun_str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Atom.html#to_string/1">to_string</a></span><span class="p" data-group-id="15852">(</span><span class="n">callee_fun</span><span class="p" data-group-id="15852">)</span><span class="w"></span>
-<span class="w">              </span><span class="p" data-group-id="15856">%</span><span class="nc" data-group-id="15856">FunctionCall</span><span class="p" data-group-id="15856">{</span><span class="w"></span>
-<span class="w">                </span><span class="ss">m</span><span class="p">:</span><span class="w"> </span><span class="n">module_name</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="ss">f</span><span class="p">:</span><span class="w"> </span><span class="n">callee_fun_str</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="ss">a</span><span class="p">:</span><span class="w"> </span><span class="n">callee_arity</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="ss">caller_mfa</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15854">{</span><span class="n">module_name</span><span class="p">,</span><span class="w"> </span><span class="nc">Atom</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Atom.html#to_string/1">to_string</a></span><span class="p" data-group-id="15853">(</span><span class="n">caller_fun</span><span class="p" data-group-id="15853">)</span><span class="p">,</span><span class="w"> </span><span class="n">caller_arity</span><span class="p" data-group-id="15854">}</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="ss">caller_module</span><span class="p">:</span><span class="w"> </span><span class="n">caller_module</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">callee_line</span><span class="p">,</span><span class="w"></span>
-<span class="w">                </span><span class="ss">f_file_line</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15855">{</span><span class="n">callee_fun_str</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">callee_line</span><span class="p" data-group-id="15855">}</span><span class="w"></span>
-<span class="w">              </span><span class="p" data-group-id="15856">}</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">FunctionCall</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Guaxinim.Database.FunctionCall.html#write/1">write</a></span><span class="w"></span>
-<span class="w">            </span><span class="k" data-group-id="15857">end</span><span class="w"></span>
-<span class="w">          </span><span class="k" data-group-id="15858">end</span><span class="w"></span>
-<span class="w">        </span><span class="k" data-group-id="15859">end</span><span class="w"></span>
+            <pre><span class="w"></span>
+<span class="w">    </span><span class="n">abs_files</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="11997">(</span><span class="n">rel_files</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Path</span><span class="o">.</span><span class="n">join</span><span class="p" data-group-id="11996">(</span><span class="n">ebin_path</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="11996">)</span><span class="p" data-group-id="11997">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">        </span><span class="ss">:ok</span><span class="w"></span>
-<span class="w">      </span><span class="k" data-group-id="15860">end</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="15861">end</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15862">end</span><span class="w"></span>
+<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n">zip</span><span class="p" data-group-id="11999">(</span><span class="p" data-group-id="11998">[</span><span class="n">module_names</span><span class="p">,</span><span class="w"> </span><span class="n">abs_files</span><span class="p" data-group-id="11998">]</span><span class="p" data-group-id="11999">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="12000">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">modules_from_app_path</span><span class="p" data-group-id="15863">(</span><span class="n">app_path</span><span class="p" data-group-id="15863">)</span><span class="w"> </span><span class="k" data-group-id="15875">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">ebin_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#join/2">join</a></span><span class="p" data-group-id="15864">(</span><span class="n">app_path</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;ebin&quot;</span><span class="p" data-group-id="15864">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">rel_files</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">      </span><span class="n">ebin_path</span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">File</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/File.html#ls!/1">ls!</a></span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#filter/2">filter</a></span><span class="p" data-group-id="15866">(</span><span class="o">&amp;</span><span class="nc">String</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/String.html#ends_with?/2">ends_with?</a></span><span class="p" data-group-id="15865">(</span><span class="ni">&amp;1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;.beam&quot;</span><span class="p" data-group-id="15865">)</span><span class="p" data-group-id="15866">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">abs_ls!</span><span class="p" data-group-id="12001">(</span><span class="n">dir</span><span class="p" data-group-id="12001">)</span><span class="w"> </span><span class="k" data-group-id="12004">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">dir</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">File</span><span class="o">.</span><span class="n">ls!</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="12003">(</span><span class="o">&amp;</span><span class="nc">Path</span><span class="o">.</span><span class="n">join</span><span class="p" data-group-id="12002">(</span><span class="n">dir</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="12002">)</span><span class="p" data-group-id="12003">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="12004">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">    </span><span class="n">module_names</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
-<span class="w">      </span><span class="n">rel_files</span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15868">(</span><span class="o">&amp;</span><span class="nc">String</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/String.html#trim_trailing/2">trim_trailing</a></span><span class="p" data-group-id="15867">(</span><span class="ni">&amp;1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;.beam&quot;</span><span class="p" data-group-id="15867">)</span><span class="p" data-group-id="15868">)</span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15870">(</span><span class="o">&amp;</span><span class="nc">String</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/String.html#trim_leading/2">trim_leading</a></span><span class="p" data-group-id="15869">(</span><span class="ni">&amp;1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Elixir.&quot;</span><span class="p" data-group-id="15869">)</span><span class="p" data-group-id="15870">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">all_modules</span><span class="p" data-group-id="12005">(</span><span class="n">classifier</span><span class="p" data-group-id="12005">)</span><span class="w"> </span><span class="k" data-group-id="12017">do</span><span class="w"></span>
+<span class="w">    </span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n">build_path</span><span class="p" data-group-id="12006">()</span><span class="w"></span>
+<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">join</span><span class="p" data-group-id="12007">(</span><span class="s2">&quot;lib&quot;</span><span class="p" data-group-id="12007">)</span><span class="w"></span>
+<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L206">abs_ls!</a></span><span class="w"></span>
+<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="12011">(</span><span class="k" data-group-id="12010">fn</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p" data-group-id="12009">{</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">classifier</span><span class="o">.</span><span class="p" data-group-id="12008">(</span><span class="n">path</span><span class="p" data-group-id="12008">)</span><span class="p" data-group-id="12009">}</span><span class="w"> </span><span class="k" data-group-id="12010">end</span><span class="p" data-group-id="12011">)</span><span class="w"></span>
+<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="12016">(</span><span class="k" data-group-id="12015">fn</span><span class="w"> </span><span class="p" data-group-id="12012">{</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">classification</span><span class="p" data-group-id="12012">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">          </span><span class="k">for</span><span class="w"> </span><span class="n">module</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L189">modules_from_app_path</a></span><span class="p" data-group-id="12013">(</span><span class="n">path</span><span class="p" data-group-id="12013">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">            </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="12014">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">classification</span><span class="p" data-group-id="12014">}</span><span class="w"></span>
+<span class="w">         </span><span class="k" data-group-id="12015">end</span><span class="p" data-group-id="12016">)</span><span class="w"></span>
+<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n">flatten</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="12017">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">    </span><span class="n">abs_files</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15872">(</span><span class="n">rel_files</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#join/2">join</a></span><span class="p" data-group-id="15871">(</span><span class="n">ebin_path</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="15871">)</span><span class="p" data-group-id="15872">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">internal_app?</span><span class="p" data-group-id="12018">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="n">app_path</span><span class="p" data-group-id="12018">)</span><span class="w"> </span><span class="k" data-group-id="12021">do</span><span class="w"></span>
+<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n">member?</span><span class="p" data-group-id="12020">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n">basename</span><span class="p" data-group-id="12019">(</span><span class="n">app_path</span><span class="p" data-group-id="12019">)</span><span class="p" data-group-id="12020">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="12021">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#zip/1">zip</a></span><span class="p" data-group-id="15874">(</span><span class="p" data-group-id="15873">[</span><span class="n">module_names</span><span class="p">,</span><span class="w"> </span><span class="n">abs_files</span><span class="p" data-group-id="15873">]</span><span class="p" data-group-id="15874">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15875">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">abs_ls!</span><span class="p" data-group-id="15876">(</span><span class="n">dir</span><span class="p" data-group-id="15876">)</span><span class="w"> </span><span class="k" data-group-id="15879">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">dir</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">File</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/File.html#ls!/1">ls!</a></span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15878">(</span><span class="o">&amp;</span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#join/2">join</a></span><span class="p" data-group-id="15877">(</span><span class="n">dir</span><span class="p">,</span><span class="w"> </span><span class="ni">&amp;1</span><span class="p" data-group-id="15877">)</span><span class="p" data-group-id="15878">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15879">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">all_modules</span><span class="p" data-group-id="15880">(</span><span class="n">classifier</span><span class="p" data-group-id="15880">)</span><span class="w"> </span><span class="k" data-group-id="15892">do</span><span class="w"></span>
-<span class="w">    </span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Project.html#build_path/0">build_path</a></span><span class="p" data-group-id="15881">()</span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#join/2">join</a></span><span class="p" data-group-id="15882">(</span><span class="s2">&quot;lib&quot;</span><span class="p" data-group-id="15882">)</span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L197">abs_ls!</a></span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15886">(</span><span class="k" data-group-id="15885">fn</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p" data-group-id="15884">{</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">classifier</span><span class="o">.</span><span class="p" data-group-id="15883">(</span><span class="n">path</span><span class="p" data-group-id="15883">)</span><span class="p" data-group-id="15884">}</span><span class="w"> </span><span class="k" data-group-id="15885">end</span><span class="p" data-group-id="15886">)</span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15891">(</span><span class="k" data-group-id="15890">fn</span><span class="w"> </span><span class="p" data-group-id="15887">{</span><span class="n">path</span><span class="p">,</span><span class="w"> </span><span class="n">classification</span><span class="p" data-group-id="15887">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">          </span><span class="k">for</span><span class="w"> </span><span class="n">module</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L180">modules_from_app_path</a></span><span class="p" data-group-id="15888">(</span><span class="n">path</span><span class="p" data-group-id="15888">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">            </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15889">{</span><span class="n">module</span><span class="p">,</span><span class="w"> </span><span class="n">classification</span><span class="p" data-group-id="15889">}</span><span class="w"></span>
-<span class="w">         </span><span class="k" data-group-id="15890">end</span><span class="p" data-group-id="15891">)</span><span class="w"></span>
-<span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/List.html#flatten/1">flatten</a></span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15892">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">internal_app?</span><span class="p" data-group-id="15893">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="n">app_path</span><span class="p" data-group-id="15893">)</span><span class="w"> </span><span class="k" data-group-id="15896">do</span><span class="w"></span>
-<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#member?/2">member?</a></span><span class="p" data-group-id="15895">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#basename/1">basename</a></span><span class="p" data-group-id="15894">(</span><span class="n">app_path</span><span class="p" data-group-id="15894">)</span><span class="p" data-group-id="15895">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15896">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_data_from_modules</span><span class="p" data-group-id="15897">(</span><span class="n">config</span><span class="p" data-group-id="15897">)</span><span class="w"> </span><span class="k" data-group-id="15900">do</span><span class="w"></span>
-<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L70">file_references</a></span><span class="p" data-group-id="15898">(</span><span class="n">config</span><span class="p" data-group-id="15898">)</span><span class="w"></span>
-<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L233">gather_data_from_modules__async_stream</a></span><span class="p" data-group-id="15899">(</span><span class="n">config</span><span class="p" data-group-id="15899">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15900">end</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_data_from_modules</span><span class="p" data-group-id="12022">(</span><span class="n">config</span><span class="p" data-group-id="12022">)</span><span class="w"> </span><span class="k" data-group-id="12025">do</span><span class="w"></span>
+<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L75">file_references</a></span><span class="p" data-group-id="12023">(</span><span class="n">config</span><span class="p" data-group-id="12023">)</span><span class="w"></span>
+<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L242">gather_data_from_modules__async_stream</a></span><span class="p" data-group-id="12024">(</span><span class="n">config</span><span class="p" data-group-id="12024">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="12025">end</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -879,16 +1128,7 @@ we can add the internal function calls.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L223"></a><a href="#L223">223</a>
-<a id="L224"></a><a href="#L224">224</a>
-<a id="L225"></a><a href="#L225">225</a>
-<a id="L226"></a><a href="#L226">226</a>
-<a id="L227"></a><a href="#L227">227</a>
-<a id="L228"></a><a href="#L228">228</a>
-<a id="L229"></a><a href="#L229">229</a>
-<a id="L230"></a><a href="#L230">230</a>
-<a id="L231"></a><a href="#L231">231</a>
-<a id="L232"></a><a href="#L232">232</a>
+            <pre><a id="L232"></a><a href="#L232">232</a>
 <a id="L233"></a><a href="#L233">233</a>
 <a id="L234"></a><a href="#L234">234</a>
 <a id="L235"></a><a href="#L235">235</a>
@@ -910,43 +1150,52 @@ we can add the internal function calls.</p>
 <a id="L251"></a><a href="#L251">251</a>
 <a id="L252"></a><a href="#L252">252</a>
 <a id="L253"></a><a href="#L253">253</a>
-<a id="L254"></a><a href="#L254">254</a></pre>
+<a id="L254"></a><a href="#L254">254</a>
+<a id="L255"></a><a href="#L255">255</a>
+<a id="L256"></a><a href="#L256">256</a>
+<a id="L257"></a><a href="#L257">257</a>
+<a id="L258"></a><a href="#L258">258</a>
+<a id="L259"></a><a href="#L259">259</a>
+<a id="L260"></a><a href="#L260">260</a>
+<a id="L261"></a><a href="#L261">261</a>
+<a id="L262"></a><a href="#L262">262</a>
+<a id="L263"></a><a href="#L263">263</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
             <pre><span class="w"></span>
 <span class="w">  </span><span class="na">@doc</span><span class="w"> </span><span class="no">false</span><span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_data_from_modules__sequential</span><span class="p" data-group-id="15901">(</span><span class="n">config</span><span class="p" data-group-id="15901">)</span><span class="w"> </span><span class="k" data-group-id="15911">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">internal_app_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="15903">[</span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#basename/1">basename</a></span><span class="p" data-group-id="15902">(</span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Project.html#app_path/0">app_path</a></span><span class="p" data-group-id="15902">)</span><span class="p" data-group-id="15903">]</span><span class="w"></span>
-<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L201">all_modules</a></span><span class="p" data-group-id="15906">(</span><span class="k" data-group-id="15905">fn</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L213">internal_app?</a></span><span class="p" data-group-id="15904">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="p" data-group-id="15904">)</span><span class="w"> </span><span class="k" data-group-id="15905">end</span><span class="p" data-group-id="15906">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15910">(</span><span class="k" data-group-id="15909">fn</span><span class="w"> </span><span class="p" data-group-id="15907">{</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="15907">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L103">gather_function_definitions_in_module</a></span><span class="p" data-group-id="15908">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="15908">)</span><span class="w"> </span><span class="k" data-group-id="15909">end</span><span class="p" data-group-id="15910">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15911">end</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_data_from_modules__sequential</span><span class="p" data-group-id="12026">(</span><span class="n">config</span><span class="p" data-group-id="12026">)</span><span class="w"> </span><span class="k" data-group-id="12036">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">internal_app_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="12028">[</span><span class="nc">Path</span><span class="o">.</span><span class="n">basename</span><span class="p" data-group-id="12027">(</span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n">app_path</span><span class="p" data-group-id="12027">)</span><span class="p" data-group-id="12028">]</span><span class="w"></span>
+<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L210">all_modules</a></span><span class="p" data-group-id="12031">(</span><span class="k" data-group-id="12030">fn</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L222">internal_app?</a></span><span class="p" data-group-id="12029">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="p" data-group-id="12029">)</span><span class="w"> </span><span class="k" data-group-id="12030">end</span><span class="p" data-group-id="12031">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="12035">(</span><span class="k" data-group-id="12034">fn</span><span class="w"> </span><span class="p" data-group-id="12032">{</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="12032">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L110">gather_function_definitions_in_module</a></span><span class="p" data-group-id="12033">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="12033">)</span><span class="w"> </span><span class="k" data-group-id="12034">end</span><span class="p" data-group-id="12035">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="12036">end</span><span class="w"></span>
 <span class="w"></span>
 <span class="w">  </span><span class="na">@doc</span><span class="w"> </span><span class="no">false</span><span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_data_from_modules__async_stream</span><span class="p" data-group-id="15912">(</span><span class="n">config</span><span class="p" data-group-id="15912">)</span><span class="w"> </span><span class="k" data-group-id="15928">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">internal_app_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="15914">[</span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#basename/1">basename</a></span><span class="p" data-group-id="15913">(</span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Project.html#app_path/0">app_path</a></span><span class="p" data-group-id="15913">)</span><span class="p" data-group-id="15914">]</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_data_from_modules__async_stream</span><span class="p" data-group-id="12037">(</span><span class="n">config</span><span class="p" data-group-id="12037">)</span><span class="w"> </span><span class="k" data-group-id="12053">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">internal_app_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="12039">[</span><span class="nc">Path</span><span class="o">.</span><span class="n">basename</span><span class="p" data-group-id="12038">(</span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n">app_path</span><span class="p" data-group-id="12038">)</span><span class="p" data-group-id="12039">]</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L201">all_modules</a></span><span class="p" data-group-id="15917">(</span><span class="k" data-group-id="15916">fn</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L213">internal_app?</a></span><span class="p" data-group-id="15915">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="p" data-group-id="15915">)</span><span class="w"> </span><span class="k" data-group-id="15916">end</span><span class="p" data-group-id="15917">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Task</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Task.html#async_stream/2">async_stream</a></span><span class="p" data-group-id="15921">(</span><span class="k" data-group-id="15920">fn</span><span class="w"> </span><span class="p" data-group-id="15918">{</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="15918">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L103">gather_function_definitions_in_module</a></span><span class="p" data-group-id="15919">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="15919">)</span><span class="w"> </span><span class="k" data-group-id="15920">end</span><span class="p" data-group-id="15921">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Stream</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Stream.html#filter/2">filter</a></span><span class="p" data-group-id="15924">(</span><span class="k" data-group-id="15923">fn</span><span class="w"> </span><span class="p" data-group-id="15922">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="15922">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="no">true</span><span class="p">;</span><span class="w"> </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="no">false</span><span class="w"> </span><span class="k" data-group-id="15923">end</span><span class="p" data-group-id="15924">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Stream</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Stream.html#map/2">map</a></span><span class="p" data-group-id="15927">(</span><span class="k" data-group-id="15926">fn</span><span class="w"> </span><span class="p" data-group-id="15925">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">result</span><span class="p" data-group-id="15925">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="k" data-group-id="15926">end</span><span class="p" data-group-id="15927">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#to_list/1">to_list</a></span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15928">end</span><span class="w"></span>
+<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L210">all_modules</a></span><span class="p" data-group-id="12042">(</span><span class="k" data-group-id="12041">fn</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L222">internal_app?</a></span><span class="p" data-group-id="12040">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="p" data-group-id="12040">)</span><span class="w"> </span><span class="k" data-group-id="12041">end</span><span class="p" data-group-id="12042">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Task</span><span class="o">.</span><span class="n">async_stream</span><span class="p" data-group-id="12046">(</span><span class="k" data-group-id="12045">fn</span><span class="w"> </span><span class="p" data-group-id="12043">{</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="12043">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L110">gather_function_definitions_in_module</a></span><span class="p" data-group-id="12044">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="12044">)</span><span class="w"> </span><span class="k" data-group-id="12045">end</span><span class="p" data-group-id="12046">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Stream</span><span class="o">.</span><span class="n">filter</span><span class="p" data-group-id="12049">(</span><span class="k" data-group-id="12048">fn</span><span class="w"> </span><span class="p" data-group-id="12047">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="12047">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="no">true</span><span class="p">;</span><span class="w"> </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="no">false</span><span class="w"> </span><span class="k" data-group-id="12048">end</span><span class="p" data-group-id="12049">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Stream</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="12052">(</span><span class="k" data-group-id="12051">fn</span><span class="w"> </span><span class="p" data-group-id="12050">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="n">result</span><span class="p" data-group-id="12050">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="k" data-group-id="12051">end</span><span class="p" data-group-id="12052">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">to_list</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="12053">end</span><span class="w"></span>
 <span class="w"></span>
 <span class="w">  </span><span class="na">@doc</span><span class="w"> </span><span class="no">false</span><span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_data_from_modules__task_async</span><span class="p" data-group-id="15929">(</span><span class="n">config</span><span class="p" data-group-id="15929">)</span><span class="w"> </span><span class="k" data-group-id="15941">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">internal_app_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="15931">[</span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#basename/1">basename</a></span><span class="p" data-group-id="15930">(</span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Project.html#app_path/0">app_path</a></span><span class="p" data-group-id="15930">)</span><span class="p" data-group-id="15931">]</span><span class="w"></span>
-<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L201">all_modules</a></span><span class="p" data-group-id="15934">(</span><span class="k" data-group-id="15933">fn</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L213">internal_app?</a></span><span class="p" data-group-id="15932">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="p" data-group-id="15932">)</span><span class="w"> </span><span class="k" data-group-id="15933">end</span><span class="p" data-group-id="15934">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15939">(</span><span class="o">&amp;</span><span class="nc">Task</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Task.html#async/1">async</a></span><span class="p" data-group-id="15938">(</span><span class="k" data-group-id="15937">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">         </span><span class="p" data-group-id="15935">{</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="15935">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ni">&amp;1</span><span class="w"></span>
-<span class="w">         </span><span class="n"><a class="guaxinim-source-link" href="#L103">gather_function_definitions_in_module</a></span><span class="p" data-group-id="15936">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="15936">)</span><span class="w"></span>
-<span class="w">       </span><span class="k" data-group-id="15937">end</span><span class="p" data-group-id="15938">)</span><span class="p" data-group-id="15939">)</span><span class="w"></span>
-<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15940">(</span><span class="o">&amp;</span><span class="nc">Task</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Task.html#await/1">await</a></span><span class="o">/</span><span class="mi">1</span><span class="p" data-group-id="15940">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="15941">end</span><span class="w"></span>
-<span class="k" data-group-id="15942">end</span></pre>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">gather_data_from_modules__task_async</span><span class="p" data-group-id="12054">(</span><span class="n">config</span><span class="p" data-group-id="12054">)</span><span class="w"> </span><span class="k" data-group-id="12066">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">internal_app_names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="12056">[</span><span class="nc">Path</span><span class="o">.</span><span class="n">basename</span><span class="p" data-group-id="12055">(</span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n">app_path</span><span class="p" data-group-id="12055">)</span><span class="p" data-group-id="12056">]</span><span class="w"></span>
+<span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L210">all_modules</a></span><span class="p" data-group-id="12059">(</span><span class="k" data-group-id="12058">fn</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L222">internal_app?</a></span><span class="p" data-group-id="12057">(</span><span class="n">internal_app_names</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="p" data-group-id="12057">)</span><span class="w"> </span><span class="k" data-group-id="12058">end</span><span class="p" data-group-id="12059">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="12064">(</span><span class="o">&amp;</span><span class="nc">Task</span><span class="o">.</span><span class="n">async</span><span class="p" data-group-id="12063">(</span><span class="k" data-group-id="12062">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">         </span><span class="p" data-group-id="12060">{</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="12060">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ni">&amp;1</span><span class="w"></span>
+<span class="w">         </span><span class="n"><a class="guaxinim-source-link" href="#L110">gather_function_definitions_in_module</a></span><span class="p" data-group-id="12061">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">internal?</span><span class="p" data-group-id="12061">)</span><span class="w"></span>
+<span class="w">       </span><span class="k" data-group-id="12062">end</span><span class="p" data-group-id="12063">)</span><span class="p" data-group-id="12064">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n">map</span><span class="p" data-group-id="12065">(</span><span class="o">&amp;</span><span class="nc">Task</span><span class="o">.</span><span class="n">await</span><span class="o">/</span><span class="mi">1</span><span class="p" data-group-id="12065">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="12066">end</span><span class="w"></span>
+<span class="k" data-group-id="12067">end</span></pre>
           </div>
         </td>
       </tr>
