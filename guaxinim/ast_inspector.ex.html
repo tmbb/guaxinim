@@ -1,0 +1,197 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Licensed under the Apache 2.0 License -->
+    <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
+    <!-- Licensed under the SIL Open Font License -->
+    <link rel="stylesheet" type="text/css" href="../_static/fonts/source-serif-pro/source-serif-pro.css" />
+    <!-- Guzzler docs -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!--
+      <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
+    -->
+    <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
+    <!-- Guaxinim -->
+    <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div id="left-column">
+        <div class="sphinxsidebar">
+  <a href="#" class="text-logo">
+    Guaxinim
+  </a>
+  <div class="sidebar-block">
+    <div class="sidebar-wrapper">
+      <h2>Table Of Contents</h2>
+    </div>
+    <div class="sidebar-toc">
+      <ul class="current">
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="..">
+            <span class="glyphicon glyphicon-level-up"></span>
+            &nbsp;
+            <span class="sidebar-toc-level-up">../</span></a></li>
+        
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="internal">
+            <span class="glyphicon glyphicon-folder-open"></span>
+            &nbsp;
+            <span class="sidebar-toc-directory">internal/</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="templates">
+            <span class="glyphicon glyphicon-folder-open"></span>
+            &nbsp;
+            <span class="sidebar-toc-directory">templates/</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="utils">
+            <span class="glyphicon glyphicon-folder-open"></span>
+            &nbsp;
+            <span class="sidebar-toc-directory">utils/</span></a></li>
+        
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="ast_inspector.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">ast_inspector.ex</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="beam_inspector.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">beam_inspector.ex</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="config.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">config.ex</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="database.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">database.ex</span></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <div id="right-column">
+        <div class="document clearer body">
+          <div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L1"></a><a href="#L1"> 1</a>
+<a id="L2"></a><a href="#L2"> 2</a>
+<a id="L3"></a><a href="#L3"> 3</a>
+<a id="L4"></a><a href="#L4"> 4</a>
+<a id="L5"></a><a href="#L5"> 5</a>
+<a id="L6"></a><a href="#L6"> 6</a>
+<a id="L7"></a><a href="#L7"> 7</a>
+<a id="L8"></a><a href="#L8"> 8</a>
+<a id="L9"></a><a href="#L9"> 9</a>
+<a id="L10"></a><a href="#L10">10</a>
+<a id="L11"></a><a href="#L11">11</a>
+<a id="L12"></a><a href="#L12">12</a>
+<a id="L13"></a><a href="#L13">13</a>
+<a id="L14"></a><a href="#L14">14</a>
+<a id="L15"></a><a href="#L15">15</a>
+<a id="L16"></a><a href="#L16">16</a>
+<a id="L17"></a><a href="#L17">17</a>
+<a id="L18"></a><a href="#L18">18</a>
+<a id="L19"></a><a href="#L19">19</a>
+<a id="L20"></a><a href="#L20">20</a>
+<a id="L21"></a><a href="#L21">21</a>
+<a id="L22"></a><a href="#L22">22</a>
+<a id="L23"></a><a href="#L23">23</a>
+<a id="L24"></a><a href="#L24">24</a>
+<a id="L25"></a><a href="#L25">25</a>
+<a id="L26"></a><a href="#L26">26</a>
+<a id="L27"></a><a href="#L27">27</a>
+<a id="L28"></a><a href="#L28">28</a>
+<a id="L29"></a><a href="#L29">29</a>
+<a id="L30"></a><a href="#L30">30</a>
+<a id="L31"></a><a href="#L31">31</a>
+<a id="L32"></a><a href="#L32">32</a>
+<a id="L33"></a><a href="#L33">33</a>
+<a id="L34"></a><a href="#L34">34</a>
+<a id="L35"></a><a href="#L35">35</a>
+<a id="L36"></a><a href="#L36">36</a>
+<a id="L37"></a><a href="#L37">37</a>
+<a id="L38"></a><a href="#L38">38</a>
+<a id="L39"></a><a href="#L39">39</a>
+<a id="L40"></a><a href="#L40">40</a>
+<a id="L41"></a><a href="#L41">41</a>
+<a id="L42"></a><a href="#L42">42</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.AstInspector</span><span class="w"> </span><span class="k" data-group-id="15761">do</span><span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="n">functions_called_pre_walk</span><span class="p" data-group-id="15719">(</span><span class="p" data-group-id="15718">{</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">location</span><span class="p">,</span><span class="w"> </span><span class="n">args</span><span class="p" data-group-id="15718">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ast_node</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15719">)</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#is_atom-1">is_atom</a></span><span class="p" data-group-id="15720">(</span><span class="n">f</span><span class="p" data-group-id="15720">)</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#is_list-1">is_list</a></span><span class="p" data-group-id="15721">(</span><span class="n">args</span><span class="p" data-group-id="15721">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="15726">{</span><span class="n">ast_node</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15725">[</span><span class="p" data-group-id="15724">{</span><span class="p" data-group-id="15723">{</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="15722">(</span><span class="n">args</span><span class="p" data-group-id="15722">)</span><span class="p" data-group-id="15723">}</span><span class="p">,</span><span class="w"> </span><span class="n">location</span><span class="w"> </span><span class="p" data-group-id="15724">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15725">]</span><span class="p" data-group-id="15726">}</span><span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="n">functions_called_pre_walk</span><span class="p" data-group-id="15727">(</span><span class="n">ast_node</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15727">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15728">{</span><span class="n">ast_node</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15728">}</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="n">post_walk</span><span class="p" data-group-id="15729">(</span><span class="n">ast_node</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15729">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15730">{</span><span class="n">ast_node</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15730">}</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">functions_called_by</span><span class="p" data-group-id="15731">(</span><span class="n">definitions</span><span class="p">,</span><span class="w"> </span><span class="n">heads</span><span class="p" data-group-id="15731">)</span><span class="w"> </span><span class="k" data-group-id="15740">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">calls_per_head</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">      </span><span class="k">for</span><span class="w"> </span><span class="n">head</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">heads</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="p" data-group-id="15732">{</span><span class="n">_loc</span><span class="p">,</span><span class="w"> </span><span class="n">_args</span><span class="p">,</span><span class="w"> </span><span class="n">_context</span><span class="p">,</span><span class="w"> </span><span class="n">ast</span><span class="p" data-group-id="15732">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">head</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="p" data-group-id="15733">{</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">calls</span><span class="p" data-group-id="15733">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Macro</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Macro.html#traverse/4">traverse</a></span><span class="p" data-group-id="15735">(</span><span class="n">ast</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15734">[]</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">functions_called_pre_walk</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">post_walk</span><span class="o">/</span><span class="mi">2</span><span class="p" data-group-id="15735">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="n">calls</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">    </span><span class="n">calls_per_head</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/List.html#flatten/1">flatten</a></span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#filter/2">filter</a></span><span class="p" data-group-id="15739">(</span><span class="k" data-group-id="15738">fn</span><span class="w"> </span><span class="p" data-group-id="15736">{</span><span class="n">fun_arity</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="15736">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">MapSet</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/MapSet.html#member?/2">member?</a></span><span class="p" data-group-id="15737">(</span><span class="n">definitions</span><span class="p">,</span><span class="w"> </span><span class="n">fun_arity</span><span class="p" data-group-id="15737">)</span><span class="w"> </span><span class="k" data-group-id="15738">end</span><span class="p" data-group-id="15739">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="15740">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="n">aliases_to_string</span><span class="p" data-group-id="15741">(</span><span class="n">aliases</span><span class="p" data-group-id="15741">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="n">aliases</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="15742">(</span><span class="o">&amp;</span><span class="nc">Atom</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Atom.html#to_string/1">to_string</a></span><span class="o">/</span><span class="mi">1</span><span class="p" data-group-id="15742">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#join/2">join</a></span><span class="p" data-group-id="15743">(</span><span class="s2">&quot;.&quot;</span><span class="p" data-group-id="15743">)</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="n">module_reference_pre_walk</span><span class="p" data-group-id="15748">(</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="15747">{</span><span class="n">macro</span><span class="p">,</span><span class="w"></span>
+<span class="w">       </span><span class="bp">_</span><span class="p">,</span><span class="w"></span>
+<span class="w">       </span><span class="p" data-group-id="15746">[</span><span class="p" data-group-id="15745">{</span><span class="p" data-group-id="15744">{</span><span class="ss">:require</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">prefix_aliases</span><span class="p" data-group-id="15744">}</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="bp">_</span><span class="p">,</span><span class="w"></span>
+<span class="w">         </span><span class="n">suffix_aliases</span><span class="p" data-group-id="15745">}</span><span class="p" data-group-id="15746">]</span><span class="p" data-group-id="15747">}</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15748">)</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n">macro</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="ss">:require</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="n">macro</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="ss">:alias</span><span class="w"> </span><span class="k" data-group-id="15753">do</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">    </span><span class="n">full_aliases</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="p" data-group-id="15749">{</span><span class="ss">:__aliases__</span><span class="p">,</span><span class="w"> </span><span class="n">meta</span><span class="p">,</span><span class="w"> </span><span class="n">aliases</span><span class="p" data-group-id="15749">}</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">suffix_aliases</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15751">{</span><span class="n"><a class="guaxinim-source-link" href="#L20">aliases_to_string</a></span><span class="p" data-group-id="15750">(</span><span class="n">prefix_aliases</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">aliases</span><span class="p" data-group-id="15750">)</span><span class="p">,</span><span class="w"> </span><span class="n">meta</span><span class="p" data-group-id="15751">}</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="15752">{</span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="n">full_aliases</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15752">}</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="15753">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="n">module_reference_pre_walk</span><span class="p" data-group-id="15754">(</span><span class="n">ast_node</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15754">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="15755">{</span><span class="n">ast_node</span><span class="p">,</span><span class="w"> </span><span class="n">acc</span><span class="p" data-group-id="15755">}</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">module_imports_and_etc</span><span class="p" data-group-id="15756">(</span><span class="n">file_ast</span><span class="p" data-group-id="15756">)</span><span class="w"> </span><span class="k" data-group-id="15760">do</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="15757">{</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">references</span><span class="p" data-group-id="15757">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Macro</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Macro.html#traverse/4">traverse</a></span><span class="p" data-group-id="15759">(</span><span class="n">file_ast</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15758">[]</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">module_reference_pre_walk</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">post_walk</span><span class="o">/</span><span class="mi">2</span><span class="p" data-group-id="15759">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">references</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="15760">end</span><span class="w"></span>
+<span class="k" data-group-id="15761">end</span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

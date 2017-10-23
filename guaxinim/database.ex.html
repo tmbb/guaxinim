@@ -1,0 +1,871 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Licensed under the Apache 2.0 License -->
+    <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
+    <!-- Licensed under the SIL Open Font License -->
+    <link rel="stylesheet" type="text/css" href="../_static/fonts/source-serif-pro/source-serif-pro.css" />
+    <!-- Guzzler docs -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!--
+      <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
+    -->
+    <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
+    <!-- Guaxinim -->
+    <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div id="left-column">
+        <div class="sphinxsidebar">
+  <a href="#" class="text-logo">
+    Guaxinim
+  </a>
+  <div class="sidebar-block">
+    <div class="sidebar-wrapper">
+      <h2>Table Of Contents</h2>
+    </div>
+    <div class="sidebar-toc">
+      <ul class="current">
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="..">
+            <span class="glyphicon glyphicon-level-up"></span>
+            &nbsp;
+            <span class="sidebar-toc-level-up">../</span></a></li>
+        
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="internal">
+            <span class="glyphicon glyphicon-folder-open"></span>
+            &nbsp;
+            <span class="sidebar-toc-directory">internal/</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="templates">
+            <span class="glyphicon glyphicon-folder-open"></span>
+            &nbsp;
+            <span class="sidebar-toc-directory">templates/</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="utils">
+            <span class="glyphicon glyphicon-folder-open"></span>
+            &nbsp;
+            <span class="sidebar-toc-directory">utils/</span></a></li>
+        
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="ast_inspector.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">ast_inspector.ex</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="beam_inspector.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">beam_inspector.ex</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="config.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">config.ex</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="database.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">database.ex</span></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <div id="right-column">
+        <div class="document clearer body">
+          <div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <h2>General Description</h2>
+<p>The Elixir AST discards column numbers, so we’ll have to work
+with the line numbers alone
+The main problem with this limitation is that we can’t distinguish
+two different function calls in the same line.
+We assume those cases will be rare and will make no attempt to fix this
+in the short term.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L9"></a><a href="#L9"> 9</a>
+<a id="L10"></a><a href="#L10">10</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="kn">use</span><span class="w"> </span><span class="nc">Amnesia</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <h2>The Database</h2>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L12"></a><a href="#L12">12</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Amnesia.html#defdatabase/2">defdatabase</a></span><span class="w"> </span><span class="nc">Guaxinim.Database</span><span class="w"> </span><span class="k" data-group-id="15958">do</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <h3>Function definitions</h3>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L14"></a><a href="#L14">14</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Amnesia.Database.html#deftable/4">deftable</a></span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15945">[</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Index, denormalized <code class="inline">{module, function, arity}</code></p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L16"></a><a href="#L16">16</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:mfa</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Normalized module, function and arity</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L18"></a><a href="#L18">18</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:m</span><span class="p">,</span><span class="w"> </span><span class="ss">:f</span><span class="p">,</span><span class="w"> </span><span class="ss">:a</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Is the function internal to the project?</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L20"></a><a href="#L20">20</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:internal?</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>If it is external, which package does it come from?</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L22"></a><a href="#L22">22</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:package</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>file and line of the first head of the definition</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L24"></a><a href="#L24">24</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:file</span><span class="p">,</span><span class="w"> </span><span class="ss">:line</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Keyword used to define the function (<code class="inline">:def</code>, <code class="inline">defp</code>, <code class="inline">defmacro</code>, etc.)</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L26"></a><a href="#L26">26</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:keyword</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Extra data we might decide to include</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L28"></a><a href="#L28">28</a>
+<a id="L29"></a><a href="#L29">29</a>
+<a id="L30"></a><a href="#L30">30</a>
+<a id="L31"></a><a href="#L31">31</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:meta</span><span class="p" data-group-id="15945">]</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:ordered_set</span><span class="w"> </span><span class="k" data-group-id="15946">do</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="15946">end</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <h3>Function Calls</h3>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L33"></a><a href="#L33">33</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Amnesia.Database.html#deftable/4">deftable</a></span><span class="w"> </span><span class="nc">FunctionCall</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15947">[</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Denormalized <code class="inline">{function, file, line}</code> tuple for faster queries</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L35"></a><a href="#L35">35</a>
+<a id="L36"></a><a href="#L36">36</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:f_file_line</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="ss">:m</span><span class="p">,</span><span class="w"> </span><span class="ss">:f</span><span class="p">,</span><span class="w"> </span><span class="ss">:a</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Function/macro from which the function is called</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L38"></a><a href="#L38">38</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:caller_mfa</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Module from which the function is called</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L40"></a><a href="#L40">40</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:caller_module</span><span class="p">,</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>File and line. Note that we don’t have access to the column.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L42"></a><a href="#L42">42</a>
+<a id="L43"></a><a href="#L43">43</a>
+<a id="L44"></a><a href="#L44">44</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">      </span><span class="ss">:file</span><span class="p">,</span><span class="w"> </span><span class="ss">:line</span><span class="p" data-group-id="15947">]</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:ordered_set</span><span class="w"> </span><span class="k" data-group-id="15953">do</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-doc">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose"> 
+          <div class="panel panel-default guaxinim-panel">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-11">
+                  <span class="guaxinim-doc-label">@doc</span>
+                  
+                </div>
+                <div class="col-md-1 text-right">
+                  <span class="glyphicon glyphicon glyphicon-info-sign"
+                    style="margin-top:3px"></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>Lookup a function call by primary key.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L48"></a><a href="#L48">48</a>
+<a id="L49"></a><a href="#L49">49</a>
+<a id="L50"></a><a href="#L50">50</a>
+<a id="L51"></a><a href="#L51">51</a>
+<a id="L52"></a><a href="#L52">52</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="kd">def</span><span class="w"> </span><span class="nf">lookup_f_file_line!</span><span class="p" data-group-id="15949">(</span><span class="p" data-group-id="15948">{</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="15948">}</span><span class="p" data-group-id="15949">)</span><span class="w"> </span><span class="k" data-group-id="15952">do</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L33">read!</a></span><span class="p" data-group-id="15951">(</span><span class="p" data-group-id="15950">{</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="15950">}</span><span class="p" data-group-id="15951">)</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="15952">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="15953">end</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <h3>Module Definitions</h3>
+<p>Still no use for this</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L56"></a><a href="#L56">56</a>
+<a id="L57"></a><a href="#L57">57</a>
+<a id="L58"></a><a href="#L58">58</a>
+<a id="L59"></a><a href="#L59">59</a>
+<a id="L60"></a><a href="#L60">60</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Amnesia.Database.html#deftable/4">deftable</a></span><span class="w"> </span><span class="nc">ModuleDefinition</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15954">[</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:m</span><span class="p">,</span><span class="w"> </span><span class="ss">:file</span><span class="p">,</span><span class="w"> </span><span class="ss">:line</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">:internal?</span><span class="p">,</span><span class="w"> </span><span class="ss">:package</span><span class="p" data-group-id="15954">]</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:ordered_set</span><span class="w"> </span><span class="k" data-group-id="15955">do</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="15955">end</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <h3>Module References (= aliases)</h3>
+<p>Still no use for this</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L64"></a><a href="#L64">64</a>
+<a id="L65"></a><a href="#L65">65</a>
+<a id="L66"></a><a href="#L66">66</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Amnesia.Database.html#deftable/4">deftable</a></span><span class="w"> </span><span class="nc">ModuleReference</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="15956">[</span><span class="ss">:m</span><span class="p">,</span><span class="w"> </span><span class="ss">:line</span><span class="p" data-group-id="15956">]</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="ss">:ordered_set</span><span class="w"> </span><span class="k" data-group-id="15957">do</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="15957">end</span><span class="w"></span>
+<span class="k" data-group-id="15958">end</span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

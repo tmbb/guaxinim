@@ -1,0 +1,694 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Licensed under the Apache 2.0 License -->
+    <link rel="stylesheet" type="text/css" href="../../_static/fonts/open-sans/stylesheet.css" />
+    <!-- Licensed under the SIL Open Font License -->
+    <link rel="stylesheet" type="text/css" href="../../_static/fonts/source-serif-pro/source-serif-pro.css" />
+    <!-- Guzzler docs -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!--
+      <link rel="stylesheet" type="text/css" href="../../_static/css/bootstrap.min.css" />
+    -->
+    <link rel="stylesheet" type="text/css" href="../../_static/css/bootstrap-theme.min.css" />
+    <!-- Guaxinim -->
+    <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div id="left-column">
+        <div class="sphinxsidebar">
+  <a href="#" class="text-logo">
+    Guaxinim
+  </a>
+  <div class="sidebar-block">
+    <div class="sidebar-wrapper">
+      <h2>Table Of Contents</h2>
+    </div>
+    <div class="sidebar-toc">
+      <ul class="current">
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="..">
+            <span class="glyphicon glyphicon-level-up"></span>
+            &nbsp;
+            <span class="sidebar-toc-level-up">../</span></a></li>
+        
+        
+        
+        
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="path.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">path.ex</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="tokens.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">tokens.ex</span></a></li>
+        
+        <li class="toctree-l1">
+          <a class="reference internal" href="url.ex.html">
+            <span class="glyphicon glyphicon-file"></span>
+            &nbsp;
+            <span class="sidebar-toc-file">url.ex</span></a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+      </div>
+
+      <div id="right-column">
+        <div class="document clearer body">
+          <div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L1"></a><a href="#L1">  1</a>
+<a id="L2"></a><a href="#L2">  2</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Utils.URL</span><span class="w"> </span><span class="k" data-group-id="16365">do</span><span class="w"></span>
+<span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Amnesia</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p><strong>TODO</strong>: This module must be required because somehow the <code class="inline">Amnesia</code>
+module uses macros from <code class="inline">Amnesia.Helper</code> without requiring it.
+we must see if this can be fixed with a PR to <code class="inline">Amnesia</code></p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L6"></a><a href="#L6">  6</a>
+<a id="L7"></a><a href="#L7">  7</a>
+<a id="L8"></a><a href="#L8">  8</a>
+<a id="L9"></a><a href="#L9">  9</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Amnesia.Helper</span><span class="w"></span>
+<span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Guaxinim.Database.FunctionDefinition</span><span class="w"></span>
+<span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="w"></span>
+<span class="w">  </span><span class="kn">import</span><span class="w"> </span><span class="nc">Guaxinim.Utils.Path</span><span class="p">,</span><span class="w"> </span><span class="ss">only</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="16312">[</span><span class="ss">path</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="16312">]</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <h2>Rationale</h2>
+<p>The main entry point for this module is the <code class="inline">url_for_mfa</code> function.
+It handles the task of finding the URL to a function or macro definition,
+given the function’s module, name and arity.
+Functions can come from at least 3 places:</p>
+<ol>
+<li>The Elixir standard library (must start with <code class="inline">&quot;Elixir.&quot;</code>)
+</li>
+<li>The Erlang standard library
+</li>
+<li>A package we’ve imported from Hex (it can be an Elixir or Erlang package)
+</li>
+<li>The current project
+</li>
+</ol>
+<p>Functions defined in the current project or in an external package
+were previously stored in the Database as a preprocessing step.
+Those are the ones that require a Mnesia query.</p>
+<p>Functions from the Elixir standard library can be identified through the module name.
+We will assume that all functions that don’t appear in the database and whose module
+starts with a lowercase letter are Erlang functions from the standard library.</p>
+<p>It’s not clear that these assumptions are sound, but they’re good enough for now.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L32"></a><a href="#L32"> 32</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-doc">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose"> 
+          <div class="panel panel-default guaxinim-panel">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-11">
+                  <span class="guaxinim-doc-label">@doc</span>
+                  
+                </div>
+                <div class="col-md-1 text-right">
+                  <span class="glyphicon glyphicon glyphicon-info-sign"
+                    style="margin-top:3px"></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>URL for a given function. The function is given as <code class="inline">{module, function, arity}</code>,
+where <code class="inline">module</code> and <code class="inline">function</code> are strings instead of atoms.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L37"></a><a href="#L37"> 37</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_for_mfa</span><span class="p" data-group-id="16314">(</span><span class="n">_config</span><span class="p">,</span><span class="w"> </span><span class="n">_src</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="16313">{</span><span class="s2">&quot;Elixir.&quot;</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p" data-group-id="16313">}</span><span class="p" data-group-id="16314">)</span><span class="w"> </span><span class="k" data-group-id="16317">do</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>We can distinguish built-in modules from the module name alone.
+All built-in modules start with <code class="inline">&quot;Elixir.&quot;</code>, and no modules
+other than the built-in ones start with that prefix.
+Matching this case first saves us a Mnesia query.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L42"></a><a href="#L42"> 42</a>
+<a id="L43"></a><a href="#L43"> 43</a>
+<a id="L44"></a><a href="#L44"> 44</a>
+<a id="L45"></a><a href="#L45"> 45</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="n"><a class="guaxinim-source-link" href="#L94">url_mfa_hexdocs</a></span><span class="p" data-group-id="16316">(</span><span class="s2">&quot;elixir&quot;</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="16315">{</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p" data-group-id="16315">}</span><span class="p" data-group-id="16316">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="16317">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_for_mfa</span><span class="p" data-group-id="16319">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="16318">{</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">_f</span><span class="p">,</span><span class="w"> </span><span class="n">_a</span><span class="p" data-group-id="16318">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="16319">)</span><span class="w"> </span><span class="k" data-group-id="16329">do</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>We already know that we’re not dealing with an Elixir function
+from the standard library.
+At this point there are only three cases we must handle:</p>
+<ol>
+<li>Internal functions, defined in the current project
+</li>
+<li>External Elixir functions, downloaded from an external package
+</li>
+<li>Erlang functions from the standard library
+</li>
+</ol>
+<p>The first two kinds of functions can be found in the database.
+The Erlang functions can’t.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L56"></a><a href="#L56"> 56</a>
+<a id="L57"></a><a href="#L57"> 57</a>
+<a id="L58"></a><a href="#L58"> 58</a>
+<a id="L59"></a><a href="#L59"> 59</a>
+<a id="L60"></a><a href="#L60"> 60</a>
+<a id="L61"></a><a href="#L61"> 61</a>
+<a id="L62"></a><a href="#L62"> 62</a>
+<a id="L63"></a><a href="#L63"> 63</a>
+<a id="L64"></a><a href="#L64"> 64</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Guaxinim.Database.FunctionDefinition.html#read!/1">read!</a></span><span class="p" data-group-id="16320">(</span><span class="n">mfa</span><span class="p" data-group-id="16320">)</span><span class="w"> </span><span class="k" data-group-id="16328">do</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="16321">%{</span><span class="ss">internal?</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w"> </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="16321">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L101">url_internal</a></span><span class="p" data-group-id="16322">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="16322">)</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="16323">%{</span><span class="ss">internal?</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">package</span><span class="p">:</span><span class="w"> </span><span class="n">package</span><span class="p" data-group-id="16323">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L94">url_mfa_hexdocs</a></span><span class="p" data-group-id="16324">(</span><span class="n">package</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="16324">)</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">      </span><span class="no">nil</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="k" data-group-id="16327">do</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>If the module:</p>
+<ol>
+<li>is not a built-in Elixir module module;
+</li>
+<li>has a name starting with a lowercase letter <em>and</em>
+</li>
+<li>can’t be found amongs our packages
+</li>
+</ol>
+<p>we assume it’s a built-in Erlang module and link to the erlang docs,</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L72"></a><a href="#L72"> 72</a>
+<a id="L73"></a><a href="#L73"> 73</a>
+<a id="L74"></a><a href="#L74"> 74</a>
+<a id="L75"></a><a href="#L75"> 75</a>
+<a id="L76"></a><a href="#L76"> 76</a>
+<a id="L77"></a><a href="#L77"> 77</a>
+<a id="L78"></a><a href="#L78"> 78</a>
+<a id="L79"></a><a href="#L79"> 79</a>
+<a id="L80"></a><a href="#L80"> 80</a>
+<a id="L81"></a><a href="#L81"> 81</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">          </span><span class="p" data-group-id="16325">&lt;&lt;</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="p" data-group-id="16325">&gt;&gt;</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="bp">_</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="sc">?a</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="sc">?z</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L86">url_for_builtin_erlang_module</a></span><span class="p" data-group-id="16326">(</span><span class="n">mfa</span><span class="p" data-group-id="16326">)</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">          </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="no">nil</span><span class="w"></span>
+<span class="w">        </span><span class="k" data-group-id="16327">end</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="16328">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="16329">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-doc">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose"> 
+          <div class="panel panel-default guaxinim-panel">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-11">
+                  <span class="guaxinim-doc-label">@doc</span>
+                  
+                </div>
+                <div class="col-md-1 text-right">
+                  <span class="glyphicon glyphicon glyphicon-info-sign"
+                    style="margin-top:3px"></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>URL for an Erlang function from the standard library
+(given as <code class="inline">{module, function, arity}</code>)</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L86"></a><a href="#L86"> 86</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_for_builtin_erlang_module</span><span class="p" data-group-id="16331">(</span><span class="p" data-group-id="16330">{</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p" data-group-id="16330">}</span><span class="p" data-group-id="16331">)</span><span class="w"> </span><span class="k" data-group-id="16341">do</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Thankfully the Erlang docs follow a predictable format.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L88"></a><a href="#L88"> 88</a>
+<a id="L89"></a><a href="#L89"> 89</a>
+<a id="L90"></a><a href="#L90"> 90</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="s2">&quot;http://erlang.org/doc/man/</span><span class="si" data-group-id="16334">#{</span><span class="n">m</span><span class="si" data-group-id="16334">}</span><span class="s2">.html#</span><span class="si" data-group-id="16337">#{</span><span class="n">f</span><span class="si" data-group-id="16337">}</span><span class="s2">-</span><span class="si" data-group-id="16340">#{</span><span class="n">a</span><span class="si" data-group-id="16340">}</span><span class="s2">&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="16341">end</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-doc">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose"> 
+          <div class="panel panel-default guaxinim-panel">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-11">
+                  <span class="guaxinim-doc-label">@doc</span>
+                  
+                </div>
+                <div class="col-md-1 text-right">
+                  <span class="glyphicon glyphicon glyphicon-info-sign"
+                    style="margin-top:3px"></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>URL for a function (given as <code class="inline">{module, function, arity}</code>) from a Hex package.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L94"></a><a href="#L94"> 94</a>
+<a id="L95"></a><a href="#L95"> 95</a>
+<a id="L96"></a><a href="#L96"> 96</a>
+<a id="L97"></a><a href="#L97"> 97</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_mfa_hexdocs</span><span class="p" data-group-id="16343">(</span><span class="n">package</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="16342">{</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p" data-group-id="16342">}</span><span class="p" data-group-id="16343">)</span><span class="w"> </span><span class="k" data-group-id="16356">do</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;https://hexdocs.pm/</span><span class="si" data-group-id="16346">#{</span><span class="n">package</span><span class="si" data-group-id="16346">}</span><span class="s2">/</span><span class="si" data-group-id="16349">#{</span><span class="n">m</span><span class="si" data-group-id="16349">}</span><span class="s2">.html#</span><span class="si" data-group-id="16352">#{</span><span class="n">f</span><span class="si" data-group-id="16352">}</span><span class="s2">/</span><span class="si" data-group-id="16355">#{</span><span class="n">a</span><span class="si" data-group-id="16355">}</span><span class="s2">&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="16356">end</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-doc">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose"> 
+          <div class="panel panel-default guaxinim-panel">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-md-11">
+                  <span class="guaxinim-doc-label">@doc</span>
+                  
+                </div>
+                <div class="col-md-1 text-right">
+                  <span class="glyphicon glyphicon glyphicon-info-sign"
+                    style="margin-top:3px"></span>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>URL for functions defined in the current project.</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L101"></a><a href="#L101">101</a>
+<a id="L102"></a><a href="#L102">102</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_internal</span><span class="p" data-group-id="16357">(</span><span class="n">_config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="16357">)</span><span class="w"> </span><span class="k" data-group-id="16364">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Guaxinim.Utils.Path.html#path/1">path</a></span><span class="p" data-group-id="16358">(</span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="16358">)</span><span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default" style="margin-bottom: 4px">
+            <div class="panel-body">
+              <p>Link to the anchor of the line where the function is defined:</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L104"></a><a href="#L104">104</a>
+<a id="L105"></a><a href="#L105">105</a>
+<a id="L106"></a><a href="#L106">106</a>
+<a id="L107"></a><a href="#L107">107</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">    </span><span class="s2">&quot;</span><span class="si" data-group-id="16360">#{</span><span class="n">base</span><span class="si" data-group-id="16360">}</span><span class="s2">#L</span><span class="si" data-group-id="16363">#{</span><span class="n">line</span><span class="si" data-group-id="16363">}</span><span class="s2">&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="16364">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="k" data-group-id="16365">end</span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
