@@ -20,7 +20,12 @@ defmodule Guaxinim do
     File.mkdir_p!(config.dst)
     # Copy the static assets
     dst_static = Path.join(config.dst, "_static")
-    File.cp_r!("priv/static", dst_static)
+    static_src =
+      :guaxinim
+      |> :code.priv_dir
+      |> Path.join("static")
+
+    File.cp_r!(static_src, dst_static)
     :ok
   end
 
