@@ -8,7 +8,7 @@
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <%= content %>
               <div class="end-of-panel-body"></div>

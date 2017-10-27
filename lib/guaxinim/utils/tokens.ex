@@ -80,10 +80,10 @@ defmodule Guaxinim.Utils.Tokens do
       |> Integer.to_string
       |> String.pad_leading(anchor_padding)
 
-    ~s(<a id="L#{line_nr}"></a><a href="#L#{line_nr}">#{text}</a>)
+    ~s(<a id="L#{line_nr}"></a><a class="lineno" href="#L#{line_nr}">#{text}</a>)
   end
   defp line_nr_anchor(line_nr, _, false) do
-    ~s(<a id="L#{line_nr}"></a>)
+    ~s(<a class="lineno" id="L#{line_nr}"></a>)
   end
 
   def lines_to_html_data(config, file, anchor_padding, token_lines, line_numbers? \\ true) do

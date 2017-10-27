@@ -28,28 +28,47 @@ defmodule Guaxinim.Internal.SourceFormatter do
     "lib/guaxinim/templates/code/elixir/comment.html.eex",
     [:indent, :content])
 
+  def markdown_to_html(text) do
+    options =
+      struct(Earmark.Options,
+            gfm: true,
+            line: 1,
+            file: nil,
+            breaks: false,
+            smartypants: true)
+    text
+    |> reformat_examples_header
+    |> Earmark.as_html!(options)
+  end
+
+  def reformat_examples_header(text) do
+    Regex.replace(~r/(^|\n)## Examples\n/,
+                  text,
+                  ~S(<h2 class="guaxinim-examples">Examples</h2>))
+  end
+
   def block_to_html(config, file, anchor_padding, {:code, lines}) do
     {anchors, code} = Tokens.lines_to_html_data(config, file, anchor_padding, lines)
     code_to_html(anchors, code)
   end
 
   def block_to_html(_, _, anchor_padding, {:moduledoc, text, indent}) do
-    html = Earmark.as_html!(text)
+    html = markdown_to_html(text)
     moduledoc_to_html(indent + anchor_padding, html, nil, nil)
   end
 
   def block_to_html(_, _, anchor_padding, {:doc, text, indent}) do
-    html = Earmark.as_html!(text)
+    html = markdown_to_html(text)
     doc_to_html(indent + anchor_padding, html, nil, nil)
   end
 
   def block_to_html(_, _, anchor_padding, {:typedoc, text, indent}) do
-    html = Earmark.as_html!(text)
+    html = markdown_to_html(text)
     typedoc_to_html(indent + anchor_padding, html, nil, nil)
   end
 
   def block_to_html(_, _, anchor_padding, {:comment, text, indent}) do
-    html = Earmark.as_html!(text)
+    html = markdown_to_html(text)
     comment_to_html(indent + anchor_padding, html)
   end
 

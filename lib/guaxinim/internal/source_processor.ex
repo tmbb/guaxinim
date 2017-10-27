@@ -3,7 +3,7 @@ defmodule Guaxinim.Internal.SourceProcessor do
   alias Guaxinim.Utils.Tokens
   alias Guaxinim.Internal.SourceParser
 
-  defp indentation([line | _]) do
+  defp line_indentation(line) do
     # Evaluate the indentation level of the line.
     # Will only be used for comment blocks or for heredocs.
     # We will never need to know the indentation level of a code block.
@@ -19,6 +19,17 @@ defmodule Guaxinim.Internal.SourceProcessor do
     indent
   end
 
+  defp blank_line?(line) do
+    Regex.match?(~r/^\s+$/, line)
+  end
+
+  defp indentation(lines) do
+    lines
+    |> Enum.reject(&blank_line?/1)
+    |> Enum.map(&line_indentation/1)
+    |> Enum.min(fn -> 0 end)
+  end
+
   defp strip_hash(line) do
     # Strip the indentation and hash sign (`#`) from the line.
     # If the hash is followed by at least a space (`?\s`), strip the space too.
@@ -26,9 +37,14 @@ defmodule Guaxinim.Internal.SourceProcessor do
     comment
   end
 
+  defp strip_indent(line, 0), do: line
   defp strip_indent(line, indent) do
-    # Strip a given level of indent.
-    String.trim_leading(line, String.duplicate(" ", indent))
+    case line do
+      << _::binary-size(indent), rest::binary >> ->
+        rest
+      _ ->
+        line
+    end
   end
 
   defp merge_blocks_and_token_lines(blocks, token_lines) do
