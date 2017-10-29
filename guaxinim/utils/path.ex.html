@@ -34,7 +34,7 @@
           <a class="reference internal" href="..">
             <span class="glyphicon glyphicon-level-up"></span>
             &nbsp;
-            <span class="sidebar-toc-level-up">../</span></a></li>
+            <span>../</span></a></li>
         
         
         
@@ -44,19 +44,19 @@
           <a class="reference internal" href="path.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">path.ex</span></a></li>
+            <span>path.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="tokens.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">tokens.ex</span></a></li>
+            <span>tokens.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="url.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">url.ex</span></a></li>
+            <span>url.ex</span></a></li>
         
       </ul>
     </div>
@@ -72,58 +72,58 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L1"></a><a href="#L1"> 1</a>
-<a id="L2"></a><a href="#L2"> 2</a>
-<a id="L3"></a><a href="#L3"> 3</a>
-<a id="L4"></a><a href="#L4"> 4</a>
-<a id="L5"></a><a href="#L5"> 5</a>
-<a id="L6"></a><a href="#L6"> 6</a>
-<a id="L7"></a><a href="#L7"> 7</a>
-<a id="L8"></a><a href="#L8"> 8</a>
-<a id="L9"></a><a href="#L9"> 9</a>
-<a id="L10"></a><a href="#L10">10</a>
-<a id="L11"></a><a href="#L11">11</a>
-<a id="L12"></a><a href="#L12">12</a>
-<a id="L13"></a><a href="#L13">13</a>
-<a id="L14"></a><a href="#L14">14</a>
-<a id="L15"></a><a href="#L15">15</a>
-<a id="L16"></a><a href="#L16">16</a>
-<a id="L17"></a><a href="#L17">17</a>
-<a id="L18"></a><a href="#L18">18</a>
-<a id="L19"></a><a href="#L19">19</a>
-<a id="L20"></a><a href="#L20">20</a>
-<a id="L21"></a><a href="#L21">21</a>
-<a id="L22"></a><a href="#L22">22</a>
-<a id="L23"></a><a href="#L23">23</a>
-<a id="L24"></a><a href="#L24">24</a></pre>
+            <pre><a id="L1"></a><a class="lineno" href="#L1"> 1</a>
+<a id="L2"></a><a class="lineno" href="#L2"> 2</a>
+<a id="L3"></a><a class="lineno" href="#L3"> 3</a>
+<a id="L4"></a><a class="lineno" href="#L4"> 4</a>
+<a id="L5"></a><a class="lineno" href="#L5"> 5</a>
+<a id="L6"></a><a class="lineno" href="#L6"> 6</a>
+<a id="L7"></a><a class="lineno" href="#L7"> 7</a>
+<a id="L8"></a><a class="lineno" href="#L8"> 8</a>
+<a id="L9"></a><a class="lineno" href="#L9"> 9</a>
+<a id="L10"></a><a class="lineno" href="#L10">10</a>
+<a id="L11"></a><a class="lineno" href="#L11">11</a>
+<a id="L12"></a><a class="lineno" href="#L12">12</a>
+<a id="L13"></a><a class="lineno" href="#L13">13</a>
+<a id="L14"></a><a class="lineno" href="#L14">14</a>
+<a id="L15"></a><a class="lineno" href="#L15">15</a>
+<a id="L16"></a><a class="lineno" href="#L16">16</a>
+<a id="L17"></a><a class="lineno" href="#L17">17</a>
+<a id="L18"></a><a class="lineno" href="#L18">18</a>
+<a id="L19"></a><a class="lineno" href="#L19">19</a>
+<a id="L20"></a><a class="lineno" href="#L20">20</a>
+<a id="L21"></a><a class="lineno" href="#L21">21</a>
+<a id="L22"></a><a class="lineno" href="#L22">22</a>
+<a id="L23"></a><a class="lineno" href="#L23">23</a>
+<a id="L24"></a><a class="lineno" href="#L24">24</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Utils.Path</span><span class="w"> </span><span class="k" data-group-id="595">do</span><span class="w"></span>
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Utils.Path</span><span class="w"> </span><span class="k" data-group-id="613">do</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">strip_common_prefix_from_lists</span><span class="p" data-group-id="572">(</span><span class="p" data-group-id="570">[</span><span class="n">x</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">xs</span><span class="p" data-group-id="570">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="571">[</span><span class="n">x</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="571">]</span><span class="p" data-group-id="572">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L7">strip_common_prefix_from_lists</a></span><span class="p" data-group-id="573">(</span><span class="n">xs</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="573">)</span><span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">strip_common_prefix_from_lists</span><span class="p" data-group-id="575">(</span><span class="p" data-group-id="574">[]</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="575">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="577">{</span><span class="p" data-group-id="576">[]</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="577">}</span><span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">strip_common_prefix_from_lists</span><span class="p" data-group-id="578">(</span><span class="n">xs</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="578">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="579">{</span><span class="n">xs</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="579">}</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">strip_common_prefix_from_lists</span><span class="p" data-group-id="590">(</span><span class="p" data-group-id="588">[</span><span class="n">x</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">xs</span><span class="p" data-group-id="588">]</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="589">[</span><span class="n">x</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="589">]</span><span class="p" data-group-id="590">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L7">strip_common_prefix_from_lists</a></span><span class="p" data-group-id="591">(</span><span class="n">xs</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="591">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">strip_common_prefix_from_lists</span><span class="p" data-group-id="593">(</span><span class="p" data-group-id="592">[]</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="593">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="595">{</span><span class="p" data-group-id="594">[]</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="595">}</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">strip_common_prefix_from_lists</span><span class="p" data-group-id="596">(</span><span class="n">xs</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="596">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="597">{</span><span class="n">xs</span><span class="p">,</span><span class="w"> </span><span class="n">ys</span><span class="p" data-group-id="597">}</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">path</span><span class="p" data-group-id="580">(</span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="580">)</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n">src</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">path</span><span class="p" data-group-id="581">(</span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="581">)</span><span class="w"> </span><span class="k" data-group-id="594">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">src_parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#split/1">split</a></span><span class="p" data-group-id="582">(</span><span class="n">src</span><span class="p" data-group-id="582">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">dst_parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#split/1">split</a></span><span class="p" data-group-id="583">(</span><span class="n">dst</span><span class="p" data-group-id="583">)</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="584">{</span><span class="n">src_suffix</span><span class="p">,</span><span class="w"> </span><span class="n">dst_suffix</span><span class="p" data-group-id="584">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L7">strip_common_prefix_from_lists</a></span><span class="p" data-group-id="585">(</span><span class="n">src_parts</span><span class="p">,</span><span class="w"> </span><span class="n">dst_parts</span><span class="p" data-group-id="585">)</span><span class="w"></span>
-<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">src_suffix</span><span class="w"> </span><span class="k" data-group-id="593">do</span><span class="w"></span>
-<span class="w">      </span><span class="p" data-group-id="586">[</span><span class="bp">_</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="586">]</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="n">dots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/List.html#duplicate/2">duplicate</a></span><span class="p" data-group-id="588">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="587">(</span><span class="n">src_suffix</span><span class="p" data-group-id="587">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="588">)</span><span class="w"></span>
-<span class="w">        </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#join/1">join</a></span><span class="p" data-group-id="589">(</span><span class="n">dots</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">dst_suffix</span><span class="p" data-group-id="589">)</span><span class="w"></span>
-<span class="w">      </span><span class="p" data-group-id="590">[]</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#join/1">join</a></span><span class="p" data-group-id="592">(</span><span class="p" data-group-id="591">[</span><span class="s2">&quot;./&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dst_suffix</span><span class="p" data-group-id="591">]</span><span class="p" data-group-id="592">)</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="593">end</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="594">end</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">path</span><span class="p" data-group-id="598">(</span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="598">)</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n">src</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">path</span><span class="p" data-group-id="599">(</span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="599">)</span><span class="w"> </span><span class="k" data-group-id="612">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">src_parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#split/1">split</a></span><span class="p" data-group-id="600">(</span><span class="n">src</span><span class="p" data-group-id="600">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">dst_parts</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#split/1">split</a></span><span class="p" data-group-id="601">(</span><span class="n">dst</span><span class="p" data-group-id="601">)</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="602">{</span><span class="n">src_suffix</span><span class="p">,</span><span class="w"> </span><span class="n">dst_suffix</span><span class="p" data-group-id="602">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L7">strip_common_prefix_from_lists</a></span><span class="p" data-group-id="603">(</span><span class="n">src_parts</span><span class="p">,</span><span class="w"> </span><span class="n">dst_parts</span><span class="p" data-group-id="603">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">src_suffix</span><span class="w"> </span><span class="k" data-group-id="611">do</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="604">[</span><span class="bp">_</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="604">]</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n">dots</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">List</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/List.html#duplicate/2">duplicate</a></span><span class="p" data-group-id="606">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="605">(</span><span class="n">src_suffix</span><span class="p" data-group-id="605">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="606">)</span><span class="w"></span>
+<span class="w">        </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#join/1">join</a></span><span class="p" data-group-id="607">(</span><span class="n">dots</span><span class="w"> </span><span class="o">++</span><span class="w"> </span><span class="n">dst_suffix</span><span class="p" data-group-id="607">)</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="608">[]</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#join/1">join</a></span><span class="p" data-group-id="610">(</span><span class="p" data-group-id="609">[</span><span class="s2">&quot;./&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">dst_suffix</span><span class="p" data-group-id="609">]</span><span class="p" data-group-id="610">)</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="611">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="612">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="k" data-group-id="595">end</span></pre>
+<span class="k" data-group-id="613">end</span></pre>
           </div>
         </td>
       </tr>

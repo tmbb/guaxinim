@@ -34,7 +34,7 @@
           <a class="reference internal" href="..">
             <span class="glyphicon glyphicon-level-up"></span>
             &nbsp;
-            <span class="sidebar-toc-level-up">../</span></a></li>
+            <span>../</span></a></li>
         
         
         
@@ -44,25 +44,25 @@
           <a class="reference internal" href="helper.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">helper.ex</span></a></li>
+            <span>helper.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="source_formatter.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">source_formatter.ex</span></a></li>
+            <span>source_formatter.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="source_parser.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">source_parser.ex</span></a></li>
+            <span>source_parser.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="source_processor.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">source_processor.ex</span></a></li>
+            <span>source_processor.ex</span></a></li>
         
       </ul>
     </div>
@@ -78,22 +78,22 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L1"></a><a href="#L1">  1</a>
-<a id="L2"></a><a href="#L2">  2</a>
-<a id="L3"></a><a href="#L3">  3</a>
-<a id="L4"></a><a href="#L4">  4</a>
-<a id="L5"></a><a href="#L5">  5</a>
-<a id="L6"></a><a href="#L6">  6</a></pre>
+            <pre><a id="L1"></a><a class="lineno" href="#L1">  1</a>
+<a id="L2"></a><a class="lineno" href="#L2">  2</a>
+<a id="L3"></a><a class="lineno" href="#L3">  3</a>
+<a id="L4"></a><a class="lineno" href="#L4">  4</a>
+<a id="L5"></a><a class="lineno" href="#L5">  5</a>
+<a id="L6"></a><a class="lineno" href="#L6">  6</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Internal.SourceProcessor</span><span class="w"> </span><span class="k" data-group-id="569">do</span><span class="w"></span>
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Internal.SourceProcessor</span><span class="w"> </span><span class="k" data-group-id="587">do</span><span class="w"></span>
 <span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Makeup.Lexers.ElixirLexer</span><span class="w"></span>
 <span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Guaxinim.Utils.Tokens</span><span class="w"></span>
 <span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Guaxinim.Internal.SourceParser</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">indentation</span><span class="p" data-group-id="495">(</span><span class="p" data-group-id="494">[</span><span class="n">line</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="494">]</span><span class="p" data-group-id="495">)</span><span class="w"> </span><span class="k" data-group-id="499">do</span><span class="w"></span></pre>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">line_indentation</span><span class="p" data-group-id="502">(</span><span class="n">line</span><span class="p" data-group-id="502">)</span><span class="w"> </span><span class="k" data-group-id="506">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -110,7 +110,7 @@
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Evaluate the indentation level of the line.
 Will only be used for comment blocks or for heredocs.
@@ -136,20 +136,42 @@ to define much stricter rules for what counts as a comment block.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L18"></a><a href="#L18"> 18</a>
-<a id="L19"></a><a href="#L19"> 19</a>
-<a id="L20"></a><a href="#L20"> 20</a>
-<a id="L21"></a><a href="#L21"> 21</a>
-<a id="L22"></a><a href="#L22"> 22</a></pre>
+            <pre><a id="L18"></a><a class="lineno" href="#L18"> 18</a>
+<a id="L19"></a><a class="lineno" href="#L19"> 19</a>
+<a id="L20"></a><a class="lineno" href="#L20"> 20</a>
+<a id="L21"></a><a class="lineno" href="#L21"> 21</a>
+<a id="L22"></a><a class="lineno" href="#L22"> 22</a>
+<a id="L23"></a><a class="lineno" href="#L23"> 23</a>
+<a id="L24"></a><a class="lineno" href="#L24"> 24</a>
+<a id="L25"></a><a class="lineno" href="#L25"> 25</a>
+<a id="L26"></a><a class="lineno" href="#L26"> 26</a>
+<a id="L27"></a><a class="lineno" href="#L27"> 27</a>
+<a id="L28"></a><a class="lineno" href="#L28"> 28</a>
+<a id="L29"></a><a class="lineno" href="#L29"> 29</a>
+<a id="L30"></a><a class="lineno" href="#L30"> 30</a>
+<a id="L31"></a><a class="lineno" href="#L31"> 31</a>
+<a id="L32"></a><a class="lineno" href="#L32"> 32</a>
+<a id="L33"></a><a class="lineno" href="#L33"> 33</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="p" data-group-id="497">[</span><span class="p" data-group-id="496">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="496">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="497">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Regex</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Regex.html#run/3">run</a></span><span class="p" data-group-id="498">(</span><span class="sr">~r/^(</span><span class="se">\s</span><span class="sr">*)/</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="ss">return</span><span class="p">:</span><span class="w"> </span><span class="ss">:index</span><span class="p" data-group-id="498">)</span><span class="w"></span>
+            <pre><span class="w">    </span><span class="p" data-group-id="504">[</span><span class="p" data-group-id="503">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="503">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="504">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Regex</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Regex.html#run/3">run</a></span><span class="p" data-group-id="505">(</span><span class="sr">~r/^(</span><span class="se">\s</span><span class="sr">*)/</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="ss">return</span><span class="p">:</span><span class="w"> </span><span class="ss">:index</span><span class="p" data-group-id="505">)</span><span class="w"></span>
 <span class="w">    </span><span class="n">indent</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="499">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="506">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">strip_hash</span><span class="p" data-group-id="500">(</span><span class="n">line</span><span class="p" data-group-id="500">)</span><span class="w"> </span><span class="k" data-group-id="503">do</span><span class="w"></span></pre>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">blank_line?</span><span class="p" data-group-id="507">(</span><span class="n">line</span><span class="p" data-group-id="507">)</span><span class="w"> </span><span class="k" data-group-id="509">do</span><span class="w"></span>
+<span class="w">    </span><span class="nc">Regex</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Regex.html#match?/2">match?</a></span><span class="p" data-group-id="508">(</span><span class="sr">~r/^</span><span class="se">\s</span><span class="sr">+$/</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="508">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="509">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">indentation</span><span class="p" data-group-id="510">(</span><span class="n">lines</span><span class="p" data-group-id="510">)</span><span class="w"> </span><span class="k" data-group-id="515">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">lines</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#reject/2">reject</a></span><span class="p" data-group-id="511">(</span><span class="o">&amp;</span><span class="n">blank_line?</span><span class="o">/</span><span class="mi">1</span><span class="p" data-group-id="511">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="512">(</span><span class="o">&amp;</span><span class="n">line_indentation</span><span class="o">/</span><span class="mi">1</span><span class="p" data-group-id="512">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#min/2">min</a></span><span class="p" data-group-id="514">(</span><span class="k" data-group-id="513">fn</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="k" data-group-id="513">end</span><span class="p" data-group-id="514">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="515">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">strip_hash</span><span class="p" data-group-id="516">(</span><span class="n">line</span><span class="p" data-group-id="516">)</span><span class="w"> </span><span class="k" data-group-id="519">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -166,7 +188,7 @@ to define much stricter rules for what counts as a comment block.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Strip the indentation and hash sign (<code class="inline">#</code>) from the line.
 If the hash is followed by at least a space (<code class="inline">?\s</code>), strip the space too.</p>
@@ -185,20 +207,40 @@ If the hash is followed by at least a space (<code class="inline">?\s</code>), s
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L25"></a><a href="#L25"> 25</a>
-<a id="L26"></a><a href="#L26"> 26</a>
-<a id="L27"></a><a href="#L27"> 27</a>
-<a id="L28"></a><a href="#L28"> 28</a>
-<a id="L29"></a><a href="#L29"> 29</a></pre>
+            <pre><a id="L36"></a><a class="lineno" href="#L36"> 36</a>
+<a id="L37"></a><a class="lineno" href="#L37"> 37</a>
+<a id="L38"></a><a class="lineno" href="#L38"> 38</a>
+<a id="L39"></a><a class="lineno" href="#L39"> 39</a>
+<a id="L40"></a><a class="lineno" href="#L40"> 40</a>
+<a id="L41"></a><a class="lineno" href="#L41"> 41</a>
+<a id="L42"></a><a class="lineno" href="#L42"> 42</a>
+<a id="L43"></a><a class="lineno" href="#L43"> 43</a>
+<a id="L44"></a><a class="lineno" href="#L44"> 44</a>
+<a id="L45"></a><a class="lineno" href="#L45"> 45</a>
+<a id="L46"></a><a class="lineno" href="#L46"> 46</a>
+<a id="L47"></a><a class="lineno" href="#L47"> 47</a>
+<a id="L48"></a><a class="lineno" href="#L48"> 48</a>
+<a id="L49"></a><a class="lineno" href="#L49"> 49</a>
+<a id="L50"></a><a class="lineno" href="#L50"> 50</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="p" data-group-id="501">[</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p" data-group-id="501">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Regex</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Regex.html#run/2">run</a></span><span class="p" data-group-id="502">(</span><span class="sr">~r/(</span><span class="se">\s</span><span class="sr">*)#(</span><span class="se">\s</span><span class="sr">?)(.*)/</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="502">)</span><span class="w"></span>
+            <pre><span class="w">    </span><span class="p" data-group-id="517">[</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">comment</span><span class="p" data-group-id="517">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Regex</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Regex.html#run/2">run</a></span><span class="p" data-group-id="518">(</span><span class="sr">~r/(</span><span class="se">\s</span><span class="sr">*)#(</span><span class="se">\s</span><span class="sr">?)(.*)/</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="518">)</span><span class="w"></span>
 <span class="w">    </span><span class="n">comment</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="503">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="519">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">strip_indent</span><span class="p" data-group-id="504">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="504">)</span><span class="w"> </span><span class="k" data-group-id="507">do</span><span class="w"></span></pre>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">strip_indent</span><span class="p" data-group-id="520">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="520">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"> </span><span class="n">line</span><span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">strip_indent</span><span class="p" data-group-id="521">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="521">)</span><span class="w"> </span><span class="k" data-group-id="525">do</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">line</span><span class="w"> </span><span class="k" data-group-id="524">do</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="523">&lt;&lt;</span><span class="w"> </span><span class="bp">_</span><span class="o">::</span><span class="n">binary</span><span class="o">-</span><span class="n">size</span><span class="p" data-group-id="522">(</span><span class="n">indent</span><span class="p" data-group-id="522">)</span><span class="p">,</span><span class="w"> </span><span class="n">rest</span><span class="o">::</span><span class="n">binary</span><span class="w"> </span><span class="p" data-group-id="523">&gt;&gt;</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n">rest</span><span class="w"></span>
+<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n">line</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="524">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="525">end</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">merge_blocks_and_token_lines</span><span class="p" data-group-id="526">(</span><span class="n">blocks</span><span class="p">,</span><span class="w"> </span><span class="n">token_lines</span><span class="p" data-group-id="526">)</span><span class="w"> </span><span class="k" data-group-id="562">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -215,53 +257,7 @@ If the hash is followed by at least a space (<code class="inline">?\s</code>), s
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
-            <div class="panel-body">
-              <p>Strip a given level of indent.</p>
-
-              <div class="end-of-panel-body"></div>
-            </div>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<div class="guaxinim-codeblock">
-  <table>
-    <tbody>
-      <tr>
-        <td>
-          <div class="line-anchors">
-            <pre><a id="L31"></a><a href="#L31"> 31</a>
-<a id="L32"></a><a href="#L32"> 32</a>
-<a id="L33"></a><a href="#L33"> 33</a>
-<a id="L34"></a><a href="#L34"> 34</a></pre>
-          </div>
-        </td>
-        <td class="right-side guaxinim-code">
-          <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="nc">String</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/String.html#trim_leading/2">trim_leading</a></span><span class="p" data-group-id="506">(</span><span class="n">line</span><span class="p">,</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n">duplicate</span><span class="p" data-group-id="505">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="505">)</span><span class="p" data-group-id="506">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="507">end</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">merge_blocks_and_token_lines</span><span class="p" data-group-id="508">(</span><span class="n">blocks</span><span class="p">,</span><span class="w"> </span><span class="n">token_lines</span><span class="p" data-group-id="508">)</span><span class="w"> </span><span class="k" data-group-id="544">do</span><span class="w"></span></pre>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
-  <table>
-    <tbody>
-      <tr>
-        <td class="left-side">
-          <div class="line-anchors">
-            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
-          </div>
-        </td>
-        <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>We’ll transform the blocks, consuming lines as we go.</p>
 
@@ -279,12 +275,12 @@ If the hash is followed by at least a space (<code class="inline">?\s</code>), s
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L36"></a><a href="#L36"> 36</a></pre>
+            <pre><a id="L52"></a><a class="lineno" href="#L52"> 52</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="p" data-group-id="509">{</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="509">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#reduce/3">reduce</a></span><span class="w"> </span><span class="n">blocks</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="511">{</span><span class="p" data-group-id="510">[]</span><span class="p">,</span><span class="w"> </span><span class="n">token_lines</span><span class="p" data-group-id="511">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="542">(</span><span class="k" data-group-id="541">fn</span><span class="w"></span></pre>
+            <pre><span class="w">    </span><span class="p" data-group-id="527">{</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="527">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#reduce/3">reduce</a></span><span class="w"> </span><span class="n">blocks</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="529">{</span><span class="p" data-group-id="528">[]</span><span class="p">,</span><span class="w"> </span><span class="n">token_lines</span><span class="p" data-group-id="529">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="560">(</span><span class="k" data-group-id="559">fn</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -301,7 +297,7 @@ If the hash is followed by at least a space (<code class="inline">?\s</code>), s
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p><strong>Code blocks</strong>: these blocks work with tokens and not raw lines of text.
 They have no use for indentation, because they’ll be rendered inside <code class="inline">&lt;pre&gt;</code> tags.</p>
@@ -320,12 +316,12 @@ They have no use for indentation, because they’ll be rendered inside <code cla
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L39"></a><a href="#L39"> 39</a></pre>
+            <pre><a id="L55"></a><a class="lineno" href="#L55"> 55</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">      </span><span class="p" data-group-id="512">{</span><span class="ss">:code</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="512">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="513">{</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">tok_lines</span><span class="p" data-group-id="513">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span></pre>
+            <pre><span class="w">      </span><span class="p" data-group-id="530">{</span><span class="ss">:code</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="530">}</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="531">{</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">tok_lines</span><span class="p" data-group-id="531">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -342,7 +338,7 @@ They have no use for indentation, because they’ll be rendered inside <code cla
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Consume the appropriate number of lines:</p>
 
@@ -360,12 +356,12 @@ They have no use for indentation, because they’ll be rendered inside <code cla
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L41"></a><a href="#L41"> 41</a></pre>
+            <pre><a id="L57"></a><a class="lineno" href="#L57"> 57</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">        </span><span class="p" data-group-id="514">{</span><span class="n">block_token_lines</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="514">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#split/2">split</a></span><span class="p" data-group-id="516">(</span><span class="n">tok_lines</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="515">(</span><span class="n">lines</span><span class="p" data-group-id="515">)</span><span class="p" data-group-id="516">)</span><span class="w"></span></pre>
+            <pre><span class="w">        </span><span class="p" data-group-id="532">{</span><span class="n">block_token_lines</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="532">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#split/2">split</a></span><span class="p" data-group-id="534">(</span><span class="n">tok_lines</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="533">(</span><span class="n">lines</span><span class="p" data-group-id="533">)</span><span class="p" data-group-id="534">)</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -382,7 +378,7 @@ They have no use for indentation, because they’ll be rendered inside <code cla
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>The blocks are added to the front of the list.
 They must be reversed <a href="#merge_blocks_and_token_lines.reverse">afterwards</a>!</p>
@@ -401,13 +397,13 @@ They must be reversed <a href="#merge_blocks_and_token_lines.reverse">afterwards
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L44"></a><a href="#L44"> 44</a>
-<a id="L45"></a><a href="#L45"> 45</a></pre>
+            <pre><a id="L60"></a><a class="lineno" href="#L60"> 60</a>
+<a id="L61"></a><a class="lineno" href="#L61"> 61</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">        </span><span class="p" data-group-id="519">{</span><span class="p" data-group-id="518">[</span><span class="p" data-group-id="517">{</span><span class="ss">:code</span><span class="p">,</span><span class="w"> </span><span class="n">block_token_lines</span><span class="p" data-group-id="517">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">result</span><span class="p" data-group-id="518">]</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="519">}</span><span class="w"></span>
+            <pre><span class="w">        </span><span class="p" data-group-id="537">{</span><span class="p" data-group-id="536">[</span><span class="p" data-group-id="535">{</span><span class="ss">:code</span><span class="p">,</span><span class="w"> </span><span class="n">block_token_lines</span><span class="p" data-group-id="535">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">result</span><span class="p" data-group-id="536">]</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="537">}</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -425,7 +421,7 @@ They must be reversed <a href="#merge_blocks_and_token_lines.reverse">afterwards
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p><strong>Heredoce</strong>: Guaxinim recognized 3 kinds of heredocs: <code class="inline">:moduledoc</code>, <code class="inline">:doc</code> and <code class="inline">:typedoc</code>.
 They will be rendered side by side with the source, indented according to the
@@ -447,19 +443,19 @@ The text will later be interpreted as Markdown and renderd into HTML</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L51"></a><a href="#L51"> 51</a>
-<a id="L52"></a><a href="#L52"> 52</a>
-<a id="L53"></a><a href="#L53"> 53</a>
-<a id="L54"></a><a href="#L54"> 54</a>
-<a id="L55"></a><a href="#L55"> 55</a></pre>
+            <pre><a id="L67"></a><a class="lineno" href="#L67"> 67</a>
+<a id="L68"></a><a class="lineno" href="#L68"> 68</a>
+<a id="L69"></a><a class="lineno" href="#L69"> 69</a>
+<a id="L70"></a><a class="lineno" href="#L70"> 70</a>
+<a id="L71"></a><a class="lineno" href="#L71"> 71</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">      </span><span class="p" data-group-id="520">{</span><span class="n">tag</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="520">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">block</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="521">{</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">tok_lines</span><span class="p" data-group-id="521">}</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="p" data-group-id="522">[</span><span class="ss">:moduledoc</span><span class="p">,</span><span class="w"> </span><span class="ss">:doc</span><span class="p">,</span><span class="w"> </span><span class="ss">:typedoc</span><span class="p" data-group-id="522">]</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="p" data-group-id="523">{</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="523">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#split/2">split</a></span><span class="p" data-group-id="525">(</span><span class="n">tok_lines</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="524">(</span><span class="n">lines</span><span class="p" data-group-id="524">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p" data-group-id="525">)</span><span class="w"></span>
-<span class="w">        </span><span class="n">indent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L6">indentation</a></span><span class="p" data-group-id="526">(</span><span class="n">lines</span><span class="p" data-group-id="526">)</span><span class="w"></span>
-<span class="w">        </span><span class="p" data-group-id="530">{</span><span class="p" data-group-id="529">[</span><span class="p" data-group-id="528">{</span><span class="n">tag</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L82">to_text</a></span><span class="p" data-group-id="527">(</span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="n">block</span><span class="p" data-group-id="527">)</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="528">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">result</span><span class="p" data-group-id="529">]</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="530">}</span><span class="w"></span>
+            <pre><span class="w">      </span><span class="p" data-group-id="538">{</span><span class="n">tag</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="538">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">block</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="539">{</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">tok_lines</span><span class="p" data-group-id="539">}</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="p" data-group-id="540">[</span><span class="ss">:moduledoc</span><span class="p">,</span><span class="w"> </span><span class="ss">:doc</span><span class="p">,</span><span class="w"> </span><span class="ss">:typedoc</span><span class="p" data-group-id="540">]</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="p" data-group-id="541">{</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="541">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#split/2">split</a></span><span class="p" data-group-id="543">(</span><span class="n">tok_lines</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="542">(</span><span class="n">lines</span><span class="p" data-group-id="542">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p" data-group-id="543">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">indent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L26">indentation</a></span><span class="p" data-group-id="544">(</span><span class="n">lines</span><span class="p" data-group-id="544">)</span><span class="w"></span>
+<span class="w">        </span><span class="p" data-group-id="548">{</span><span class="p" data-group-id="547">[</span><span class="p" data-group-id="546">{</span><span class="n">tag</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L98">to_text</a></span><span class="p" data-group-id="545">(</span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="n">block</span><span class="p" data-group-id="545">)</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="546">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">result</span><span class="p" data-group-id="547">]</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="548">}</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -477,7 +473,7 @@ The text will later be interpreted as Markdown and renderd into HTML</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p><strong>Comments</strong>: comments are similar to the heredocs above.
 They will be treated as Markdown and rendered into HTML.
@@ -497,21 +493,21 @@ They will be indented too.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L59"></a><a href="#L59"> 59</a>
-<a id="L60"></a><a href="#L60"> 60</a>
-<a id="L61"></a><a href="#L61"> 61</a>
-<a id="L62"></a><a href="#L62"> 62</a>
-<a id="L63"></a><a href="#L63"> 63</a>
-<a id="L64"></a><a href="#L64"> 64</a></pre>
+            <pre><a id="L75"></a><a class="lineno" href="#L75"> 75</a>
+<a id="L76"></a><a class="lineno" href="#L76"> 76</a>
+<a id="L77"></a><a class="lineno" href="#L77"> 77</a>
+<a id="L78"></a><a class="lineno" href="#L78"> 78</a>
+<a id="L79"></a><a class="lineno" href="#L79"> 79</a>
+<a id="L80"></a><a class="lineno" href="#L80"> 80</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">      </span><span class="p" data-group-id="531">{</span><span class="ss">:comment</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="531">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">block</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="532">{</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">tok_lines</span><span class="p" data-group-id="532">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="p" data-group-id="533">{</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="533">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#split/2">split</a></span><span class="p" data-group-id="535">(</span><span class="n">tok_lines</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="534">(</span><span class="n">lines</span><span class="p" data-group-id="534">)</span><span class="p" data-group-id="535">)</span><span class="w"></span>
-<span class="w">        </span><span class="n">indent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L6">indentation</a></span><span class="p" data-group-id="536">(</span><span class="n">lines</span><span class="p" data-group-id="536">)</span><span class="w"></span>
-<span class="w">        </span><span class="p" data-group-id="540">{</span><span class="p" data-group-id="539">[</span><span class="p" data-group-id="538">{</span><span class="ss">:comment</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L82">to_text</a></span><span class="p" data-group-id="537">(</span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="n">block</span><span class="p" data-group-id="537">)</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="538">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">result</span><span class="p" data-group-id="539">]</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="540">}</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="541">end</span><span class="p" data-group-id="542">)</span><span class="w"></span>
+            <pre><span class="w">      </span><span class="p" data-group-id="549">{</span><span class="ss">:comment</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="549">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">block</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="550">{</span><span class="n">result</span><span class="p">,</span><span class="w"> </span><span class="n">tok_lines</span><span class="p" data-group-id="550">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="p" data-group-id="551">{</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="551">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#split/2">split</a></span><span class="p" data-group-id="553">(</span><span class="n">tok_lines</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="p" data-group-id="552">(</span><span class="n">lines</span><span class="p" data-group-id="552">)</span><span class="p" data-group-id="553">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">indent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L26">indentation</a></span><span class="p" data-group-id="554">(</span><span class="n">lines</span><span class="p" data-group-id="554">)</span><span class="w"></span>
+<span class="w">        </span><span class="p" data-group-id="558">{</span><span class="p" data-group-id="557">[</span><span class="p" data-group-id="556">{</span><span class="ss">:comment</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L98">to_text</a></span><span class="p" data-group-id="555">(</span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="n">block</span><span class="p" data-group-id="555">)</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="556">}</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">result</span><span class="p" data-group-id="557">]</span><span class="p">,</span><span class="w"> </span><span class="n">rest_token_lines</span><span class="p" data-group-id="558">}</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="559">end</span><span class="p" data-group-id="560">)</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -529,7 +525,7 @@ They will be indented too.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p><a id="merge_blocks_and_token_lines.reverse"></a>
 Reverse the order of the blocks</p>
@@ -548,15 +544,15 @@ Reverse the order of the blocks</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L67"></a><a href="#L67"> 67</a>
-<a id="L68"></a><a href="#L68"> 68</a>
-<a id="L69"></a><a href="#L69"> 69</a></pre>
+            <pre><a id="L83"></a><a class="lineno" href="#L83"> 83</a>
+<a id="L84"></a><a class="lineno" href="#L84"> 84</a>
+<a id="L85"></a><a class="lineno" href="#L85"> 85</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="ss">:lists</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/lists.html#reverse-1">reverse</a></span><span class="p" data-group-id="543">(</span><span class="n">result</span><span class="p" data-group-id="543">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="544">end</span><span class="w"></span>
+            <pre><span class="w">    </span><span class="ss">:lists</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/lists.html#reverse-1">reverse</a></span><span class="p" data-group-id="561">(</span><span class="n">result</span><span class="p" data-group-id="561">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="562">end</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -574,7 +570,7 @@ Reverse the order of the blocks</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Extract raw text from comment block:</p>
 
@@ -592,19 +588,19 @@ Reverse the order of the blocks</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L71"></a><a href="#L71"> 71</a>
-<a id="L72"></a><a href="#L72"> 72</a>
-<a id="L73"></a><a href="#L73"> 73</a>
-<a id="L74"></a><a href="#L74"> 74</a>
-<a id="L75"></a><a href="#L75"> 75</a></pre>
+            <pre><a id="L87"></a><a class="lineno" href="#L87"> 87</a>
+<a id="L88"></a><a class="lineno" href="#L88"> 88</a>
+<a id="L89"></a><a class="lineno" href="#L89"> 89</a>
+<a id="L90"></a><a class="lineno" href="#L90"> 90</a>
+<a id="L91"></a><a class="lineno" href="#L91"> 91</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">to_text</span><span class="p" data-group-id="546">(</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="545">{</span><span class="ss">:comment</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="545">}</span><span class="p" data-group-id="546">)</span><span class="w"> </span><span class="k" data-group-id="549">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lines</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="547">(</span><span class="o">&amp;</span><span class="n">strip_hash</span><span class="o">/</span><span class="mi">1</span><span class="p" data-group-id="547">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#join/2">join</a></span><span class="p" data-group-id="548">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p" data-group-id="548">)</span><span class="w"></span>
+            <pre><span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">to_text</span><span class="p" data-group-id="564">(</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="563">{</span><span class="ss">:comment</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="563">}</span><span class="p" data-group-id="564">)</span><span class="w"> </span><span class="k" data-group-id="567">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lines</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="565">(</span><span class="o">&amp;</span><span class="n">strip_hash</span><span class="o">/</span><span class="mi">1</span><span class="p" data-group-id="565">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#join/2">join</a></span><span class="p" data-group-id="566">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p" data-group-id="566">)</span><span class="w"></span>
 <span class="w">    </span><span class="n">result</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="549">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="567">end</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -622,7 +618,7 @@ Reverse the order of the blocks</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Extract raw text from heredocs (<code class="inline">:doc</code>, <code class="inline">:moduledoc</code> and <code class="inline">:typedoc</code>)</p>
 
@@ -640,17 +636,17 @@ Reverse the order of the blocks</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L77"></a><a href="#L77"> 77</a>
-<a id="L78"></a><a href="#L78"> 78</a>
-<a id="L79"></a><a href="#L79"> 79</a>
-<a id="L80"></a><a href="#L80"> 80</a></pre>
+            <pre><a id="L93"></a><a class="lineno" href="#L93"> 93</a>
+<a id="L94"></a><a class="lineno" href="#L94"> 94</a>
+<a id="L95"></a><a class="lineno" href="#L95"> 95</a>
+<a id="L96"></a><a class="lineno" href="#L96"> 96</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">to_text</span><span class="p" data-group-id="551">(</span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="550">{</span><span class="n">tag</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="550">}</span><span class="p" data-group-id="551">)</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="p" data-group-id="552">[</span><span class="ss">:doc</span><span class="p">,</span><span class="w"> </span><span class="ss">:moduledoc</span><span class="p">,</span><span class="w"> </span><span class="ss">:typedoc</span><span class="p" data-group-id="552">]</span><span class="w"> </span><span class="k" data-group-id="556">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">lines</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="554">(</span><span class="o">&amp;</span><span class="n"><a class="guaxinim-source-link" href="#L29">strip_indent</a></span><span class="p" data-group-id="553">(</span><span class="ni">&amp;1</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="553">)</span><span class="p" data-group-id="554">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#join/2">join</a></span><span class="p" data-group-id="555">(</span><span class="s2">&quot;&quot;</span><span class="p" data-group-id="555">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="556">end</span><span class="w"></span>
+            <pre><span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">to_text</span><span class="p" data-group-id="569">(</span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="568">{</span><span class="n">tag</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="568">}</span><span class="p" data-group-id="569">)</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="p" data-group-id="570">[</span><span class="ss">:doc</span><span class="p">,</span><span class="w"> </span><span class="ss">:moduledoc</span><span class="p">,</span><span class="w"> </span><span class="ss">:typedoc</span><span class="p" data-group-id="570">]</span><span class="w"> </span><span class="k" data-group-id="574">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">lines</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#map/2">map</a></span><span class="p" data-group-id="572">(</span><span class="o">&amp;</span><span class="n"><a class="guaxinim-source-link" href="#L41">strip_indent</a></span><span class="p" data-group-id="571">(</span><span class="ni">&amp;1</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p" data-group-id="571">)</span><span class="p" data-group-id="572">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#join/2">join</a></span><span class="p" data-group-id="573">(</span><span class="s2">&quot;&quot;</span><span class="p" data-group-id="573">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="574">end</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -668,7 +664,7 @@ Reverse the order of the blocks</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Extract raw text from code block (implemented for completeness, it’s not needed right now):</p>
 
@@ -686,15 +682,15 @@ Reverse the order of the blocks</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L82"></a><a href="#L82"> 82</a>
-<a id="L83"></a><a href="#L83"> 83</a>
-<a id="L84"></a><a href="#L84"> 84</a></pre>
+            <pre><a id="L98"></a><a class="lineno" href="#L98"> 98</a>
+<a id="L99"></a><a class="lineno" href="#L99"> 99</a>
+<a id="L100"></a><a class="lineno" href="#L100">100</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">to_text</span><span class="p" data-group-id="558">(</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="557">{</span><span class="ss">:code</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="557">}</span><span class="p" data-group-id="558">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#join/2">join</a></span><span class="p" data-group-id="559">(</span><span class="n">lines</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p" data-group-id="559">)</span><span class="w"></span>
+            <pre><span class="w">  </span><span class="kd">defp</span><span class="w"> </span><span class="nf">to_text</span><span class="p" data-group-id="576">(</span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="575">{</span><span class="ss">:code</span><span class="p">,</span><span class="w"> </span><span class="n">lines</span><span class="p" data-group-id="575">}</span><span class="p" data-group-id="576">)</span><span class="p">,</span><span class="w"> </span><span class="ss">do</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nc">Enum</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Enum.html#join/2">join</a></span><span class="p" data-group-id="577">(</span><span class="n">lines</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p" data-group-id="577">)</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -712,7 +708,7 @@ Reverse the order of the blocks</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Process the raw source of the file into blocks.</p>
 
@@ -730,44 +726,44 @@ Reverse the order of the blocks</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L86"></a><a href="#L86"> 86</a>
-<a id="L87"></a><a href="#L87"> 87</a>
-<a id="L88"></a><a href="#L88"> 88</a>
-<a id="L89"></a><a href="#L89"> 89</a>
-<a id="L90"></a><a href="#L90"> 90</a>
-<a id="L91"></a><a href="#L91"> 91</a>
-<a id="L92"></a><a href="#L92"> 92</a>
-<a id="L93"></a><a href="#L93"> 93</a>
-<a id="L94"></a><a href="#L94"> 94</a>
-<a id="L95"></a><a href="#L95"> 95</a>
-<a id="L96"></a><a href="#L96"> 96</a>
-<a id="L97"></a><a href="#L97"> 97</a>
-<a id="L98"></a><a href="#L98"> 98</a>
-<a id="L99"></a><a href="#L99"> 99</a>
-<a id="L100"></a><a href="#L100">100</a>
-<a id="L101"></a><a href="#L101">101</a>
-<a id="L102"></a><a href="#L102">102</a></pre>
+            <pre><a id="L102"></a><a class="lineno" href="#L102">102</a>
+<a id="L103"></a><a class="lineno" href="#L103">103</a>
+<a id="L104"></a><a class="lineno" href="#L104">104</a>
+<a id="L105"></a><a class="lineno" href="#L105">105</a>
+<a id="L106"></a><a class="lineno" href="#L106">106</a>
+<a id="L107"></a><a class="lineno" href="#L107">107</a>
+<a id="L108"></a><a class="lineno" href="#L108">108</a>
+<a id="L109"></a><a class="lineno" href="#L109">109</a>
+<a id="L110"></a><a class="lineno" href="#L110">110</a>
+<a id="L111"></a><a class="lineno" href="#L111">111</a>
+<a id="L112"></a><a class="lineno" href="#L112">112</a>
+<a id="L113"></a><a class="lineno" href="#L113">113</a>
+<a id="L114"></a><a class="lineno" href="#L114">114</a>
+<a id="L115"></a><a class="lineno" href="#L115">115</a>
+<a id="L116"></a><a class="lineno" href="#L116">116</a>
+<a id="L117"></a><a class="lineno" href="#L117">117</a>
+<a id="L118"></a><a class="lineno" href="#L118">118</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">process_source</span><span class="p" data-group-id="560">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="560">)</span><span class="w"> </span><span class="k" data-group-id="568">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">tokens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ElixirLexer</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/makeup_elixir/Makeup.Lexers.ElixirLexer.html#lex/2">lex</a></span><span class="p" data-group-id="562">(</span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="561">[]</span><span class="p" data-group-id="562">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">token_lines</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Tokens</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../utils/tokens.ex.html#L8">split_into_lines</a></span><span class="p" data-group-id="563">(</span><span class="n">tokens</span><span class="p" data-group-id="563">)</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="564">%{</span><span class="ss">error</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">result</span><span class="p">:</span><span class="w"> </span><span class="n">blocks</span><span class="p" data-group-id="564">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SourceParser</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="source_parser.ex.html#L125">from_string</a></span><span class="p" data-group-id="565">(</span><span class="n">source</span><span class="p" data-group-id="565">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">merged_blocks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L34">merge_blocks_and_token_lines</a></span><span class="p" data-group-id="566">(</span><span class="n">blocks</span><span class="p">,</span><span class="w"> </span><span class="n">token_lines</span><span class="p" data-group-id="566">)</span><span class="w"></span>
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">process_source</span><span class="p" data-group-id="578">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">source</span><span class="p" data-group-id="578">)</span><span class="w"> </span><span class="k" data-group-id="586">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">tokens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">ElixirLexer</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/makeup_elixir/Makeup.Lexers.ElixirLexer.html#lex/2">lex</a></span><span class="p" data-group-id="580">(</span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="579">[]</span><span class="p" data-group-id="580">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">token_lines</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Tokens</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../utils/tokens.ex.html#L8">split_into_lines</a></span><span class="p" data-group-id="581">(</span><span class="n">tokens</span><span class="p" data-group-id="581">)</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="582">%{</span><span class="ss">error</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">result</span><span class="p">:</span><span class="w"> </span><span class="n">blocks</span><span class="p" data-group-id="582">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">SourceParser</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="source_parser.ex.html#L125">from_string</a></span><span class="p" data-group-id="583">(</span><span class="n">source</span><span class="p" data-group-id="583">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">merged_blocks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L50">merge_blocks_and_token_lines</a></span><span class="p" data-group-id="584">(</span><span class="n">blocks</span><span class="p">,</span><span class="w"> </span><span class="n">token_lines</span><span class="p" data-group-id="584">)</span><span class="w"></span>
 <span class="w">    </span><span class="n">anchor_padding</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
 <span class="w">      </span><span class="n">token_lines</span><span class="w"></span>
 <span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="http://erlang.org/doc/man/erlang.html#length-1">length</a></span><span class="w"></span>
 <span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Integer</span><span class="o">.</span><span class="n">to_string</span><span class="w"></span>
 <span class="w">      </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/String.html#length/1">length</a></span><span class="w"></span>
 <span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="567">%{</span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="585">%{</span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">file</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="ss">blocks</span><span class="p">:</span><span class="w"> </span><span class="n">merged_blocks</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="ss">anchor_padding</span><span class="p">:</span><span class="w"> </span><span class="n">anchor_padding</span><span class="p" data-group-id="567">}</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="568">end</span><span class="w"></span>
+<span class="w">      </span><span class="ss">anchor_padding</span><span class="p">:</span><span class="w"> </span><span class="n">anchor_padding</span><span class="p" data-group-id="585">}</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="586">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="k" data-group-id="569">end</span></pre>
+<span class="k" data-group-id="587">end</span></pre>
           </div>
         </td>
       </tr>

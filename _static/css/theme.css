@@ -954,6 +954,20 @@ span.eqno {
 /* Guaxinim
 -------------------------------------------------- */
 
+h2.guaxinim-examples {
+  font-size: 24px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+h2.guaxinim-examples + pre {
+  margin-top: 0px;
+}
+
+a.lineno {
+  color: lightgray
+}
+
 td.guaxinim-prose {
   width: 100%;
 }
@@ -969,7 +983,7 @@ td.guaxinim-prose {
 }
 
 td.right-side {
-  padding-left: 8px;
+  padding-left: 16px;
   vertical-align: top;
 }
 
@@ -997,10 +1011,17 @@ table {
   margin-top: -10px;
 }
 
+.panel-body pre + .end-of-panel-body {
+  margin-top: -28px;
+}
+
 .guaxinim-inline-comments .panel {
   border-width: 0px 0px 0px 2px !important;
   border-radius: 0px !important;
+  /* box-shadow: 1px 1px 3px gray; */
+  box-shadow: none !important;
 }
+
 
 .guaxinim-inline-comments .panel-body {
   padding: 8px;
@@ -1043,12 +1064,12 @@ table {
 }
 
 .sidebar-toc-level-up {
-  font-family: Consolas,monospace;
   font-weight: bold;
 }
 
-.sidebar-toc-directory, .sidebar-toc-file {
+.sidebar-toc {
   font-family: Consolas,monospace;
+  font-size: 85%;
 }
 
 .guaxinim-source-link {

@@ -34,7 +34,7 @@
           <a class="reference internal" href="..">
             <span class="glyphicon glyphicon-level-up"></span>
             &nbsp;
-            <span class="sidebar-toc-level-up">../</span></a></li>
+            <span>../</span></a></li>
         
         
         
@@ -44,19 +44,19 @@
           <a class="reference internal" href="path.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">path.ex</span></a></li>
+            <span>path.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="tokens.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">tokens.ex</span></a></li>
+            <span>tokens.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="url.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">url.ex</span></a></li>
+            <span>url.ex</span></a></li>
         
       </ul>
     </div>
@@ -72,13 +72,13 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L1"></a><a href="#L1">  1</a>
-<a id="L2"></a><a href="#L2">  2</a></pre>
+            <pre><a id="L1"></a><a class="lineno" href="#L1">  1</a>
+<a id="L2"></a><a class="lineno" href="#L2">  2</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Utils.URL</span><span class="w"> </span><span class="k" data-group-id="761">do</span><span class="w"></span>
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Utils.URL</span><span class="w"> </span><span class="k" data-group-id="785">do</span><span class="w"></span>
 <span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Amnesia</span><span class="w"></span></pre>
           </div>
         </td>
@@ -96,7 +96,7 @@
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p><strong>TODO</strong>: This module must be required because somehow the <code class="inline">Amnesia</code>
 module uses macros from <code class="inline">Amnesia.Helper</code> without requiring it.
@@ -116,10 +116,10 @@ we must see if this can be fixed with a PR to <code class="inline">Amnesia</code
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L6"></a><a href="#L6">  6</a>
-<a id="L7"></a><a href="#L7">  7</a>
-<a id="L8"></a><a href="#L8">  8</a>
-<a id="L9"></a><a href="#L9">  9</a></pre>
+            <pre><a id="L6"></a><a class="lineno" href="#L6">  6</a>
+<a id="L7"></a><a class="lineno" href="#L7">  7</a>
+<a id="L8"></a><a class="lineno" href="#L8">  8</a>
+<a id="L9"></a><a class="lineno" href="#L9">  9</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
@@ -127,7 +127,7 @@ we must see if this can be fixed with a PR to <code class="inline">Amnesia</code
             <pre><span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">Amnesia.Helper</span><span class="w"></span>
 <span class="w">  </span><span class="kn">alias</span><span class="w"> </span><span class="nc">Guaxinim.Database.FunctionDefinition</span><span class="w"></span>
 <span class="w">  </span><span class="kn">require</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="w"></span>
-<span class="w">  </span><span class="kn">import</span><span class="w"> </span><span class="nc">Guaxinim.Utils.Path</span><span class="p">,</span><span class="w"> </span><span class="ss">only</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="705">[</span><span class="ss">path</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="705">]</span><span class="w"></span></pre>
+<span class="w">  </span><span class="kn">import</span><span class="w"> </span><span class="nc">Guaxinim.Utils.Path</span><span class="p">,</span><span class="w"> </span><span class="ss">only</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="723">[</span><span class="ss">path</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="723">]</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -144,7 +144,7 @@ we must see if this can be fixed with a PR to <code class="inline">Amnesia</code
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <h2>Rationale</h2>
 <p>The main entry point for this module is the <code class="inline">url_for_mfa</code> function.
@@ -183,7 +183,7 @@ starts with a lowercase letter are Erlang functions from the standard library.</
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L32"></a><a href="#L32"> 32</a></pre>
+            <pre><a id="L32"></a><a class="lineno" href="#L32"> 32</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
@@ -236,12 +236,12 @@ where <code class="inline">module</code> and <code class="inline">function</code
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L37"></a><a href="#L37"> 37</a></pre>
+            <pre><a id="L37"></a><a class="lineno" href="#L37"> 37</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_for_mfa</span><span class="p" data-group-id="706">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="706">)</span><span class="w"> </span><span class="k" data-group-id="720">do</span><span class="w"></span></pre>
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_for_mfa</span><span class="p" data-group-id="724">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="724">)</span><span class="w"> </span><span class="k" data-group-id="744">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -258,7 +258,7 @@ where <code class="inline">module</code> and <code class="inline">function</code
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>We already know that we’re not dealing with an Elixir function
 from the standard library.
@@ -288,28 +288,28 @@ The Erlang functions can’t.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L48"></a><a href="#L48"> 48</a>
-<a id="L49"></a><a href="#L49"> 49</a>
-<a id="L50"></a><a href="#L50"> 50</a>
-<a id="L51"></a><a href="#L51"> 51</a>
-<a id="L52"></a><a href="#L52"> 52</a>
-<a id="L53"></a><a href="#L53"> 53</a>
-<a id="L54"></a><a href="#L54"> 54</a>
-<a id="L55"></a><a href="#L55"> 55</a>
-<a id="L56"></a><a href="#L56"> 56</a></pre>
+            <pre><a id="L48"></a><a class="lineno" href="#L48"> 48</a>
+<a id="L49"></a><a class="lineno" href="#L49"> 49</a>
+<a id="L50"></a><a class="lineno" href="#L50"> 50</a>
+<a id="L51"></a><a class="lineno" href="#L51"> 51</a>
+<a id="L52"></a><a class="lineno" href="#L52"> 52</a>
+<a id="L53"></a><a class="lineno" href="#L53"> 53</a>
+<a id="L54"></a><a class="lineno" href="#L54"> 54</a>
+<a id="L55"></a><a class="lineno" href="#L55"> 55</a>
+<a id="L56"></a><a class="lineno" href="#L56"> 56</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../database.ex.html#L14">read!</a></span><span class="p" data-group-id="707">(</span><span class="n">mfa</span><span class="p" data-group-id="707">)</span><span class="w"> </span><span class="k" data-group-id="719">do</span><span class="w"></span>
-<span class="w">      </span><span class="p" data-group-id="708">%{</span><span class="ss">internal?</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w"> </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="708">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L96">url_internal</a></span><span class="p" data-group-id="709">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="709">)</span><span class="w"></span>
+            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">FunctionDefinition</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../database.ex.html#L14">read!</a></span><span class="p" data-group-id="725">(</span><span class="n">mfa</span><span class="p" data-group-id="725">)</span><span class="w"> </span><span class="k" data-group-id="743">do</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="726">%{</span><span class="ss">internal?</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w"> </span><span class="ss">file</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="ss">line</span><span class="p">:</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="726">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L106">url_internal</a></span><span class="p" data-group-id="727">(</span><span class="n">config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="727">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">      </span><span class="p" data-group-id="710">%{</span><span class="ss">internal?</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">package</span><span class="p">:</span><span class="w"> </span><span class="n">package</span><span class="p" data-group-id="710">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L88">url_mfa_hexdocs</a></span><span class="p" data-group-id="711">(</span><span class="n">package</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="711">)</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="728">%{</span><span class="ss">internal?</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w"> </span><span class="ss">package</span><span class="p">:</span><span class="w"> </span><span class="n">package</span><span class="p" data-group-id="728">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L98">url_mfa_hexdocs</a></span><span class="p" data-group-id="729">(</span><span class="n">package</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="729">)</span><span class="w"></span>
 <span class="w"></span>
 <span class="w">      </span><span class="no">nil</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="n">mfa</span><span class="w"> </span><span class="k" data-group-id="718">do</span><span class="w"></span></pre>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="n">mfa</span><span class="w"> </span><span class="k" data-group-id="742">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -326,7 +326,7 @@ The Erlang functions can’t.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>If the module:</p>
 <ol>
@@ -353,33 +353,89 @@ The Erlang functions can’t.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L64"></a><a href="#L64"> 64</a>
-<a id="L65"></a><a href="#L65"> 65</a>
-<a id="L66"></a><a href="#L66"> 66</a>
-<a id="L67"></a><a href="#L67"> 67</a>
-<a id="L68"></a><a href="#L68"> 68</a>
-<a id="L69"></a><a href="#L69"> 69</a>
-<a id="L70"></a><a href="#L70"> 70</a>
-<a id="L71"></a><a href="#L71"> 71</a>
-<a id="L72"></a><a href="#L72"> 72</a>
-<a id="L73"></a><a href="#L73"> 73</a>
-<a id="L74"></a><a href="#L74"> 74</a>
-<a id="L75"></a><a href="#L75"> 75</a></pre>
+            <pre><a id="L64"></a><a class="lineno" href="#L64"> 64</a>
+<a id="L65"></a><a class="lineno" href="#L65"> 65</a>
+<a id="L66"></a><a class="lineno" href="#L66"> 66</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">          </span><span class="p" data-group-id="713">{</span><span class="p" data-group-id="712">&lt;&lt;</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="p" data-group-id="712">&gt;&gt;</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="713">}</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="sc">?a</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="sc">?z</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L80">url_for_builtin_erlang_module</a></span><span class="p" data-group-id="714">(</span><span class="n">mfa</span><span class="p" data-group-id="714">)</span><span class="w"></span>
+            <pre><span class="w">          </span><span class="p" data-group-id="731">{</span><span class="p" data-group-id="730">&lt;&lt;</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="p" data-group-id="730">&gt;&gt;</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_</span><span class="p" data-group-id="731">}</span><span class="w"> </span><span class="ow">when</span><span class="w"> </span><span class="sc">?a</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">m0</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="sc">?z</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L90">url_for_builtin_erlang_module</a></span><span class="p" data-group-id="732">(</span><span class="n">mfa</span><span class="p" data-group-id="732">)</span><span class="w"></span>
+<span class="w"></span></pre>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div style="display: flex;" class="guaxinim-docblock guaxinim-inline-comments">
+  <table>
+    <tbody>
+      <tr>
+        <td class="left-side">
+          <div class="line-anchors">
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-prose">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p>Built-ins packages:</p>
+
+              <div class="end-of-panel-body"></div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="guaxinim-codeblock">
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="line-anchors">
+            <pre><a id="L68"></a><a class="lineno" href="#L68"> 68</a>
+<a id="L69"></a><a class="lineno" href="#L69"> 69</a>
+<a id="L70"></a><a class="lineno" href="#L70"> 70</a>
+<a id="L71"></a><a class="lineno" href="#L71"> 71</a>
+<a id="L72"></a><a class="lineno" href="#L72"> 72</a>
+<a id="L73"></a><a class="lineno" href="#L73"> 73</a>
+<a id="L74"></a><a class="lineno" href="#L74"> 74</a>
+<a id="L75"></a><a class="lineno" href="#L75"> 75</a>
+<a id="L76"></a><a class="lineno" href="#L76"> 76</a>
+<a id="L77"></a><a class="lineno" href="#L77"> 77</a>
+<a id="L78"></a><a class="lineno" href="#L78"> 78</a>
+<a id="L79"></a><a class="lineno" href="#L79"> 79</a>
+<a id="L80"></a><a class="lineno" href="#L80"> 80</a>
+<a id="L81"></a><a class="lineno" href="#L81"> 81</a>
+<a id="L82"></a><a class="lineno" href="#L82"> 82</a>
+<a id="L83"></a><a class="lineno" href="#L83"> 83</a>
+<a id="L84"></a><a class="lineno" href="#L84"> 84</a>
+<a id="L85"></a><a class="lineno" href="#L85"> 85</a></pre>
+          </div>
+        </td>
+        <td class="right-side guaxinim-code">
+          <div class="nohighlight makeup code">
+            <pre><span class="w">          </span><span class="p" data-group-id="733">{</span><span class="s2">&quot;Elixir.EEx&quot;</span><span class="p">,</span><span class="w"> </span><span class="bp">_f</span><span class="p">,</span><span class="w"> </span><span class="bp">_a</span><span class="p" data-group-id="733">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L98">url_mfa_hexdocs</a></span><span class="p" data-group-id="734">(</span><span class="s2">&quot;eex&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="734">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">          </span><span class="p" data-group-id="715">{</span><span class="s2">&quot;EEx.&quot;</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_f</span><span class="p">,</span><span class="w"> </span><span class="bp">_a</span><span class="p" data-group-id="715">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L88">url_mfa_hexdocs</a></span><span class="p" data-group-id="716">(</span><span class="s2">&quot;eex&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="716">)</span><span class="w"></span>
+<span class="w">          </span><span class="p" data-group-id="735">{</span><span class="s2">&quot;Elixir.EEx.&quot;</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_f</span><span class="p">,</span><span class="w"> </span><span class="bp">_a</span><span class="p" data-group-id="735">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L98">url_mfa_hexdocs</a></span><span class="p" data-group-id="736">(</span><span class="s2">&quot;eex&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="736">)</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">          </span><span class="p" data-group-id="737">{</span><span class="s2">&quot;Elixir.Mix&quot;</span><span class="p">,</span><span class="w"> </span><span class="bp">_f</span><span class="p">,</span><span class="w"> </span><span class="bp">_a</span><span class="p" data-group-id="737">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L98">url_mfa_hexdocs</a></span><span class="p" data-group-id="738">(</span><span class="s2">&quot;mix&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="738">)</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">          </span><span class="p" data-group-id="739">{</span><span class="s2">&quot;Elixir.Mix.&quot;</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="bp">_</span><span class="p">,</span><span class="w"> </span><span class="bp">_f</span><span class="p">,</span><span class="w"> </span><span class="bp">_a</span><span class="p" data-group-id="739">}</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
+<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L98">url_mfa_hexdocs</a></span><span class="p" data-group-id="740">(</span><span class="s2">&quot;mix&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="740">)</span><span class="w"></span>
 <span class="w"></span>
 <span class="w">          </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"></span>
-<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L88">url_mfa_hexdocs</a></span><span class="p" data-group-id="717">(</span><span class="s2">&quot;elixir&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="717">)</span><span class="w"></span>
-<span class="w">        </span><span class="k" data-group-id="718">end</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="719">end</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="720">end</span><span class="w"></span>
+<span class="w">            </span><span class="n"><a class="guaxinim-source-link" href="#L98">url_mfa_hexdocs</a></span><span class="p" data-group-id="741">(</span><span class="s2">&quot;elixir&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">mfa</span><span class="p" data-group-id="741">)</span><span class="w"></span>
+<span class="w">        </span><span class="k" data-group-id="742">end</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="743">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="744">end</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -428,12 +484,12 @@ The Erlang functions can’t.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L80"></a><a href="#L80"> 80</a></pre>
+            <pre><a id="L90"></a><a class="lineno" href="#L90"> 90</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_for_builtin_erlang_module</span><span class="p" data-group-id="722">(</span><span class="p" data-group-id="721">{</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p" data-group-id="721">}</span><span class="p" data-group-id="722">)</span><span class="w"> </span><span class="k" data-group-id="732">do</span><span class="w"></span></pre>
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_for_builtin_erlang_module</span><span class="p" data-group-id="746">(</span><span class="p" data-group-id="745">{</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p" data-group-id="745">}</span><span class="p" data-group-id="746">)</span><span class="w"> </span><span class="k" data-group-id="756">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -450,7 +506,7 @@ The Erlang functions can’t.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Thankfully the Erlang docs follow a predictable format.</p>
 
@@ -468,15 +524,15 @@ The Erlang functions can’t.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L82"></a><a href="#L82"> 82</a>
-<a id="L83"></a><a href="#L83"> 83</a>
-<a id="L84"></a><a href="#L84"> 84</a></pre>
+            <pre><a id="L92"></a><a class="lineno" href="#L92"> 92</a>
+<a id="L93"></a><a class="lineno" href="#L93"> 93</a>
+<a id="L94"></a><a class="lineno" href="#L94"> 94</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="s2">&quot;http://erlang.org/doc/man/</span><span class="si" data-group-id="725">#{</span><span class="n">m</span><span class="si" data-group-id="725">}</span><span class="s2">.html#</span><span class="si" data-group-id="728">#{</span><span class="n">f</span><span class="si" data-group-id="728">}</span><span class="s2">-</span><span class="si" data-group-id="731">#{</span><span class="n">a</span><span class="si" data-group-id="731">}</span><span class="s2">&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="732">end</span><span class="w"></span>
+            <pre><span class="w">    </span><span class="s2">&quot;http://erlang.org/doc/man/</span><span class="si" data-group-id="749">#{</span><span class="n">m</span><span class="si" data-group-id="749">}</span><span class="s2">.html#</span><span class="si" data-group-id="752">#{</span><span class="n">f</span><span class="si" data-group-id="752">}</span><span class="s2">-</span><span class="si" data-group-id="755">#{</span><span class="n">a</span><span class="si" data-group-id="755">}</span><span class="s2">&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="756">end</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -524,19 +580,19 @@ The Erlang functions can’t.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L88"></a><a href="#L88"> 88</a>
-<a id="L89"></a><a href="#L89"> 89</a>
-<a id="L90"></a><a href="#L90"> 90</a>
-<a id="L91"></a><a href="#L91"> 91</a>
-<a id="L92"></a><a href="#L92"> 92</a></pre>
+            <pre><a id="L98"></a><a class="lineno" href="#L98"> 98</a>
+<a id="L99"></a><a class="lineno" href="#L99"> 99</a>
+<a id="L100"></a><a class="lineno" href="#L100">100</a>
+<a id="L101"></a><a class="lineno" href="#L101">101</a>
+<a id="L102"></a><a class="lineno" href="#L102">102</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_mfa_hexdocs</span><span class="p" data-group-id="734">(</span><span class="n">package</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="733">{</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p" data-group-id="733">}</span><span class="p" data-group-id="734">)</span><span class="w"> </span><span class="k" data-group-id="748">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">trimmed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/String.html#trim_leading/2">trim_leading</a></span><span class="p" data-group-id="735">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Elixir.&quot;</span><span class="p" data-group-id="735">)</span><span class="w"></span>
-<span class="w">    </span><span class="s2">&quot;https://hexdocs.pm/</span><span class="si" data-group-id="738">#{</span><span class="n">package</span><span class="si" data-group-id="738">}</span><span class="s2">/</span><span class="si" data-group-id="741">#{</span><span class="n">trimmed</span><span class="si" data-group-id="741">}</span><span class="s2">.html#</span><span class="si" data-group-id="744">#{</span><span class="n">f</span><span class="si" data-group-id="744">}</span><span class="s2">/</span><span class="si" data-group-id="747">#{</span><span class="n">a</span><span class="si" data-group-id="747">}</span><span class="s2">&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="748">end</span><span class="w"></span>
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_mfa_hexdocs</span><span class="p" data-group-id="758">(</span><span class="n">package</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="757">{</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p" data-group-id="757">}</span><span class="p" data-group-id="758">)</span><span class="w"> </span><span class="k" data-group-id="772">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">trimmed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">String</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/String.html#trim_leading/2">trim_leading</a></span><span class="p" data-group-id="759">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Elixir.&quot;</span><span class="p" data-group-id="759">)</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;https://hexdocs.pm/</span><span class="si" data-group-id="762">#{</span><span class="n">package</span><span class="si" data-group-id="762">}</span><span class="s2">/</span><span class="si" data-group-id="765">#{</span><span class="n">trimmed</span><span class="si" data-group-id="765">}</span><span class="s2">.html#</span><span class="si" data-group-id="768">#{</span><span class="n">f</span><span class="si" data-group-id="768">}</span><span class="s2">/</span><span class="si" data-group-id="771">#{</span><span class="n">a</span><span class="si" data-group-id="771">}</span><span class="s2">&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="772">end</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -584,14 +640,14 @@ The Erlang functions can’t.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L96"></a><a href="#L96"> 96</a>
-<a id="L97"></a><a href="#L97"> 97</a></pre>
+            <pre><a id="L106"></a><a class="lineno" href="#L106">106</a>
+<a id="L107"></a><a class="lineno" href="#L107">107</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_internal</span><span class="p" data-group-id="749">(</span><span class="bp">_config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="749">)</span><span class="w"> </span><span class="k" data-group-id="760">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="path.ex.html#L11">path</a></span><span class="p" data-group-id="750">(</span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="750">)</span><span class="w"></span></pre>
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">url_internal</span><span class="p" data-group-id="773">(</span><span class="bp">_config</span><span class="p">,</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="n">dst</span><span class="p">,</span><span class="w"> </span><span class="n">line</span><span class="p" data-group-id="773">)</span><span class="w"> </span><span class="k" data-group-id="784">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">base</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="path.ex.html#L11">path</a></span><span class="p" data-group-id="774">(</span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">src</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">dst</span><span class="p" data-group-id="774">)</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -608,7 +664,7 @@ The Erlang functions can’t.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Link to the anchor of the line where the function is defined:</p>
 
@@ -626,24 +682,24 @@ The Erlang functions can’t.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L99"></a><a href="#L99"> 99</a>
-<a id="L100"></a><a href="#L100">100</a>
-<a id="L101"></a><a href="#L101">101</a>
-<a id="L102"></a><a href="#L102">102</a>
-<a id="L103"></a><a href="#L103">103</a>
-<a id="L104"></a><a href="#L104">104</a>
-<a id="L105"></a><a href="#L105">105</a></pre>
+            <pre><a id="L109"></a><a class="lineno" href="#L109">109</a>
+<a id="L110"></a><a class="lineno" href="#L110">110</a>
+<a id="L111"></a><a class="lineno" href="#L111">111</a>
+<a id="L112"></a><a class="lineno" href="#L112">112</a>
+<a id="L113"></a><a class="lineno" href="#L113">113</a>
+<a id="L114"></a><a class="lineno" href="#L114">114</a>
+<a id="L115"></a><a class="lineno" href="#L115">115</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="k" data-group-id="759">do</span><span class="w"></span>
-<span class="w">      </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s2">&quot;#L</span><span class="si" data-group-id="753">#{</span><span class="n">line</span><span class="si" data-group-id="753">}</span><span class="s2">&quot;</span><span class="w"></span>
-<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si" data-group-id="755">#{</span><span class="n">base</span><span class="si" data-group-id="755">}</span><span class="s2">.html#L</span><span class="si" data-group-id="758">#{</span><span class="n">line</span><span class="si" data-group-id="758">}</span><span class="s2">&quot;</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="759">end</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="760">end</span><span class="w"></span>
+            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="k" data-group-id="783">do</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s2">&quot;#L</span><span class="si" data-group-id="777">#{</span><span class="n">line</span><span class="si" data-group-id="777">}</span><span class="s2">&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="s2">&quot;</span><span class="si" data-group-id="779">#{</span><span class="n">base</span><span class="si" data-group-id="779">}</span><span class="s2">.html#L</span><span class="si" data-group-id="782">#{</span><span class="n">line</span><span class="si" data-group-id="782">}</span><span class="s2">&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="783">end</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="784">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="k" data-group-id="761">end</span></pre>
+<span class="k" data-group-id="785">end</span></pre>
           </div>
         </td>
       </tr>

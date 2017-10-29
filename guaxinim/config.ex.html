@@ -34,7 +34,7 @@
           <a class="reference internal" href="..">
             <span class="glyphicon glyphicon-level-up"></span>
             &nbsp;
-            <span class="sidebar-toc-level-up">../</span></a></li>
+            <span>../</span></a></li>
         
         
         
@@ -42,19 +42,19 @@
           <a class="reference internal" href="internal">
             <span class="glyphicon glyphicon-folder-open"></span>
             &nbsp;
-            <span class="sidebar-toc-directory">internal/</span></a></li>
+            <span>internal/</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="templates">
             <span class="glyphicon glyphicon-folder-open"></span>
             &nbsp;
-            <span class="sidebar-toc-directory">templates/</span></a></li>
+            <span>templates/</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="utils">
             <span class="glyphicon glyphicon-folder-open"></span>
             &nbsp;
-            <span class="sidebar-toc-directory">utils/</span></a></li>
+            <span>utils/</span></a></li>
         
         
         
@@ -62,25 +62,25 @@
           <a class="reference internal" href="ast_inspector.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">ast_inspector.ex</span></a></li>
+            <span>ast_inspector.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="beam_inspector.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">beam_inspector.ex</span></a></li>
+            <span>beam_inspector.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="config.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">config.ex</span></a></li>
+            <span>config.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="database.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">database.ex</span></a></li>
+            <span>database.ex</span></a></li>
         
       </ul>
     </div>
@@ -96,35 +96,35 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L1"></a><a href="#L1"> 1</a>
-<a id="L2"></a><a href="#L2"> 2</a>
-<a id="L3"></a><a href="#L3"> 3</a>
-<a id="L4"></a><a href="#L4"> 4</a>
-<a id="L5"></a><a href="#L5"> 5</a>
-<a id="L6"></a><a href="#L6"> 6</a>
-<a id="L7"></a><a href="#L7"> 7</a>
-<a id="L8"></a><a href="#L8"> 8</a>
-<a id="L9"></a><a href="#L9"> 9</a>
-<a id="L10"></a><a href="#L10">10</a>
-<a id="L11"></a><a href="#L11">11</a>
-<a id="L12"></a><a href="#L12">12</a>
-<a id="L13"></a><a href="#L13">13</a></pre>
+            <pre><a id="L1"></a><a class="lineno" href="#L1"> 1</a>
+<a id="L2"></a><a class="lineno" href="#L2"> 2</a>
+<a id="L3"></a><a class="lineno" href="#L3"> 3</a>
+<a id="L4"></a><a class="lineno" href="#L4"> 4</a>
+<a id="L5"></a><a class="lineno" href="#L5"> 5</a>
+<a id="L6"></a><a class="lineno" href="#L6"> 6</a>
+<a id="L7"></a><a class="lineno" href="#L7"> 7</a>
+<a id="L8"></a><a class="lineno" href="#L8"> 8</a>
+<a id="L9"></a><a class="lineno" href="#L9"> 9</a>
+<a id="L10"></a><a class="lineno" href="#L10">10</a>
+<a id="L11"></a><a class="lineno" href="#L11">11</a>
+<a id="L12"></a><a class="lineno" href="#L12">12</a>
+<a id="L13"></a><a class="lineno" href="#L13">13</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Config</span><span class="w"> </span><span class="k" data-group-id="326">do</span><span class="w"></span>
-<span class="w">  </span><span class="kd">defstruct</span><span class="w"> </span><span class="p" data-group-id="314">[</span><span class="w"></span>
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Config</span><span class="w"> </span><span class="k" data-group-id="327">do</span><span class="w"></span>
+<span class="w">  </span><span class="kd">defstruct</span><span class="w"> </span><span class="p" data-group-id="315">[</span><span class="w"></span>
 <span class="w">    </span><span class="ss">src</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="ss">dst</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="ss">project_title</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="314">]</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="315">]</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">from_mix</span><span class="p" data-group-id="315">()</span><span class="w"> </span><span class="k" data-group-id="325">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">guaxinim_user_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/3">get</a></span><span class="p" data-group-id="318">(</span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Mix.Project.html#config/0">config</a></span><span class="p" data-group-id="316">()</span><span class="p">,</span><span class="w"> </span><span class="ss">:guaxinim</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="317">[]</span><span class="p" data-group-id="318">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/3">get</a></span><span class="p" data-group-id="319">(</span><span class="n">guaxinim_user_config</span><span class="p">,</span><span class="w"> </span><span class="ss">:src</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;lib&quot;</span><span class="p" data-group-id="319">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">dst</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/3">get</a></span><span class="p" data-group-id="320">(</span><span class="n">guaxinim_user_config</span><span class="p">,</span><span class="w"> </span><span class="ss">:dst</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;literate&quot;</span><span class="p" data-group-id="320">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">project_title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/3">get</a></span><span class="p" data-group-id="321">(</span><span class="n">guaxinim_user_config</span><span class="p">,</span><span class="w"> </span><span class="ss">:project_title</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Add Title...&quot;</span><span class="p" data-group-id="321">)</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">from_mix</span><span class="p" data-group-id="316">()</span><span class="w"> </span><span class="k" data-group-id="326">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">guaxinim_user_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/3">get</a></span><span class="p" data-group-id="319">(</span><span class="nc">Mix.Project</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/mix/Mix.Project.html#config/0">config</a></span><span class="p" data-group-id="317">()</span><span class="p">,</span><span class="w"> </span><span class="ss">:guaxinim</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="318">[]</span><span class="p" data-group-id="319">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">src</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/3">get</a></span><span class="p" data-group-id="320">(</span><span class="n">guaxinim_user_config</span><span class="p">,</span><span class="w"> </span><span class="ss">:src</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;lib&quot;</span><span class="p" data-group-id="320">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">dst</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/3">get</a></span><span class="p" data-group-id="321">(</span><span class="n">guaxinim_user_config</span><span class="p">,</span><span class="w"> </span><span class="ss">:dst</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;literate&quot;</span><span class="p" data-group-id="321">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">project_title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Keyword</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Keyword.html#get/3">get</a></span><span class="p" data-group-id="322">(</span><span class="n">guaxinim_user_config</span><span class="p">,</span><span class="w"> </span><span class="ss">:project_title</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Add Title...&quot;</span><span class="p" data-group-id="322">)</span><span class="w"></span>
 <span class="w"></span></pre>
           </div>
         </td>
@@ -142,7 +142,7 @@
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Paths will be relative to the mix project’s root</p>
 
@@ -160,24 +160,24 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L15"></a><a href="#L15">15</a>
-<a id="L16"></a><a href="#L16">16</a>
-<a id="L17"></a><a href="#L17">17</a>
-<a id="L18"></a><a href="#L18">18</a>
-<a id="L19"></a><a href="#L19">19</a>
-<a id="L20"></a><a href="#L20">20</a>
-<a id="L21"></a><a href="#L21">21</a></pre>
+            <pre><a id="L15"></a><a class="lineno" href="#L15">15</a>
+<a id="L16"></a><a class="lineno" href="#L16">16</a>
+<a id="L17"></a><a class="lineno" href="#L17">17</a>
+<a id="L18"></a><a class="lineno" href="#L18">18</a>
+<a id="L19"></a><a class="lineno" href="#L19">19</a>
+<a id="L20"></a><a class="lineno" href="#L20">20</a>
+<a id="L21"></a><a class="lineno" href="#L21">21</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="p">%</span><span class="bp">__MODULE__</span><span class="p" data-group-id="324">{</span><span class="w"></span>
-<span class="w">      </span><span class="ss">src</span><span class="p">:</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#absname/1">absname</a></span><span class="p" data-group-id="322">(</span><span class="n">src</span><span class="p" data-group-id="322">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="ss">dst</span><span class="p">:</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#absname/1">absname</a></span><span class="p" data-group-id="323">(</span><span class="n">dst</span><span class="p" data-group-id="323">)</span><span class="p">,</span><span class="w"></span>
+            <pre><span class="w">    </span><span class="p">%</span><span class="bp">__MODULE__</span><span class="p" data-group-id="325">{</span><span class="w"></span>
+<span class="w">      </span><span class="ss">src</span><span class="p">:</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#absname/1">absname</a></span><span class="p" data-group-id="323">(</span><span class="n">src</span><span class="p" data-group-id="323">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="ss">dst</span><span class="p">:</span><span class="w"> </span><span class="nc">Path</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/Path.html#absname/1">absname</a></span><span class="p" data-group-id="324">(</span><span class="n">dst</span><span class="p" data-group-id="324">)</span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="ss">project_title</span><span class="p">:</span><span class="w"> </span><span class="n">project_title</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="324">}</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="325">end</span><span class="w"></span>
-<span class="k" data-group-id="326">end</span></pre>
+<span class="w">    </span><span class="p" data-group-id="325">}</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="326">end</span><span class="w"></span>
+<span class="k" data-group-id="327">end</span></pre>
           </div>
         </td>
       </tr>

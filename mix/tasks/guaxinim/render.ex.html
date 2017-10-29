@@ -34,7 +34,7 @@
           <a class="reference internal" href="..">
             <span class="glyphicon glyphicon-level-up"></span>
             &nbsp;
-            <span class="sidebar-toc-level-up">../</span></a></li>
+            <span>../</span></a></li>
         
         
         
@@ -44,7 +44,7 @@
           <a class="reference internal" href="render.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">render.ex</span></a></li>
+            <span>render.ex</span></a></li>
         
       </ul>
     </div>
@@ -60,12 +60,12 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L1"></a><a href="#L1"> 1</a></pre>
+            <pre><a id="L1"></a><a class="lineno" href="#L1"> 1</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Mix.Tasks.Guaxinim.Render</span><span class="w"> </span><span class="k" data-group-id="789">do</span><span class="w"></span></pre>
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Mix.Tasks.Guaxinim.Render</span><span class="w"> </span><span class="k" data-group-id="813">do</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -116,7 +116,7 @@
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>This is all rather hacky.
 I don’t know where the Mnesia database is being created.
@@ -136,7 +136,7 @@ I’ll have to find out if I ever want to implement some kind of caching.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L8"></a><a href="#L8"> 8</a></pre>
+            <pre><a id="L8"></a><a class="lineno" href="#L8"> 8</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
@@ -158,7 +158,7 @@ I’ll have to find out if I ever want to implement some kind of caching.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>This task is extremely wasteful, generating and destroying
 the database each time it is run.
@@ -187,14 +187,14 @@ and for those cases we can’t afford to have stale values in the tables.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L23"></a><a href="#L23">23</a>
-<a id="L24"></a><a href="#L24">24</a></pre>
+            <pre><a id="L23"></a><a class="lineno" href="#L23">23</a>
+<a id="L24"></a><a class="lineno" href="#L24">24</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">run</span><span class="p" data-group-id="775">(</span><span class="bp">_args</span><span class="p" data-group-id="775">)</span><span class="w"> </span><span class="k" data-group-id="788">do</span><span class="w"></span>
-<span class="w">    </span><span class="nc">Amnesia</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/amnesia/Amnesia.html#start/0">start</a></span><span class="p" data-group-id="776">()</span><span class="w"></span></pre>
+            <pre><span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">run</span><span class="p" data-group-id="799">(</span><span class="bp">_args</span><span class="p" data-group-id="799">)</span><span class="w"> </span><span class="k" data-group-id="812">do</span><span class="w"></span>
+<span class="w">    </span><span class="nc">Amnesia</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/amnesia/Amnesia.html#start/0">start</a></span><span class="p" data-group-id="800">()</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -211,7 +211,7 @@ and for those cases we can’t afford to have stale values in the tables.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Try to create a schema</p>
 
@@ -229,18 +229,18 @@ and for those cases we can’t afford to have stale values in the tables.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L26"></a><a href="#L26">26</a>
-<a id="L27"></a><a href="#L27">27</a>
-<a id="L28"></a><a href="#L28">28</a>
-<a id="L29"></a><a href="#L29">29</a></pre>
+            <pre><a id="L26"></a><a class="lineno" href="#L26">26</a>
+<a id="L27"></a><a class="lineno" href="#L27">27</a>
+<a id="L28"></a><a class="lineno" href="#L28">28</a>
+<a id="L29"></a><a class="lineno" href="#L29">29</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">Amnesia.Schema</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/amnesia/Amnesia.Schema.html#create/0">create</a></span><span class="p" data-group-id="777">()</span><span class="w"> </span><span class="k" data-group-id="780">do</span><span class="w"></span>
-<span class="w">      </span><span class="ss">:ok</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="778">(</span><span class="s2">&quot;Created schema.&quot;</span><span class="p" data-group-id="778">)</span><span class="w"></span>
-<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="779">(</span><span class="s2">&quot;Schema already exists.&quot;</span><span class="p" data-group-id="779">)</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="780">end</span><span class="w"></span></pre>
+            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">Amnesia.Schema</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/amnesia/Amnesia.Schema.html#create/0">create</a></span><span class="p" data-group-id="801">()</span><span class="w"> </span><span class="k" data-group-id="804">do</span><span class="w"></span>
+<span class="w">      </span><span class="ss">:ok</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="802">(</span><span class="s2">&quot;Created schema.&quot;</span><span class="p" data-group-id="802">)</span><span class="w"></span>
+<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="803">(</span><span class="s2">&quot;Schema already exists.&quot;</span><span class="p" data-group-id="803">)</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="804">end</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -257,7 +257,7 @@ and for those cases we can’t afford to have stale values in the tables.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Destroy the old version of the database, if it exists.</p>
 
@@ -275,12 +275,12 @@ and for those cases we can’t afford to have stale values in the tables.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L31"></a><a href="#L31">31</a></pre>
+            <pre><a id="L31"></a><a class="lineno" href="#L31">31</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim/database.ex.html#L12">destroy</a></span><span class="p" data-group-id="781">()</span><span class="w"></span></pre>
+            <pre><span class="w">    </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim/database.ex.html#L12">destroy</a></span><span class="p" data-group-id="805">()</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -297,7 +297,7 @@ and for those cases we can’t afford to have stale values in the tables.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Create the database</p>
 
@@ -315,18 +315,18 @@ and for those cases we can’t afford to have stale values in the tables.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L33"></a><a href="#L33">33</a>
-<a id="L34"></a><a href="#L34">34</a>
-<a id="L35"></a><a href="#L35">35</a>
-<a id="L36"></a><a href="#L36">36</a></pre>
+            <pre><a id="L33"></a><a class="lineno" href="#L33">33</a>
+<a id="L34"></a><a class="lineno" href="#L34">34</a>
+<a id="L35"></a><a class="lineno" href="#L35">35</a>
+<a id="L36"></a><a class="lineno" href="#L36">36</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim/database.ex.html#L12">create</a></span><span class="p" data-group-id="782">()</span><span class="w"> </span><span class="k" data-group-id="785">do</span><span class="w"></span>
-<span class="w">      </span><span class="ss">:ok</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="783">(</span><span class="s2">&quot;Created database.&quot;</span><span class="p" data-group-id="783">)</span><span class="w"></span>
-<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="784">(</span><span class="s2">&quot;Database already exists.&quot;</span><span class="p" data-group-id="784">)</span><span class="w"></span>
-<span class="w">    </span><span class="k" data-group-id="785">end</span><span class="w"></span></pre>
+            <pre><span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="nc">Guaxinim.Database</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim/database.ex.html#L12">create</a></span><span class="p" data-group-id="806">()</span><span class="w"> </span><span class="k" data-group-id="809">do</span><span class="w"></span>
+<span class="w">      </span><span class="ss">:ok</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="807">(</span><span class="s2">&quot;Created database.&quot;</span><span class="p" data-group-id="807">)</span><span class="w"></span>
+<span class="w">      </span><span class="bp">_</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="808">(</span><span class="s2">&quot;Database already exists.&quot;</span><span class="p" data-group-id="808">)</span><span class="w"></span>
+<span class="w">    </span><span class="k" data-group-id="809">end</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>
@@ -343,7 +343,7 @@ and for those cases we can’t afford to have stale values in the tables.</p>
           </div>
         </td>
         <td class="right-side guaxinim-prose">
-          <div class="panel panel-default" style="margin-bottom: 4px">
+          <div class="panel panel-default">
             <div class="panel-body">
               <p>Render the project</p>
 
@@ -361,18 +361,18 @@ and for those cases we can’t afford to have stale values in the tables.</p>
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L38"></a><a href="#L38">38</a>
-<a id="L39"></a><a href="#L39">39</a>
-<a id="L40"></a><a href="#L40">40</a>
-<a id="L41"></a><a href="#L41">41</a></pre>
+            <pre><a id="L38"></a><a class="lineno" href="#L38">38</a>
+<a id="L39"></a><a class="lineno" href="#L39">39</a>
+<a id="L40"></a><a class="lineno" href="#L40">40</a>
+<a id="L41"></a><a class="lineno" href="#L41">41</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="w">    </span><span class="nc">Guaxinim</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim.ex.html#L41">run</a></span><span class="p" data-group-id="786">()</span><span class="w"></span>
-<span class="w">    </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="787">(</span><span class="s2">&quot;Project rendered.&quot;</span><span class="p" data-group-id="787">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="788">end</span><span class="w"></span>
-<span class="k" data-group-id="789">end</span><span class="w"></span></pre>
+            <pre><span class="w">    </span><span class="nc">Guaxinim</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="../../../guaxinim.ex.html#L46">run</a></span><span class="p" data-group-id="810">()</span><span class="w"></span>
+<span class="w">    </span><span class="nc">IO</span><span class="o">.</span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/elixir/IO.html#puts/1">puts</a></span><span class="p" data-group-id="811">(</span><span class="s2">&quot;Project rendered.&quot;</span><span class="p" data-group-id="811">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="812">end</span><span class="w"></span>
+<span class="k" data-group-id="813">end</span><span class="w"></span></pre>
           </div>
         </td>
       </tr>

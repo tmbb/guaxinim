@@ -34,7 +34,7 @@
           <a class="reference internal" href="..">
             <span class="glyphicon glyphicon-level-up"></span>
             &nbsp;
-            <span class="sidebar-toc-level-up">../</span></a></li>
+            <span>../</span></a></li>
         
         
         
@@ -44,25 +44,25 @@
           <a class="reference internal" href="helper.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">helper.ex</span></a></li>
+            <span>helper.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="source_formatter.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">source_formatter.ex</span></a></li>
+            <span>source_formatter.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="source_parser.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">source_parser.ex</span></a></li>
+            <span>source_parser.ex</span></a></li>
         
         <li class="toctree-l1">
           <a class="reference internal" href="source_processor.ex.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file">source_processor.ex</span></a></li>
+            <span>source_processor.ex</span></a></li>
         
       </ul>
     </div>
@@ -78,268 +78,268 @@
       <tr>
         <td>
           <div class="line-anchors">
-            <pre><a id="L1"></a><a href="#L1">  1</a>
-<a id="L2"></a><a href="#L2">  2</a>
-<a id="L3"></a><a href="#L3">  3</a>
-<a id="L4"></a><a href="#L4">  4</a>
-<a id="L5"></a><a href="#L5">  5</a>
-<a id="L6"></a><a href="#L6">  6</a>
-<a id="L7"></a><a href="#L7">  7</a>
-<a id="L8"></a><a href="#L8">  8</a>
-<a id="L9"></a><a href="#L9">  9</a>
-<a id="L10"></a><a href="#L10"> 10</a>
-<a id="L11"></a><a href="#L11"> 11</a>
-<a id="L12"></a><a href="#L12"> 12</a>
-<a id="L13"></a><a href="#L13"> 13</a>
-<a id="L14"></a><a href="#L14"> 14</a>
-<a id="L15"></a><a href="#L15"> 15</a>
-<a id="L16"></a><a href="#L16"> 16</a>
-<a id="L17"></a><a href="#L17"> 17</a>
-<a id="L18"></a><a href="#L18"> 18</a>
-<a id="L19"></a><a href="#L19"> 19</a>
-<a id="L20"></a><a href="#L20"> 20</a>
-<a id="L21"></a><a href="#L21"> 21</a>
-<a id="L22"></a><a href="#L22"> 22</a>
-<a id="L23"></a><a href="#L23"> 23</a>
-<a id="L24"></a><a href="#L24"> 24</a>
-<a id="L25"></a><a href="#L25"> 25</a>
-<a id="L26"></a><a href="#L26"> 26</a>
-<a id="L27"></a><a href="#L27"> 27</a>
-<a id="L28"></a><a href="#L28"> 28</a>
-<a id="L29"></a><a href="#L29"> 29</a>
-<a id="L30"></a><a href="#L30"> 30</a>
-<a id="L31"></a><a href="#L31"> 31</a>
-<a id="L32"></a><a href="#L32"> 32</a>
-<a id="L33"></a><a href="#L33"> 33</a>
-<a id="L34"></a><a href="#L34"> 34</a>
-<a id="L35"></a><a href="#L35"> 35</a>
-<a id="L36"></a><a href="#L36"> 36</a>
-<a id="L37"></a><a href="#L37"> 37</a>
-<a id="L38"></a><a href="#L38"> 38</a>
-<a id="L39"></a><a href="#L39"> 39</a>
-<a id="L40"></a><a href="#L40"> 40</a>
-<a id="L41"></a><a href="#L41"> 41</a>
-<a id="L42"></a><a href="#L42"> 42</a>
-<a id="L43"></a><a href="#L43"> 43</a>
-<a id="L44"></a><a href="#L44"> 44</a>
-<a id="L45"></a><a href="#L45"> 45</a>
-<a id="L46"></a><a href="#L46"> 46</a>
-<a id="L47"></a><a href="#L47"> 47</a>
-<a id="L48"></a><a href="#L48"> 48</a>
-<a id="L49"></a><a href="#L49"> 49</a>
-<a id="L50"></a><a href="#L50"> 50</a>
-<a id="L51"></a><a href="#L51"> 51</a>
-<a id="L52"></a><a href="#L52"> 52</a>
-<a id="L53"></a><a href="#L53"> 53</a>
-<a id="L54"></a><a href="#L54"> 54</a>
-<a id="L55"></a><a href="#L55"> 55</a>
-<a id="L56"></a><a href="#L56"> 56</a>
-<a id="L57"></a><a href="#L57"> 57</a>
-<a id="L58"></a><a href="#L58"> 58</a>
-<a id="L59"></a><a href="#L59"> 59</a>
-<a id="L60"></a><a href="#L60"> 60</a>
-<a id="L61"></a><a href="#L61"> 61</a>
-<a id="L62"></a><a href="#L62"> 62</a>
-<a id="L63"></a><a href="#L63"> 63</a>
-<a id="L64"></a><a href="#L64"> 64</a>
-<a id="L65"></a><a href="#L65"> 65</a>
-<a id="L66"></a><a href="#L66"> 66</a>
-<a id="L67"></a><a href="#L67"> 67</a>
-<a id="L68"></a><a href="#L68"> 68</a>
-<a id="L69"></a><a href="#L69"> 69</a>
-<a id="L70"></a><a href="#L70"> 70</a>
-<a id="L71"></a><a href="#L71"> 71</a>
-<a id="L72"></a><a href="#L72"> 72</a>
-<a id="L73"></a><a href="#L73"> 73</a>
-<a id="L74"></a><a href="#L74"> 74</a>
-<a id="L75"></a><a href="#L75"> 75</a>
-<a id="L76"></a><a href="#L76"> 76</a>
-<a id="L77"></a><a href="#L77"> 77</a>
-<a id="L78"></a><a href="#L78"> 78</a>
-<a id="L79"></a><a href="#L79"> 79</a>
-<a id="L80"></a><a href="#L80"> 80</a>
-<a id="L81"></a><a href="#L81"> 81</a>
-<a id="L82"></a><a href="#L82"> 82</a>
-<a id="L83"></a><a href="#L83"> 83</a>
-<a id="L84"></a><a href="#L84"> 84</a>
-<a id="L85"></a><a href="#L85"> 85</a>
-<a id="L86"></a><a href="#L86"> 86</a>
-<a id="L87"></a><a href="#L87"> 87</a>
-<a id="L88"></a><a href="#L88"> 88</a>
-<a id="L89"></a><a href="#L89"> 89</a>
-<a id="L90"></a><a href="#L90"> 90</a>
-<a id="L91"></a><a href="#L91"> 91</a>
-<a id="L92"></a><a href="#L92"> 92</a>
-<a id="L93"></a><a href="#L93"> 93</a>
-<a id="L94"></a><a href="#L94"> 94</a>
-<a id="L95"></a><a href="#L95"> 95</a>
-<a id="L96"></a><a href="#L96"> 96</a>
-<a id="L97"></a><a href="#L97"> 97</a>
-<a id="L98"></a><a href="#L98"> 98</a>
-<a id="L99"></a><a href="#L99"> 99</a>
-<a id="L100"></a><a href="#L100">100</a>
-<a id="L101"></a><a href="#L101">101</a>
-<a id="L102"></a><a href="#L102">102</a>
-<a id="L103"></a><a href="#L103">103</a>
-<a id="L104"></a><a href="#L104">104</a>
-<a id="L105"></a><a href="#L105">105</a>
-<a id="L106"></a><a href="#L106">106</a>
-<a id="L107"></a><a href="#L107">107</a>
-<a id="L108"></a><a href="#L108">108</a>
-<a id="L109"></a><a href="#L109">109</a>
-<a id="L110"></a><a href="#L110">110</a>
-<a id="L111"></a><a href="#L111">111</a>
-<a id="L112"></a><a href="#L112">112</a>
-<a id="L113"></a><a href="#L113">113</a>
-<a id="L114"></a><a href="#L114">114</a>
-<a id="L115"></a><a href="#L115">115</a>
-<a id="L116"></a><a href="#L116">116</a>
-<a id="L117"></a><a href="#L117">117</a>
-<a id="L118"></a><a href="#L118">118</a>
-<a id="L119"></a><a href="#L119">119</a>
-<a id="L120"></a><a href="#L120">120</a>
-<a id="L121"></a><a href="#L121">121</a>
-<a id="L122"></a><a href="#L122">122</a>
-<a id="L123"></a><a href="#L123">123</a>
-<a id="L124"></a><a href="#L124">124</a>
-<a id="L125"></a><a href="#L125">125</a>
-<a id="L126"></a><a href="#L126">126</a>
-<a id="L127"></a><a href="#L127">127</a>
-<a id="L128"></a><a href="#L128">128</a>
-<a id="L129"></a><a href="#L129">129</a></pre>
+            <pre><a id="L1"></a><a class="lineno" href="#L1">  1</a>
+<a id="L2"></a><a class="lineno" href="#L2">  2</a>
+<a id="L3"></a><a class="lineno" href="#L3">  3</a>
+<a id="L4"></a><a class="lineno" href="#L4">  4</a>
+<a id="L5"></a><a class="lineno" href="#L5">  5</a>
+<a id="L6"></a><a class="lineno" href="#L6">  6</a>
+<a id="L7"></a><a class="lineno" href="#L7">  7</a>
+<a id="L8"></a><a class="lineno" href="#L8">  8</a>
+<a id="L9"></a><a class="lineno" href="#L9">  9</a>
+<a id="L10"></a><a class="lineno" href="#L10"> 10</a>
+<a id="L11"></a><a class="lineno" href="#L11"> 11</a>
+<a id="L12"></a><a class="lineno" href="#L12"> 12</a>
+<a id="L13"></a><a class="lineno" href="#L13"> 13</a>
+<a id="L14"></a><a class="lineno" href="#L14"> 14</a>
+<a id="L15"></a><a class="lineno" href="#L15"> 15</a>
+<a id="L16"></a><a class="lineno" href="#L16"> 16</a>
+<a id="L17"></a><a class="lineno" href="#L17"> 17</a>
+<a id="L18"></a><a class="lineno" href="#L18"> 18</a>
+<a id="L19"></a><a class="lineno" href="#L19"> 19</a>
+<a id="L20"></a><a class="lineno" href="#L20"> 20</a>
+<a id="L21"></a><a class="lineno" href="#L21"> 21</a>
+<a id="L22"></a><a class="lineno" href="#L22"> 22</a>
+<a id="L23"></a><a class="lineno" href="#L23"> 23</a>
+<a id="L24"></a><a class="lineno" href="#L24"> 24</a>
+<a id="L25"></a><a class="lineno" href="#L25"> 25</a>
+<a id="L26"></a><a class="lineno" href="#L26"> 26</a>
+<a id="L27"></a><a class="lineno" href="#L27"> 27</a>
+<a id="L28"></a><a class="lineno" href="#L28"> 28</a>
+<a id="L29"></a><a class="lineno" href="#L29"> 29</a>
+<a id="L30"></a><a class="lineno" href="#L30"> 30</a>
+<a id="L31"></a><a class="lineno" href="#L31"> 31</a>
+<a id="L32"></a><a class="lineno" href="#L32"> 32</a>
+<a id="L33"></a><a class="lineno" href="#L33"> 33</a>
+<a id="L34"></a><a class="lineno" href="#L34"> 34</a>
+<a id="L35"></a><a class="lineno" href="#L35"> 35</a>
+<a id="L36"></a><a class="lineno" href="#L36"> 36</a>
+<a id="L37"></a><a class="lineno" href="#L37"> 37</a>
+<a id="L38"></a><a class="lineno" href="#L38"> 38</a>
+<a id="L39"></a><a class="lineno" href="#L39"> 39</a>
+<a id="L40"></a><a class="lineno" href="#L40"> 40</a>
+<a id="L41"></a><a class="lineno" href="#L41"> 41</a>
+<a id="L42"></a><a class="lineno" href="#L42"> 42</a>
+<a id="L43"></a><a class="lineno" href="#L43"> 43</a>
+<a id="L44"></a><a class="lineno" href="#L44"> 44</a>
+<a id="L45"></a><a class="lineno" href="#L45"> 45</a>
+<a id="L46"></a><a class="lineno" href="#L46"> 46</a>
+<a id="L47"></a><a class="lineno" href="#L47"> 47</a>
+<a id="L48"></a><a class="lineno" href="#L48"> 48</a>
+<a id="L49"></a><a class="lineno" href="#L49"> 49</a>
+<a id="L50"></a><a class="lineno" href="#L50"> 50</a>
+<a id="L51"></a><a class="lineno" href="#L51"> 51</a>
+<a id="L52"></a><a class="lineno" href="#L52"> 52</a>
+<a id="L53"></a><a class="lineno" href="#L53"> 53</a>
+<a id="L54"></a><a class="lineno" href="#L54"> 54</a>
+<a id="L55"></a><a class="lineno" href="#L55"> 55</a>
+<a id="L56"></a><a class="lineno" href="#L56"> 56</a>
+<a id="L57"></a><a class="lineno" href="#L57"> 57</a>
+<a id="L58"></a><a class="lineno" href="#L58"> 58</a>
+<a id="L59"></a><a class="lineno" href="#L59"> 59</a>
+<a id="L60"></a><a class="lineno" href="#L60"> 60</a>
+<a id="L61"></a><a class="lineno" href="#L61"> 61</a>
+<a id="L62"></a><a class="lineno" href="#L62"> 62</a>
+<a id="L63"></a><a class="lineno" href="#L63"> 63</a>
+<a id="L64"></a><a class="lineno" href="#L64"> 64</a>
+<a id="L65"></a><a class="lineno" href="#L65"> 65</a>
+<a id="L66"></a><a class="lineno" href="#L66"> 66</a>
+<a id="L67"></a><a class="lineno" href="#L67"> 67</a>
+<a id="L68"></a><a class="lineno" href="#L68"> 68</a>
+<a id="L69"></a><a class="lineno" href="#L69"> 69</a>
+<a id="L70"></a><a class="lineno" href="#L70"> 70</a>
+<a id="L71"></a><a class="lineno" href="#L71"> 71</a>
+<a id="L72"></a><a class="lineno" href="#L72"> 72</a>
+<a id="L73"></a><a class="lineno" href="#L73"> 73</a>
+<a id="L74"></a><a class="lineno" href="#L74"> 74</a>
+<a id="L75"></a><a class="lineno" href="#L75"> 75</a>
+<a id="L76"></a><a class="lineno" href="#L76"> 76</a>
+<a id="L77"></a><a class="lineno" href="#L77"> 77</a>
+<a id="L78"></a><a class="lineno" href="#L78"> 78</a>
+<a id="L79"></a><a class="lineno" href="#L79"> 79</a>
+<a id="L80"></a><a class="lineno" href="#L80"> 80</a>
+<a id="L81"></a><a class="lineno" href="#L81"> 81</a>
+<a id="L82"></a><a class="lineno" href="#L82"> 82</a>
+<a id="L83"></a><a class="lineno" href="#L83"> 83</a>
+<a id="L84"></a><a class="lineno" href="#L84"> 84</a>
+<a id="L85"></a><a class="lineno" href="#L85"> 85</a>
+<a id="L86"></a><a class="lineno" href="#L86"> 86</a>
+<a id="L87"></a><a class="lineno" href="#L87"> 87</a>
+<a id="L88"></a><a class="lineno" href="#L88"> 88</a>
+<a id="L89"></a><a class="lineno" href="#L89"> 89</a>
+<a id="L90"></a><a class="lineno" href="#L90"> 90</a>
+<a id="L91"></a><a class="lineno" href="#L91"> 91</a>
+<a id="L92"></a><a class="lineno" href="#L92"> 92</a>
+<a id="L93"></a><a class="lineno" href="#L93"> 93</a>
+<a id="L94"></a><a class="lineno" href="#L94"> 94</a>
+<a id="L95"></a><a class="lineno" href="#L95"> 95</a>
+<a id="L96"></a><a class="lineno" href="#L96"> 96</a>
+<a id="L97"></a><a class="lineno" href="#L97"> 97</a>
+<a id="L98"></a><a class="lineno" href="#L98"> 98</a>
+<a id="L99"></a><a class="lineno" href="#L99"> 99</a>
+<a id="L100"></a><a class="lineno" href="#L100">100</a>
+<a id="L101"></a><a class="lineno" href="#L101">101</a>
+<a id="L102"></a><a class="lineno" href="#L102">102</a>
+<a id="L103"></a><a class="lineno" href="#L103">103</a>
+<a id="L104"></a><a class="lineno" href="#L104">104</a>
+<a id="L105"></a><a class="lineno" href="#L105">105</a>
+<a id="L106"></a><a class="lineno" href="#L106">106</a>
+<a id="L107"></a><a class="lineno" href="#L107">107</a>
+<a id="L108"></a><a class="lineno" href="#L108">108</a>
+<a id="L109"></a><a class="lineno" href="#L109">109</a>
+<a id="L110"></a><a class="lineno" href="#L110">110</a>
+<a id="L111"></a><a class="lineno" href="#L111">111</a>
+<a id="L112"></a><a class="lineno" href="#L112">112</a>
+<a id="L113"></a><a class="lineno" href="#L113">113</a>
+<a id="L114"></a><a class="lineno" href="#L114">114</a>
+<a id="L115"></a><a class="lineno" href="#L115">115</a>
+<a id="L116"></a><a class="lineno" href="#L116">116</a>
+<a id="L117"></a><a class="lineno" href="#L117">117</a>
+<a id="L118"></a><a class="lineno" href="#L118">118</a>
+<a id="L119"></a><a class="lineno" href="#L119">119</a>
+<a id="L120"></a><a class="lineno" href="#L120">120</a>
+<a id="L121"></a><a class="lineno" href="#L121">121</a>
+<a id="L122"></a><a class="lineno" href="#L122">122</a>
+<a id="L123"></a><a class="lineno" href="#L123">123</a>
+<a id="L124"></a><a class="lineno" href="#L124">124</a>
+<a id="L125"></a><a class="lineno" href="#L125">125</a>
+<a id="L126"></a><a class="lineno" href="#L126">126</a>
+<a id="L127"></a><a class="lineno" href="#L127">127</a>
+<a id="L128"></a><a class="lineno" href="#L128">128</a>
+<a id="L129"></a><a class="lineno" href="#L129">129</a></pre>
           </div>
         </td>
         <td class="right-side guaxinim-code">
           <div class="nohighlight makeup code">
-            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Internal.SourceParser</span><span class="w"> </span><span class="k" data-group-id="493">do</span><span class="w"></span>
+            <pre><span class="kd">defmodule</span><span class="w"> </span><span class="nc">Guaxinim.Internal.SourceParser</span><span class="w"> </span><span class="k" data-group-id="501">do</span><span class="w"></span>
 <span class="w">  </span><span class="kn">use</span><span class="w"> </span><span class="nc">ExSpirit.Parser</span><span class="p">,</span><span class="w"> </span><span class="ss">text</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">newline</span><span class="p" data-group-id="390">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">alt</span><span class="p" data-group-id="389">(</span><span class="p" data-group-id="388">[</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L2">char</a></span><span class="p" data-group-id="386">(</span><span class="sc">?\n</span><span class="p" data-group-id="386">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">eoi</span><span class="p" data-group-id="387">()</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="388">]</span><span class="p" data-group-id="389">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="390">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">newline</span><span class="p" data-group-id="398">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">alt</span><span class="p" data-group-id="397">(</span><span class="p" data-group-id="396">[</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L2">char</a></span><span class="p" data-group-id="394">(</span><span class="sc">?\n</span><span class="p" data-group-id="394">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">eoi</span><span class="p" data-group-id="395">()</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="396">]</span><span class="p" data-group-id="397">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="398">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">any_line</span><span class="p" data-group-id="396">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">lexeme</span><span class="p" data-group-id="395">(</span><span class="w"></span>
-<span class="w">      </span><span class="n">seq</span><span class="p" data-group-id="394">(</span><span class="p" data-group-id="393">[</span><span class="w"></span>
-<span class="w">        </span><span class="n">chars</span><span class="p" data-group-id="391">(</span><span class="o">-</span><span class="sc">?\n</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="391">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="392">()</span><span class="p" data-group-id="393">]</span><span class="p" data-group-id="394">)</span><span class="p" data-group-id="395">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="396">)</span><span class="w"></span>
-<span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">comment_line</span><span class="p" data-group-id="404">(</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">any_line</span><span class="p" data-group-id="404">(</span><span class="w"></span>
 <span class="w">    </span><span class="n">lexeme</span><span class="p" data-group-id="403">(</span><span class="w"></span>
 <span class="w">      </span><span class="n">seq</span><span class="p" data-group-id="402">(</span><span class="p" data-group-id="401">[</span><span class="w"></span>
-<span class="w">        </span><span class="n">chars</span><span class="p" data-group-id="397">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="397">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">char</a></span><span class="p" data-group-id="398">(</span><span class="sc">?#</span><span class="p" data-group-id="398">)</span><span class="p">,</span><span class="w"></span>
 <span class="w">        </span><span class="n">chars</span><span class="p" data-group-id="399">(</span><span class="o">-</span><span class="sc">?\n</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="399">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="400">()</span><span class="w"></span>
-<span class="w">      </span><span class="p" data-group-id="401">]</span><span class="p" data-group-id="402">)</span><span class="p" data-group-id="403">)</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="400">()</span><span class="p" data-group-id="401">]</span><span class="p" data-group-id="402">)</span><span class="p" data-group-id="403">)</span><span class="w"></span>
 <span class="w">  </span><span class="p" data-group-id="404">)</span><span class="w"></span>
+<span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">comment_line</span><span class="p" data-group-id="412">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">lexeme</span><span class="p" data-group-id="411">(</span><span class="w"></span>
+<span class="w">      </span><span class="n">seq</span><span class="p" data-group-id="410">(</span><span class="p" data-group-id="409">[</span><span class="w"></span>
+<span class="w">        </span><span class="n">chars</span><span class="p" data-group-id="405">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="405">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">char</a></span><span class="p" data-group-id="406">(</span><span class="sc">?#</span><span class="p" data-group-id="406">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">chars</span><span class="p" data-group-id="407">(</span><span class="o">-</span><span class="sc">?\n</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="407">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="408">()</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="409">]</span><span class="p" data-group-id="410">)</span><span class="p" data-group-id="411">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="412">)</span><span class="w"></span>
 <span class="w">  </span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">doc_block_start</span><span class="p" data-group-id="417">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="416">(</span><span class="p" data-group-id="415">[</span><span class="w"></span>
-<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="405">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="405">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="406">(</span><span class="s2">&quot;@doc&quot;</span><span class="p" data-group-id="406">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="407">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="407">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">alt</span><span class="p" data-group-id="412">(</span><span class="p" data-group-id="411">[</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="408">(</span><span class="s2">&quot;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="408">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="409">(</span><span class="s2">&quot;~S</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="409">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="410">(</span><span class="s2">&quot;~s</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="410">)</span><span class="w"></span>
-<span class="w">      </span><span class="p" data-group-id="411">]</span><span class="p" data-group-id="412">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">doc_block_start</span><span class="p" data-group-id="425">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="424">(</span><span class="p" data-group-id="423">[</span><span class="w"></span>
 <span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="413">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="413">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="414">()</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="415">]</span><span class="p" data-group-id="416">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="417">)</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="414">(</span><span class="s2">&quot;@doc&quot;</span><span class="p" data-group-id="414">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="415">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="415">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">alt</span><span class="p" data-group-id="420">(</span><span class="p" data-group-id="419">[</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="416">(</span><span class="s2">&quot;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="416">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="417">(</span><span class="s2">&quot;~S</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="417">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="418">(</span><span class="s2">&quot;~s</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="418">)</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="419">]</span><span class="p" data-group-id="420">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="421">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="421">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="422">()</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="423">]</span><span class="p" data-group-id="424">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="425">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">moduledoc_block_start</span><span class="p" data-group-id="430">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="429">(</span><span class="p" data-group-id="428">[</span><span class="w"></span>
-<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="418">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="418">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="419">(</span><span class="s2">&quot;@moduledoc&quot;</span><span class="p" data-group-id="419">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="420">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="420">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">alt</span><span class="p" data-group-id="425">(</span><span class="p" data-group-id="424">[</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="421">(</span><span class="s2">&quot;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="421">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="422">(</span><span class="s2">&quot;~S</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="422">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="423">(</span><span class="s2">&quot;~s</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="423">)</span><span class="w"></span>
-<span class="w">      </span><span class="p" data-group-id="424">]</span><span class="p" data-group-id="425">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">moduledoc_block_start</span><span class="p" data-group-id="438">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="437">(</span><span class="p" data-group-id="436">[</span><span class="w"></span>
 <span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="426">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="426">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="427">()</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="428">]</span><span class="p" data-group-id="429">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="430">)</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="427">(</span><span class="s2">&quot;@moduledoc&quot;</span><span class="p" data-group-id="427">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="428">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="428">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">alt</span><span class="p" data-group-id="433">(</span><span class="p" data-group-id="432">[</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="429">(</span><span class="s2">&quot;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="429">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="430">(</span><span class="s2">&quot;~S</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="430">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="431">(</span><span class="s2">&quot;~s</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="431">)</span><span class="w"></span>
+<span class="w">      </span><span class="p" data-group-id="432">]</span><span class="p" data-group-id="433">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="434">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="434">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="435">()</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="436">]</span><span class="p" data-group-id="437">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="438">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">heredoc_end</span><span class="p" data-group-id="437">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="436">(</span><span class="p" data-group-id="435">[</span><span class="w"></span>
-<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="431">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="431">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="432">(</span><span class="s2">&quot;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="432">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="433">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="433">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="434">()</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="435">]</span><span class="p" data-group-id="436">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="437">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">heredoc_end</span><span class="p" data-group-id="445">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="444">(</span><span class="p" data-group-id="443">[</span><span class="w"></span>
+<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="439">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="439">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L2">lit</a></span><span class="p" data-group-id="440">(</span><span class="s2">&quot;</span><span class="se">\&quot;\&quot;\&quot;</span><span class="s2">&quot;</span><span class="p" data-group-id="440">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">chars</span><span class="p" data-group-id="441">(</span><span class="sc">?\s</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="441">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L4">newline</a></span><span class="p" data-group-id="442">()</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="443">]</span><span class="p" data-group-id="444">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="445">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">doc_block</span><span class="p" data-group-id="449">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="448">(</span><span class="p" data-group-id="447">[</span><span class="w"></span>
-<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="439">(</span><span class="n"><a class="guaxinim-source-link" href="#L28">doc_block_start</a></span><span class="p" data-group-id="438">()</span><span class="p" data-group-id="439">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">tag</span><span class="p" data-group-id="444">(</span><span class="ss">:doc</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n">repeat</span><span class="p" data-group-id="443">(</span><span class="w"></span>
-<span class="w">          </span><span class="n">lookahead_not</span><span class="p" data-group-id="441">(</span><span class="n"><a class="guaxinim-source-link" href="#L58">heredoc_end</a></span><span class="p" data-group-id="440">()</span><span class="p" data-group-id="441">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L11">any_line</a></span><span class="p" data-group-id="442">()</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="443">)</span><span class="p" data-group-id="444">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="446">(</span><span class="n"><a class="guaxinim-source-link" href="#L58">heredoc_end</a></span><span class="p" data-group-id="445">()</span><span class="p" data-group-id="446">)</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="447">]</span><span class="p" data-group-id="448">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="449">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">doc_block</span><span class="p" data-group-id="457">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="456">(</span><span class="p" data-group-id="455">[</span><span class="w"></span>
+<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="447">(</span><span class="n"><a class="guaxinim-source-link" href="#L28">doc_block_start</a></span><span class="p" data-group-id="446">()</span><span class="p" data-group-id="447">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">tag</span><span class="p" data-group-id="452">(</span><span class="ss">:doc</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">repeat</span><span class="p" data-group-id="451">(</span><span class="w"></span>
+<span class="w">          </span><span class="n">lookahead_not</span><span class="p" data-group-id="449">(</span><span class="n"><a class="guaxinim-source-link" href="#L58">heredoc_end</a></span><span class="p" data-group-id="448">()</span><span class="p" data-group-id="449">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L11">any_line</a></span><span class="p" data-group-id="450">()</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="451">)</span><span class="p" data-group-id="452">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="454">(</span><span class="n"><a class="guaxinim-source-link" href="#L58">heredoc_end</a></span><span class="p" data-group-id="453">()</span><span class="p" data-group-id="454">)</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="455">]</span><span class="p" data-group-id="456">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="457">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">moduledoc_block</span><span class="p" data-group-id="461">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="460">(</span><span class="p" data-group-id="459">[</span><span class="w"></span>
-<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="451">(</span><span class="n"><a class="guaxinim-source-link" href="#L43">moduledoc_block_start</a></span><span class="p" data-group-id="450">()</span><span class="p" data-group-id="451">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">tag</span><span class="p" data-group-id="456">(</span><span class="ss">:moduledoc</span><span class="p">,</span><span class="w"></span>
-<span class="w">        </span><span class="n">repeat</span><span class="p" data-group-id="455">(</span><span class="w"></span>
-<span class="w">          </span><span class="n">lookahead_not</span><span class="p" data-group-id="453">(</span><span class="n"><a class="guaxinim-source-link" href="#L58">heredoc_end</a></span><span class="p" data-group-id="452">()</span><span class="p" data-group-id="453">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L11">any_line</a></span><span class="p" data-group-id="454">()</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="455">)</span><span class="p" data-group-id="456">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="458">(</span><span class="n"><a class="guaxinim-source-link" href="#L58">heredoc_end</a></span><span class="p" data-group-id="457">()</span><span class="p" data-group-id="458">)</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="459">]</span><span class="p" data-group-id="460">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="461">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">moduledoc_block</span><span class="p" data-group-id="469">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="468">(</span><span class="p" data-group-id="467">[</span><span class="w"></span>
+<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="459">(</span><span class="n"><a class="guaxinim-source-link" href="#L43">moduledoc_block_start</a></span><span class="p" data-group-id="458">()</span><span class="p" data-group-id="459">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">tag</span><span class="p" data-group-id="464">(</span><span class="ss">:moduledoc</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">repeat</span><span class="p" data-group-id="463">(</span><span class="w"></span>
+<span class="w">          </span><span class="n">lookahead_not</span><span class="p" data-group-id="461">(</span><span class="n"><a class="guaxinim-source-link" href="#L58">heredoc_end</a></span><span class="p" data-group-id="460">()</span><span class="p" data-group-id="461">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L11">any_line</a></span><span class="p" data-group-id="462">()</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p" data-group-id="463">)</span><span class="p" data-group-id="464">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="466">(</span><span class="n"><a class="guaxinim-source-link" href="#L58">heredoc_end</a></span><span class="p" data-group-id="465">()</span><span class="p" data-group-id="466">)</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="467">]</span><span class="p" data-group-id="468">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="469">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">comment_block</span><span class="p" data-group-id="465">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">tag</span><span class="p" data-group-id="464">(</span><span class="ss">:comment</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">repeat</span><span class="p" data-group-id="463">(</span><span class="n"><a class="guaxinim-source-link" href="#L18">comment_line</a></span><span class="p" data-group-id="462">()</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="463">)</span><span class="p" data-group-id="464">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="465">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">comment_block</span><span class="p" data-group-id="473">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">tag</span><span class="p" data-group-id="472">(</span><span class="ss">:comment</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">repeat</span><span class="p" data-group-id="471">(</span><span class="n"><a class="guaxinim-source-link" href="#L18">comment_line</a></span><span class="p" data-group-id="470">()</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="471">)</span><span class="p" data-group-id="472">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="473">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">non_code_line</span><span class="p" data-group-id="472">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">alt</span><span class="p" data-group-id="471">(</span><span class="p" data-group-id="470">[</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L18">comment_line</a></span><span class="p" data-group-id="466">()</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L28">doc_block_start</a></span><span class="p" data-group-id="467">()</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L43">moduledoc_block_start</a></span><span class="p" data-group-id="468">()</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">eoi</span><span class="p" data-group-id="469">()</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="470">]</span><span class="p" data-group-id="471">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="472">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">non_code_line</span><span class="p" data-group-id="480">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">alt</span><span class="p" data-group-id="479">(</span><span class="p" data-group-id="478">[</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L18">comment_line</a></span><span class="p" data-group-id="474">()</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L28">doc_block_start</a></span><span class="p" data-group-id="475">()</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L43">moduledoc_block_start</a></span><span class="p" data-group-id="476">()</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">eoi</span><span class="p" data-group-id="477">()</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="478">]</span><span class="p" data-group-id="479">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="480">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">code_line</span><span class="p" data-group-id="479">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="478">(</span><span class="p" data-group-id="477">[</span><span class="w"></span>
-<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="475">(</span><span class="n">lookahead_not</span><span class="p" data-group-id="474">(</span><span class="n"><a class="guaxinim-source-link" href="#L92">non_code_line</a></span><span class="p" data-group-id="473">()</span><span class="p" data-group-id="474">)</span><span class="p" data-group-id="475">)</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L11">any_line</a></span><span class="p" data-group-id="476">()</span><span class="p" data-group-id="477">]</span><span class="p" data-group-id="478">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="479">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">code_line</span><span class="p" data-group-id="487">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">seq</span><span class="p" data-group-id="486">(</span><span class="p" data-group-id="485">[</span><span class="w"></span>
+<span class="w">      </span><span class="n">ignore</span><span class="p" data-group-id="483">(</span><span class="n">lookahead_not</span><span class="p" data-group-id="482">(</span><span class="n"><a class="guaxinim-source-link" href="#L92">non_code_line</a></span><span class="p" data-group-id="481">()</span><span class="p" data-group-id="482">)</span><span class="p" data-group-id="483">)</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L11">any_line</a></span><span class="p" data-group-id="484">()</span><span class="p" data-group-id="485">]</span><span class="p" data-group-id="486">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="487">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">code_block</span><span class="p" data-group-id="484">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">tag</span><span class="p" data-group-id="483">(</span><span class="ss">:code</span><span class="p">,</span><span class="w"></span>
-<span class="w">      </span><span class="n">repeat</span><span class="p" data-group-id="482">(</span><span class="n">lookahead_not</span><span class="p" data-group-id="481">(</span><span class="n"><a class="guaxinim-source-link" href="#L92">non_code_line</a></span><span class="p" data-group-id="480">()</span><span class="p" data-group-id="481">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L11">any_line</a></span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="482">)</span><span class="p" data-group-id="483">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="484">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">code_block</span><span class="p" data-group-id="492">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">tag</span><span class="p" data-group-id="491">(</span><span class="ss">:code</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">repeat</span><span class="p" data-group-id="490">(</span><span class="n">lookahead_not</span><span class="p" data-group-id="489">(</span><span class="n"><a class="guaxinim-source-link" href="#L92">non_code_line</a></span><span class="p" data-group-id="488">()</span><span class="p" data-group-id="489">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L11">any_line</a></span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="490">)</span><span class="p" data-group-id="491">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="492">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">block</span><span class="p" data-group-id="487">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">alt</span><span class="p" data-group-id="486">(</span><span class="p" data-group-id="485">[</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">block</span><span class="p" data-group-id="495">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">alt</span><span class="p" data-group-id="494">(</span><span class="p" data-group-id="493">[</span><span class="w"></span>
 <span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L107">code_block</a></span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L87">comment_block</a></span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L67">doc_block</a></span><span class="p">,</span><span class="w"></span>
 <span class="w">      </span><span class="n"><a class="guaxinim-source-link" href="#L77">moduledoc_block</a></span><span class="w"></span>
-<span class="w">    </span><span class="p" data-group-id="485">]</span><span class="p" data-group-id="486">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="487">)</span><span class="w"></span>
+<span class="w">    </span><span class="p" data-group-id="493">]</span><span class="p" data-group-id="494">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="495">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">blocks</span><span class="p" data-group-id="489">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">repeat</span><span class="p" data-group-id="488">(</span><span class="n"><a class="guaxinim-source-link" href="#L112">block</a></span><span class="p" data-group-id="488">)</span><span class="w"></span>
-<span class="w">  </span><span class="p" data-group-id="489">)</span><span class="w"></span>
+<span class="w">  </span><span class="n"><a class="guaxinim-source-link" href="https://hexdocs.pm/ex_spirit/ExSpirit.Parser.html#defrule/1">defrule</a></span><span class="w"> </span><span class="n">blocks</span><span class="p" data-group-id="497">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">repeat</span><span class="p" data-group-id="496">(</span><span class="n"><a class="guaxinim-source-link" href="#L112">block</a></span><span class="p" data-group-id="496">)</span><span class="w"></span>
+<span class="w">  </span><span class="p" data-group-id="497">)</span><span class="w"></span>
 <span class="w"></span>
-<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">from_string</span><span class="p" data-group-id="490">(</span><span class="n">source</span><span class="p" data-group-id="490">)</span><span class="w"> </span><span class="k" data-group-id="492">do</span><span class="w"></span>
-<span class="w">    </span><span class="n">parse</span><span class="p" data-group-id="491">(</span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L121">blocks</a></span><span class="p" data-group-id="491">)</span><span class="w"></span>
-<span class="w">  </span><span class="k" data-group-id="492">end</span><span class="w"></span>
+<span class="w">  </span><span class="kd">def</span><span class="w"> </span><span class="nf">from_string</span><span class="p" data-group-id="498">(</span><span class="n">source</span><span class="p" data-group-id="498">)</span><span class="w"> </span><span class="k" data-group-id="500">do</span><span class="w"></span>
+<span class="w">    </span><span class="n">parse</span><span class="p" data-group-id="499">(</span><span class="n">source</span><span class="p">,</span><span class="w"> </span><span class="n"><a class="guaxinim-source-link" href="#L121">blocks</a></span><span class="p" data-group-id="499">)</span><span class="w"></span>
+<span class="w">  </span><span class="k" data-group-id="500">end</span><span class="w"></span>
 <span class="w"></span>
-<span class="k" data-group-id="493">end</span></pre>
+<span class="k" data-group-id="501">end</span></pre>
           </div>
         </td>
       </tr>
