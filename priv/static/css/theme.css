@@ -1064,12 +1064,10 @@ table {
 }
 
 .sidebar-toc-level-up {
-  font-family: Consolas,monospace;
-  font-size: 85%;
   font-weight: bold;
 }
 
-.sidebar-toc-directory, .sidebar-toc-file {
+.sidebar-toc {
   font-family: Consolas,monospace;
   font-size: 85%;
 }

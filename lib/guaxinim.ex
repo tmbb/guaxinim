@@ -108,6 +108,19 @@ defmodule Guaxinim do
     write_with_mkdir(output_file, html)
   end
 
+  def write_with_mkdir(output_file, content) do
+    dirname = Path.dirname(output_file)
+    # Ensure the directory exists.
+    # To do this, we try to create the directory and ignore
+    # both the `:ok` result (which means we've succeeded)
+    # and the `{:error, :eexist}` result (which means the directory already existed)
+    # Raise an error in case we get any other `{:error, _}` value.
+    case File.mkdir_p(dirname) do
+      :ok -> nil
+      {:error, :eexist} -> nil
+    end
+    File.write!(output_file, content)
+  end
 
   def child_directories_and_files(parent_dir) do
     children =
@@ -129,20 +142,6 @@ defmodule Guaxinim do
       |> Enum.sort
 
     {child_directories, child_files}
-  end
-
-  def write_with_mkdir(output_file, content) do
-    dirname = Path.dirname(output_file)
-    # Ensure the directory exists.
-    # To do this, we try to create the directory and ignore
-    # both the `:ok` result (which means we've succeeded)
-    # and the `{:error, :eexist}` result (which means the directory already existed)
-    # Raise an error in case we get any other `{:error, _}` value.
-    case File.mkdir_p(dirname) do
-      :ok -> nil
-      {:error, :eexist} -> nil
-    end
-    File.write!(output_file, content)
   end
 
   # Convenience functions to render the templates

@@ -64,8 +64,18 @@ defmodule Guaxinim.Utils.URL do
           {<< m0 >> <> _, _, _} when ?a <= m0 and m0 <= ?z ->
             url_for_builtin_erlang_module(mfa)
 
-          {"EEx." <> _, _f, _a} ->
+          # Built-ins packages:
+          {"Elixir.EEx", _f, _a} ->
             url_mfa_hexdocs("eex", mfa)
+
+          {"Elixir.EEx." <> _, _f, _a} ->
+            url_mfa_hexdocs("eex", mfa)
+
+          {"Elixir.Mix", _f, _a} ->
+            url_mfa_hexdocs("mix", mfa)
+
+          {"Elixir.Mix." <> _, _f, _a} ->
+            url_mfa_hexdocs("mix", mfa)
 
           _ ->
             url_mfa_hexdocs("elixir", mfa)

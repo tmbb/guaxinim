@@ -220,8 +220,6 @@ defmodule Guaxinim.BeamInspector do
       #   * `definitions` contains the `MapSet` which we will use to lookup
       #     the right definition at each call site
 
-      # IO.inspect(fun_arities)
-
       # After we've added the function definitions,
       # we can add the function calls internal to each module.
       # We only care about the function calls from the files in the current project,

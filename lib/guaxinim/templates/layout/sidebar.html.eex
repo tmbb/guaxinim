@@ -14,7 +14,7 @@
           <a class="reference internal" href="..">
             <span class="glyphicon glyphicon-level-up"></span>
             &nbsp;
-            <span class="sidebar-toc-level-up">../</span></a></li>
+            <span>../</span></a></li>
         <% end %>
         <%# List of directories %>
         <%= for dir <- @sibling_directories do %>
@@ -22,7 +22,7 @@
           <a class="reference internal" href="<%= dir %>">
             <span class="glyphicon glyphicon-folder-open"></span>
             &nbsp;
-            <span class="sidebar-toc-directory"><%= dir %>/</span></a></li>
+            <span><%= dir %>/</span></a></li>
         <% end %>
         <%# List of files %>
         <%= for file <- @sibling_files do %>
@@ -30,7 +30,7 @@
           <a class="reference internal" href="<%= file %>.html">
             <span class="glyphicon glyphicon-file"></span>
             &nbsp;
-            <span class="sidebar-toc-file"><%= file %></span></a></li>
+            <span><%= file %></span></a></li>
         <% end %>
       </ul>
     </div>
